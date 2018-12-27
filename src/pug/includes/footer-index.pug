@@ -1,0 +1,74 @@
+section.footer-index
+    .container
+        .row
+            .col-12.col-lg-6.footer-index_left-block
+                .footer-index_left-block_items
+                    .footer-index_left-block_item
+                        ul
+                            li
+                                a(href="#") Главная
+                            li
+                                a(href="#") Компания
+                            li
+                                a(href="#") Доставка
+                            li
+                                a(href="#") Акции
+                            li
+                                a(href="#") Контакты
+                    .footer-index_left-block_item
+                        ul
+                            li
+                                a(href="#") Кровати металлические
+                            li
+                                a(href="#") Комплектующие
+                            li
+                                a(href="#") Матрасы
+                            li
+                                a(href="#") Постельное бельё
+                            li
+                                a(href="#") Постельные комплекты
+            .col-12.col-lg-6.footer-index_right-block
+                .footer-index_right-block_wrapper
+                    .footer-index_right-block_contacts
+                        p.address Москва, Михалковская ул. д. 48, корп 2, офис 4
+                        .phone
+                            .phone-1 <i class="fas fa-phone red fa-rotate-90 px-2"></i> <i class="fab fa-whatsapp green px-1"></i> <i class="fab fa-viber perple px-1 pr-2"></i>
+                                a(href="+79255501265") +7 925 550-12-65
+                            .phone-2 <i class="fas fa-phone red fa-rotate-90 px-2"></i>
+                                a(href="tel:+74993945986") +7 499 394-59-86
+                            .phone-3 <i class="fas fa-phone red fa-rotate-90 px-2"></i>
+                                a(href="+79267265383") +7 926 726-53-83
+                    .footer-index_right-block_time-work
+                        p.text Режим работы:
+                        p.text Пн - Чт: 9.00-18.00
+                        p.text Пятница.: 9.00 -17.00
+                        p.text Сб - Вс: выходной
+                .footer-index_right-block_social
+                    a(href="#") <i class="fab fa-facebook"></i>
+                    a(href="#") <i class="fab fa-instagram"></i>
+
+//Modal
+.modal.fade#searchModal(tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true")
+    .modal-dialog(role="document")
+        .modal-content
+            .modal-header
+                button.close(type="button" aria-label="Close" data-dismiss="modal")
+                    span(aria-hidden="true") &times;
+            .modal-body
+                h2.modal-title.mb-3 Поиск по сайту
+                form#search
+                    input.form-control(type="text" )
+                button(type="button" data-dismiss="modal").btn.btn-dark-gray.m-3 Закрыть
+                button(type="button").btn.btn-dark-red.m-3 Поиск
+
+//.modal.fade(tabindex="-1" role="dialog" aria-labelledby="myModalLabel")#myModal
+    .modal-dialog(role="document")
+        .modal-content
+            .modal-header
+                button.close(type="button" data-dismiss="modal" aria-label="Close") <span aria-hidden="true">&times;</span>
+            .modal-body
+                h1 Search
+                form.navbar-form(role="search")
+                    .form-group
+                        input.form-control(type="text" placeholder="Search")
+                    button.btn.btn-default(type="submit")

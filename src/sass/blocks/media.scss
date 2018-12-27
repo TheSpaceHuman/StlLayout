@@ -1,0 +1,253 @@
+// Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+//@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+//@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+//@media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+//@media (min-width: 1200px) { ... }
+
+// No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+//@include media-breakpoint-up(sm) { ... }
+//@include media-breakpoint-up(md) { ... }
+//@include media-breakpoint-up(lg) {
+//  .features_img {
+//    display: none;
+//  }
+// }
+//@include media-breakpoint-up(xl) {
+//  .features_img {
+//    display: block;
+//  }
+//}
+
+//MY Media
+@media (max-width: 1499px) {
+  .navbar {
+    padding: 8px;
+  }
+  .top-slider .container-fluid {
+    padding: 0;
+  }
+  .breadcrumb {
+    padding: 25px 10px;;
+  }
+}
+@media (min-width: 1500px) {
+  .navbar {
+    padding: 0;
+  }
+
+}
+@media (max-width: 1300px) {
+  .goods-slider {
+    .slick-prev {
+      left: 69%;
+    }
+    .slick-next {
+      left: 69%;
+    }
+  }
+}
+@media (max-width: 1200px) {
+  .goods-slider {
+    .slick-prev {
+      left: 71%;
+    }
+    .slick-next {
+      left: 71%;
+    }
+  }
+  .top-menu_message {
+    display: none;
+  }
+}
+@media (max-width: 1100px) {
+  .goods-slider {
+    .slick-prev {
+      left: 73%;
+    }
+    .slick-next {
+      left: 73%;
+    }
+  }
+
+}
+@media (max-width: 1000px) {
+  .goods-slider {
+    .slick-prev {
+      left: 75%;
+    }
+    .slick-next {
+      left: 75%;
+    }
+  }
+  .index-slider {
+    display: none;
+  }
+  .top-menu_phone {
+    display: none;
+  }
+}
+@media (max-width: 900px) {
+  .goods-slider {
+    .slick-prev {
+      left: 77%;
+    }
+    .slick-next {
+      left: 77%;
+    }
+  }
+}
+@media (max-width: 820px) {
+  .navbar-collapse {
+    display: none!important;
+  }
+  .navbar-toggler {
+    display: none!important;
+  }
+  .navbar-expand-md .navbar-collapse {
+    display: none!important;
+  }
+}
+@media (min-width: 800px) {
+  .navbar-expand-md .navbar-collapse {
+    display: flex!important;
+    flex-basis: auto;
+  }
+}
+@media (max-width: 800px) {
+  .goods-slider {
+    .slick-prev {
+      left: 79%;
+    }
+    .slick-next {
+      left: 79%;
+    }
+  }
+  .btn-shopping-cart {
+    position: relative;
+    padding: 5px 10px;
+    top: unset;
+  }
+  .info-menu .btn {
+    margin: 0;
+  }
+  .info-menu {
+    padding-bottom: 25px;
+  }
+  .nav-item, .nav-link {
+    text-align: center;
+  }
+  .feedback_left-block {
+    padding-bottom: 35px;
+    text-align: center;
+  }
+
+}
+@media (max-width: 700px) {
+  .goods-slider {
+    .slick-prev {
+      left: 81%;
+    }
+    .slick-next {
+      left: 81%;
+    }
+  }
+
+}
+@media (max-width: 600px) {
+  .goods-slider {
+    .slick-prev {
+      left: 48%;
+      top: -35px;
+    }
+    .slick-next {
+      left: 48%;
+      top: -35px;
+    }
+  }
+  .popular .goods-slider {
+    .slick-prev {
+      left: 45%;
+      top: -35px;
+    }
+    .slick-next {
+      left: 45%;
+      top: -35px;
+    }
+  }
+}
+@media (max-width: 500px) {
+  .goods-slider {
+    .slick-prev {
+      left: 45%;
+      top: -35px;
+    }
+    .slick-next {
+      left: 45%;
+      top: -35px;
+    }
+  }
+  .popular .goods-slider {
+    .slick-prev {
+      left: 45%;
+      top: -35px;
+    }
+    .slick-next {
+      left: 45%;
+      top: -35px;
+    }
+  }
+}
+@media (max-width: 400px) {
+  .goods-slider {
+    .slick-prev {
+      top: -35px;
+      left: 45%;
+    }
+    .slick-next {
+      top: -35px;
+      left: 45%;
+    }
+  }
+  .container-list {
+    padding: 10px;
+  }
+  .feedback_left-block {
+    text-align: left;
+  }
+}
+@media (max-width: 991px) {
+  .footer-index_left-block_items {
+    margin-bottom: 0;
+    margin-top: 25px;
+  }
+
+}
+
+@media (max-width: 650px) {
+  .tab-content .tab-pane {
+    width: 100%;
+  }
+}
+@media (max-width: 550px) {
+  .card-goods_main-block_price-button {
+    justify-content: space-around;
+  }
+}
+@media (max-width: 980px) {
+  .card-goods_main-block_info {
+    padding: 10px;
+  }
+}@media (max-width: 400px) {
+  .card-goods_main-block_info_model {
+    margin: 0 auto;
+  }
+}

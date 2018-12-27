@@ -1,0 +1,21 @@
+/*===========bootstrap 4=========*/
+@import "../libs/bootstrap/dist/css/bootstrap.css";
+/*===========slick=========*/
+@import "../libs/slick/slick.css";
+@import "../libs/slick/slick-theme.css";
+/*===========normalize=========*/
+@import "blocks/normalize";
+/*===========VARS=========*/
+@import "vars";
+/*========HEADER==========*/
+@import "blocks/header";
+/*==========MAIN==========*/
+@import "blocks/main";
+/*============FOOTER============*/
+@import "blocks/footer";
+/*============Menu============*/
+@import "blocks/menu";
+/*============MEDIA============*/
+@import "blocks/media";
+/*===============ANIMATION==============*/
+@import "blocks/animation";
