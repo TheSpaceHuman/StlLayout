@@ -1,4 +1,12 @@
 /* Variables */
+$blue: #00a3d8;
+$dark-blue: #0075bd;
+$pink: #c3006e;
+$dark-pink: #c3006e;
+$green: #209740;
+$emerald: #009e9c;
+$brow: #cb5000;
+
 
 /* Remove def style */
 html {
@@ -8,7 +16,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: Circe, sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -33,28 +41,23 @@ ul,ol, li {
 a {
   color: black;
 }
-a:hover {
-  color: $dark-red;
+a:hover, a:focus {
+  color: #00a3d8;
   text-decoration: none;
 }
-//Fonts
-@import "fontsMix";
-@font-face {
-  font-family: Circe;
-  src: url('../fonts/Circe/Circe-Regular/Circe-Regular.eot');
-  src: url('../fonts/Circe/Circe-Regular/Circe-Regular.woff2') format('woff2'),
-  url('../fonts/Circe/Circe-Regular/Circe-Regular.woff') format('woff'),
-  url('../fonts/Circe/Circe-Regular/Circe-Regular.svg#Circe-Regular') format('svg'),
-  url('../fonts/Circe/Circe-Regular/Circe-Regular.eot?#iefix') format('embedded-opentype');
-  font-weight: 400;
-  font-style: normal;
+*:focus {
+  outline-color: transparent!important;
 }
-@include font-face(Ubuntu, ../fonts/Ubuntu/, 500, normal, eot woff2 woff);
+//Fonts
+//@import "fontsMix";
+//@include font-face(Ubuntu, fonts/Ubuntu-Bold, 700, normal, woff2 woff);
+
+
 * {
   transition: all .3s;
 }
 .container {
-  max-width: 1500px!important;
+  max-width: 1250px!important;
 }
 
 

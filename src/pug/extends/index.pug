@@ -2,11 +2,12 @@ doctype html
 html(lang="ru")
     head
         meta(charset="UTF-8")
-        title ЛидерОПТ
+        title Современные Технологические Линии
         meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
         block css
             // ===== styles =====
             link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.3.1/css/all.css", integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU", crossorigin="anonymous")
+            link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,700,700i")
             link(rel="stylesheet", href="css/style.min.css")
 
 
@@ -14,21 +15,21 @@ html(lang="ru")
 
 
     body
-        header.header-index
+        header.header
             block header
                 include ../includes/header-index
 
-        main.main-index
+        main.main
             block main
                 include ../includes/main-index
 
-        footer.footer-index
+        footer.footer
             block footer
                 include ../includes/footer-index
 
         block script
             script(src="libs/jquery/dist/jquery.min.js")
-            script(src="libs/jquery/dist/jquery.slim.min.js" async)
+            script(src="libs/jquery/dist/jquery.slim.min.js")
             script(src="libs/bootstrap/dist/js/bootstrap.min.js" async)
             script(src="libs/slick/slick.min.js" async)
             script(src="libs/lazysizes/lazysizes.min.js" async)

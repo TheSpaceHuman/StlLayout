@@ -1,106 +1,56 @@
-section.top-menu.fixed-top
+section.header_top
     .container
         .row
-            nav.navbar.navbar-expand-md.navbar-light
-                a.navbar-brand.py-3(href="index.html")
-                    p.brand_title Лидер<span>ОПТ</span>
-                    p.brand_description кровати металлические
-                button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation") <i class="fas fa-bars"></i>
+            nav.col-12.col-md-6
+                ul.header_top_link-list
+                    li.header_top_link-list_item
+                        a(href="#") Сертификаты
+                    li.header_top_link-list_item
+                        a(href="#") Бесплатная доставка
+                    li.header_top_link-list_item
+                        a(href="#") Неограниченная гарантия
+            .col-12.col-md-6.header_top_wrapper-right
+                .header_top_lang
+                    button.header_top_lang_item RU
+                    button.header_top_lang_item ENG
+                a(href='#').header_top_bascket Корзина
+                a(href='#').header_top_user-control
+                    | Вход / Регистрация
 
+section.header_middle
+    .container
+        .row
+            .col-12.col-md-6
+                .header_middle_brand
+                    img(src="img/index/top-logo.png" alt="Современные Технологические Линии")
+            .col-12.col-md-6.header_middle_wrapper-right
+                .header_middle_delivery
+                    .header_middle_delivery_intro Бесплатный звонок по России
+                    .header_middle_delivery_phone 8 800 707-78-80
+                    .header_middle_delivery_button
+                        button.btn.btn-delivery Бесплатная доставка <i class="fas fa-truck"></i>
 
-                .collapse.navbar-collapse#navbarSupportedContent
-                    ul.navbar-nav
-                        li.nav-item.active
-                            a.nav-link(href="index.html") Главная
-                        li.nav-item
-                            .dropdown
-                                a.nav-link#dropdown2(href="catalog.html") Каталог
-                                .dropdown-menu(aria-labelledby="dropdown2")
-                                    a.dropdown-item(href="card-goods.html") Кровати металлические
-                                    a.dropdown-item(href="#") Постельные принадлежности
-                                    a.dropdown-item(href="#") Мебель ДСП
-                                    a.dropdown-item(href="#") Пружинные матрасы
-                                    a.dropdown-item(href="#") Стулья-кресла офисные
-                                    a.dropdown-item(href="#") Мебель на металл каркасе
-                        li.nav-item
-                            a.nav-link(href="#") Компания
-                        li.nav-item
-                            a.nav-link(href="delivery.html") Доставка
-                        li.nav-item
-                            a.nav-link(href="promotions.html") Акции
-                        li.nav-item
-                            a.nav-link(href="#") Контакты
-                    .info-menu
-                        .top-menu_phone
-                            <i class="fas fa-phone fa-rotate-90 px-2"></i>
-                            <i class="fab fa-whatsapp px-1"></i>
-                            <i class="fab fa-viber px-1"></i>
-                            a(href="tel:+79255501265") +7 925 550-12-65
-                        .top-menu_message
-                            .icon-first
-                            p.text Мы первые
-                        button.btn.btn-search(data-toggle="modal" data-target="#searchModal")
-                            i.fas.fa-search
-                        button.btn.btn-shopping-cart
-                            i.fas.fa-shopping-cart
-
-                .catalog-menu
-                    a.sidemenu-btn2(href="#" title="Меню") <i class="fa fa-bars"></i>
-                .sidemenu2
-                    a.close-menu2(href="#" title="") <i class="fa fa-times"></i>
-                    ul
-                        li.nav-item.active
-                            a.nav-link(href="index.html") Главная
-                        li.nav-item
-                            a(href="#") Каталог
-                            ul.drop-menu.animated.fadeIn
-                                li.nav-item.first
-                                    a(href="#") Кровати металлические
-                                li.nav-item
-                                    a(href="#") Постельные принадлежности
-                                li.nav-item
-                                    a(href="#") Мебель ДСП
-                                li.nav-item
-                                    a(href="#") Пружинные матрасы
-                                li.nav-item
-                                    a(href="#") Стулья-кресла офисные
-                                li.nav-item.last
-                                    a(href="#") Мебель на металл каркасе
-                        li.nav-item
-                            a(href="#") Компания
-                        li.nav-item
-                            a(href="#") Акции
-                        li.nav-item
+section.header_bottom
+    .container
+        nav.header_bottom_main-menu
+            ul.header_bottom_main-menu_items
+                li.header_bottom_main-menu_item
+                    a(href="#") О компании
+                    ul.header_bottom_main-menu_items.lvl-2
+                        li.header_bottom_main-menu_item.lvl-2
+                            a(href="#") Новости
+                        li.header_bottom_main-menu_item.lvl-2
+                            a(href="#") Лучшие сотрудники
+                        li.header_bottom_main-menu_item.lvl-2
                             a(href="#") Контакты
-                    .sidemenu2_buttons
-                        button.btn.btn-search(data-toggle="modal" data-target="#searchModal")
-                            i.fas.fa-search
-                        button.btn.btn-shopping-cart
-                            i.fas.fa-shopping-cart
 
-
-
-secrion.top-slider
-    .container-fluid
-        h1.title-1.d-none ЛидерОПТ
-        .index-slider
-             - for (var n = 0; n < 4; n++)
-                div
-                    .index-slider_item
-                        .index-slider_left-block
-                            .index-slider_text
-                                p.index-slider_text_title металлические <span>кровати</span>
-                                p.index-slider_text_price от <span>890</span> <i class="fas fa-ruble-sign"></i>
-                                p.index-slider_text_description Купить металлические кровати недорого в розницу по оптовым ценам производителя.
-                                .index-slider_text_buttons
-                                    a.link-def(href="#") Подробно
-                                    button.btn.btn-dark-red Перейти в каталог
-                            .index-slider_intro
-                                .index-slider_intro_img
-                                    img(src="img/index/Layer_21.jpg" alt="Интерьер с кроватью").lazyload
-                                .index-slider_intro_text
-                                    p.title Наши кровати
-                                    p.text Наши кровати закуплены в московский центр здоровья «Москва»
-                        .index-slider_right-block
-                            .index-slider_wrapper-img
-                                img(src="img/index/final.png" alt="Кровать-2202").lazyload
+                li.header_bottom_main-menu_item
+                    a(href="#") Продукция
+                li.header_bottom_main-menu_item
+                    a(href="#") Медицина
+                li.header_bottom_main-menu_item
+                    a(href="#") Сотрудничество
+                li.header_bottom_main-menu_item
+                    a(href="#") Вопрос-ответ
+                li.header_bottom_main-menu_item.search
+                    a(href="#") Поиск <i class="fas fa-search"></i>
