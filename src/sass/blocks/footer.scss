@@ -1,0 +1,132 @@
+.footer_top {
+
+  &_items {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &_item {
+    flex: 0 0 160px;
+    margin-bottom: 25px;
+  }
+}
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+
+  .link {
+    margin-bottom: 6px;
+    color: #000000;
+    font-size: 13px;
+    font-weight: 400;
+  }
+  .title {
+    color: #000000;
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 12px;
+  }
+}
+.footer {
+
+  &_bottom {
+    background-color: #edefef;
+    padding: 45px 0;
+    &_copyright {
+      color: #acadb0;
+      font-size: 13px;
+      font-weight: 400;
+    }
+    &_social-icons {
+      display: flex;
+      justify-content: flex-end;
+      a:hover, a:focus {
+        background-color: $pink;
+        color: #fff;
+      }
+    }
+  }
+  &_top {
+    background-color: #edefef;
+    padding-top: 70px;
+  }
+
+}
+.feetback-info {
+  margin-left: auto;
+  min-width: 225px;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 21px;
+  &_address {
+
+  }
+  &_phons {
+
+    a {
+      display: block;
+    }
+  }
+  &_email {
+    text-decoration: underline;
+  }
+}
+.icon-circle {
+  border-radius: 50%;
+  background-color: #00a3d8;
+  color: #fff;
+  width: 28px;
+  height: 28px;
+  position: relative;
+  margin: 0 10px;
+}
+.icon-facebook::before {
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 900;
+  content: "\f39e";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 14px;
+}
+.icon-vk::before {
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 900;
+  content: "\f189";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 14px;
+}
+.icon-ok::before {
+   font-family: "Font Awesome 5 Brands";
+   font-weight: 900;
+   content: "\f263";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 14px;
+ }
+.icon-youtube::before {
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 900;
+  content: "\f167";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 14px;
+}
+.icon-instagram::before {
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 900;
+  content: "\f16d";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 14px;
+}
