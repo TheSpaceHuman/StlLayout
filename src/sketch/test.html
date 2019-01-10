@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div class="u-container">
+
+    <div class="section-row section-row--100">
+
+        <div class="section-row-content">
+
+            <div class="section-row-header">
+
+                <h2 class="section-row-header-title"><strong>ОТДЕЛ ОБСЛУЖИВАНИЯ</strong></h2>
+
+            </div>
+
+            <div class="ContactForm__row">
+
+                <div class="ContactForm__column"><img src="assets/template/images/logo-blue.png" alt=""
+                                                      class="img-responsive"
+                                                      style="width: 75%;display: block;margin: auto;">
+
+                    <ul class="ContactForm__info u-list-unstyled">
+
+                        <li class="ContactForm__info-item">
+
+                            <div class="ContactForm__info-icon"><span class="fuxicon-contact"></span></div>
+
+                            <div class="ContactForm__info-data">
+
+                                <h6 class="Scandia-Bold">Email</h6>
+
+                                <p>cs@fuxion.ru</p>
+
+                            </div>
+
+                        </li>
+
+
+                        <li class="ContactForm__info-item">
+
+                            <div class="ContactForm__info-icon"><span class="fuxicon-marker"></span></div>
+
+                            <div class="ContactForm__info-data">
+
+                                <h6 class="Scandia-Bold">Address</h6>
+
+
+                                <p>Красная Площадь</p>
+
+                            </div>
+
+                        </li>
+
+
+                        <!-- <li class="ContactForm__info-item">
+
+                          <div class="ContactForm__info-icon"><span class="fuxicon-phone"></span></div>
+
+                          <div class="ContactForm__info-data">
+
+                            <h6>Teléfono</h6>
+
+                            <p>Teléf: (511) 513 9120 (anexo 144)</p>
+
+                          </div>
+
+                        </li> -->
+
+
+                    </ul>
+
+                </div>
+
+                <div class="ContactForm__column">
+
+                    <!-- <div class="ContactForm__form-title">
+
+                      <p>Escríbenos y contactaremos contigo a la brevedad.</p>
+
+                    </div> -->
+
+                    <div class="ContactForm__successMsgBox js-success"></div>
+
+                    <form action="" method="post" id="contactForm" class="ContactForm__form ajax_form af_example"
+                          novalidate="novalidate">
+                        <div class="ContactForm__formRow">
+
+                            <input type="text" name="name" id="name" placeholder="Имя" class="form-control" value="">
+                            <span class="error_name"></span>
+
+                        </div>
+
+                        <div class="ContactForm__formRow">
+
+                            <select name="country" id="country">
+                                <option value="Париж">Париж</option>
+                                <option value="Аргентина">Аргентина</option>
+                                <option value="Боливия">Боливия</option>
+                                <option value="Бразилия">Бразилия</option>
+                                <option value="Чили">Чили</option>
+                                <option value="Колумбия">Колумбия</option>
+                                <option value="Перу">Перу</option>
+                                <option value="Венесуэла">Венесуэла</option>
+                                <option value="Коста-Рика">Коста-Рика</option>
+                                <option value="Гватемала">Гватемала</option>
+                                <option value="Никарагуа">Никарагуа</option>
+                                <option value="Панама">Панама</option>
+                                <option value="Рес. Доминикана">Рес. Доминикана</option>
+                                <option value="Мексика">Мексика</option>
+                                <option value="США">США</option>
+                                <option value="Испания">Испания</option>
+                                <option selected="" value="Россия">Россия</option>
+                            </select>
+
+                        </div>
+
+                        <div class="ContactForm__formRow">
+
+                            <input type="email" name="email" id="email" placeholder="E-Mail" class="form-control"
+                                   value="">
+                            <span class="error_name"></span>
+
+                        </div>
+
+                        <div class="ContactForm__formRow">
+
+                            <p>
+
+                                ВЫ НЕЗАВИСИМЫЙ ПРЕДПРИНИМАТЕЛЬ?
+                            </p>
+
+                            <div class="radio">
+
+                                <div class="radio__col">
+
+                                    <input type="radio" name="businessman" id="businessman_si" checked="checked"
+                                           value="Да">
+
+                                    <label for="businessman_si">
+
+                                        Да
+                                    </label>
+
+                                </div>
+
+                                <div class="radio__col">
+
+                                    <input type="radio" name="businessman" id="businessman_no" value="Нет">
+
+                                    <label for="businessman_no">
+
+                                        Нет
+                                    </label>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="ContactForm__formRow">
+
+                            <p>
+
+                                ВЫ КЛИЕНТ FUXION?
+                            </p>
+
+                            <div class="radio">
+
+                                <div class="radio__col">
+
+                                    <input type="radio" name="customer" id="customer_si" checked="checked" value="Да">
+
+                                    <label for="customer_si">
+
+                                        Да
+                                    </label>
+
+                                </div>
+
+                                <div class="radio__col">
+
+                                    <input type="radio" name="customer" id="customer_no" value="Нет">
+
+                                    <label for="customer_no">
+
+                                        Нет
+                                    </label>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="ContactForm__formRow">
+
+                            <textarea name="comment" id="comment" rows="5" placeholder="Сообщение"
+                                      class="form-control"></textarea>
+
+                            <!--<input type="hidden" value="us" id="slog_pais" name="slog_pais">-->
+
+                        </div>
+
+                        <div class="ContactForm__formRow">
+
+                            <button type="submit" id="sendForm" class="ContactForm__btn Btn Btn--blue form-control">
+                                Отправить
+                            </button>
+
+                        </div>
+
+
+                        <input type="hidden" name="af_action" value="4a6df50ddea1bb8f6304aba487dfa8e5">
+                    </form>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

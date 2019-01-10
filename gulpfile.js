@@ -101,7 +101,9 @@ gulp.task('posthtml', function () {
 gulp.task('copy', function () {
   return gulp.src([
   'src/fonts/**/*.{woff,woff2,ttf,eot}',
-  'src/libs/**/*.*'
+  'src/libs/**/*.*',
+  '!src/js/script.js',
+  'src/js/**/*.js'
   ],{
     base:'src'
   })
@@ -110,7 +112,7 @@ gulp.task('copy', function () {
 
 gulp.task('js', function () {
   return gulp.src([
-    'src/js/*.js'
+    'src/js/script.js'
   ],{
     base:'src'
   })

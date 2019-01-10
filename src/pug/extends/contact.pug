@@ -11,6 +11,7 @@ html(lang="ru")
             //link(rel="stylesheet", href="libs/fancybox/dist/css/jquery.fancybox.css")
             link(rel="stylesheet", href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.css")
             link(rel="stylesheet", href="css/style.min.css")
+            script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU")
 
 
 
@@ -23,7 +24,7 @@ html(lang="ru")
 
         main.main
             block main
-                include ../includes/main-about
+                include ../includes/main-contact
 
         footer.footer
             block footer
@@ -37,4 +38,6 @@ html(lang="ru")
             //script(src="libs/fancybox/dist/js/jquery.fancybox.js" async)
             script(src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js" async)
             script(src="libs/lazysizes/lazysizes.min.js" async)
+
+            script(src="js/yandexMap.js" async)
             script(src="js/script.min.js" async)

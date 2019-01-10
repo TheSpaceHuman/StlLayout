@@ -1,0 +1,83 @@
+//[
+//  {
+//    "caption":"Документы",
+//    "fields": [
+//      {
+//        "field": "title",
+//        "caption": "Название"
+//      },
+//      {
+//        "field": "file",
+//        "caption": "Файл PDF"
+//      }
+//    ]
+//  }
+//]
+
+//[
+//  {
+//    "caption":"Кнопки",
+//    "fields": [
+//      {
+//        "field": "button1",
+//        "caption": "Кнопака 1"
+//      },
+//      {
+//        "field": "button1link",
+//        "caption": "Ссылка 1"
+//      },
+//      {
+//        "field": "button2",
+//        "caption": "Кнопака 2"
+//      },
+//      {
+//        "field": "button2link",
+//        "caption": "Ссылка 2",
+//        "inputTV":"img"
+//      },
+//      {
+//        "field": "button3",
+//        "caption": "Кнопака 3"
+//      },
+//      {
+//        "field": "button3link",
+//        "caption": "Ссылка 3",
+//        "inputTV":"img"
+//      }
+//
+//    ]
+//  },
+//  {
+//    "caption":"Картинки",
+//    "fields":[
+//      {
+//        "field":"image",
+//        "caption":"Картинка товара",
+//        "inputTV":"img",
+//        "sourceFrom":"goods"
+//      },
+//      {
+//        "field":"icon",
+//        "caption":"Иконка",
+//        "inputTV":"img",
+//        "sourceFrom":"goods"
+//      }
+//
+//    ]
+//  }
+//]
+
+//[
+//  {"header": "Кнопка 1", "width": "60", "sortable": "true", "dataIndex": "button1"},
+//  {"header": "Ссылка 1", "width": "60", "sortable": "true", "dataIndex": "button1link"},
+//  {"header": "Кнопка 2", "width": "60", "sortable": "true", "dataIndex": "button2"},
+//  {"header": "Ссылка 2", "width": "60", "sortable": "true", "dataIndex": "button2link"},
+//  {"header": "Кнопка 3", "width": "60", "sortable": "true", "dataIndex": "button3"},
+//  {"header": "Ссылка 3", "width": "60", "sortable": "true", "dataIndex": "button3link"},
+//  {"header": "Картинка", "width": "80", "sortable": "false", "dataIndex": "image","renderer": "this.renderImage"},
+//  {"header": "Иконка", "width": "60", "sortable": "false", "dataIndex": "icon","renderer": "this.renderImage"}
+//]
+[
+  {"header": "Заголовк", "width": "50%", "sortable": "true", "dataIndex": "title"},
+  {"header": "Файл", "width": "50%", "sortable": "false", "dataIndex": "file"}
+]
