@@ -1,0 +1,131 @@
+.container
+    nav(aria-label="breadcrumb")
+        ol.breadcrumb
+            li.breadcrumb-item <a href="index.html">Главная</a>
+            li.breadcrumb-item <a href="about.html">О Компании</a>
+            li.breadcrumb-item.active(aria-current="page") Новости
+    .row
+        .col-12.col-md-3
+            h1.title-1 О Компании
+            aside.left-saidbar
+                .left-saidbar_title О Компании
+                ul.left-saidbar_list
+                   li.left-saidbar_list_item <a href="news.html">Новости</a>
+                   li.left-saidbar_list_item <a href="#">Лучшие сотрудники</a>
+                   li.left-saidbar_list_item.active <a href="contact.html">Контакты</a>
+        .col-12.col-md-9
+            section.content.mb-5
+                .content_tabs
+                    ul.nav.nav-pills.mb-3#pills-tab(role="tablist")
+                        li.nav-item
+                            a.nav-link.active#pills-home-tab(data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true") Лента новостей
+                        li.nav-item
+                            a.nav-link#pills-profile-tab(data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false") Достижения
+                        li.nav-item
+                            a.nav-link#pills-contact-tab(data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false") Выставки
+                .tab-content#pills-tabContent
+                    .tab-pane.fade.show.active#pills-home(role="tabpanel" aria-labelledby="pills-home-tab")
+                        .tab-content_news-list
+                            .tab-content_news-list_items
+                                .tab-content_news-list_item
+                                    .tab-content_news-list_item_img-wrapper
+                                        img(src="img/news/colum1/img-1.jpg")
+                                    .tab-content_news-list_item_text
+                                        .tab-content_news-list_item_text_title
+                                            | Dolor sit amet, consectetur adipisicing elit
+                                        .tab-content_news-list_item_text_content
+                                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        .tab-content_news-list_item_text_data
+                                            | 10.12.2018
+                                .tab-content_news-list_item
+                                    .tab-content_news-list_item_img-wrapper
+                                        img(src="img/news/colum1/img-2.jpg")
+                                    .tab-content_news-list_item_text
+                                        .tab-content_news-list_item_text_title
+                                            | Dolor sit amet, consectetur adipisicing elit
+                                        .tab-content_news-list_item_text_content
+                                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        .tab-content_news-list_item_text_data
+                                            | 10.12.2018
+                                .tab-content_news-list_item
+                                    .tab-content_news-list_item_img-wrapper
+                                        img(src="img/news/colum1/img-3.jpg")
+                                    .tab-content_news-list_item_text
+                                        .tab-content_news-list_item_text_title
+                                            | Dolor sit amet, consectetur adipisicing elit
+                                        .tab-content_news-list_item_text_content
+                                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        .tab-content_news-list_item_text_data
+                                            | 10.12.2018
+                                .tab-content_news-list_item
+                                    .tab-content_news-list_item_img-wrapper
+                                        img(src="img/news/colum1/img-4.jpg")
+                                    .tab-content_news-list_item_text
+                                        .tab-content_news-list_item_text_title
+                                            | Dolor sit amet, consectetur adipisicing elit
+                                        .tab-content_news-list_item_text_content
+                                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        .tab-content_news-list_item_text_data
+                                            | 10.12.2018
+                                .tab-content_news-list_item
+                                    .tab-content_news-list_item_img-wrapper
+                                        img(src="img/news/colum1/img-5.jpg")
+                                    .tab-content_news-list_item_text
+                                        .tab-content_news-list_item_text_title
+                                            | Dolor sit amet, consectetur adipisicing elit
+                                        .tab-content_news-list_item_text_content
+                                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        .tab-content_news-list_item_text_data
+                                            | 10.12.2018
+                                .tab-content_news-list_item
+                                    .tab-content_news-list_item_img-wrapper
+                                        img(src="img/news/colum1/img-6.jpg")
+                                    .tab-content_news-list_item_text
+                                        .tab-content_news-list_item_text_title
+                                            | Dolor sit amet, consectetur adipisicing elit
+                                        .tab-content_news-list_item_text_content
+                                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        .tab-content_news-list_item_text_data
+                                            | 10.12.2018
+
+                    .tab-pane.fade#pills-profile(role="tabpanel" aria-labelledby="pills-profile-tab")
+                        .tab-content_progress
+                            .tab-content_progress_items
+                                .tab-content_progress_item
+                                    .tab-content_progress_item_img-wrapper
+                                        img(src="img/news/colum2/img-1.jpg")
+                                    .tab-content_progress_item_text
+                                        .tab-content_progress_item_text_title
+                                            | Dolor sit amet, consectetur adipisicing elit
+                                        .tab-content_progress_item_text_content
+                                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        .tab-content_progress_item_text_data
+                                            | 10.12.2018
+                                .tab-content_progress_item
+                                    .tab-content_progress_item_img-wrapper
+                                        img(src="img/news/colum2/img-2.jpg")
+                                    .tab-content_progress_item_text
+                                        .tab-content_progress_item_text_title
+                                            | Dolor sit amet, consectetur adipisicing elit
+                                        .tab-content_progress_item_text_content
+                                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        .tab-content_progress_item_text_data
+                                            | 10.12.2018
+                                .tab-content_progress_item
+                                    .tab-content_progress_item_img-wrapper
+                                        img(src="img/news/colum2/img-3.jpg")
+                                    .tab-content_progress_item_text
+                                        .tab-content_progress_item_text_title
+                                            | Dolor sit amet, consectetur adipisicing elit
+                                        .tab-content_progress_item_text_content
+                                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                        .tab-content_progress_item_text_data
+                                            | 10.12.2018
+
+
+                    .tab-pane.fade#pills-contact(role="tabpanel" aria-labelledby="pills-contact-tab")
+                        .tab-content_exhibitions
+                            .tab-content_exhibitions_items
+                                .tab-content_exhibitions_item
+                                .tab-content_exhibitions_item
+                                .tab-content_exhibitions_item

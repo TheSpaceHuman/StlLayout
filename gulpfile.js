@@ -60,6 +60,10 @@ gulp.task('server', function () {
 
   gulp.watch('src/sass/**/*.{sass,scss}', ['style']);
   gulp.watch('src/js/**/*.js', ['js']);
+  gulp.watch([
+    'src/js/**/*.js',
+    '!src/js/script.js'
+  ], ['copy']);
   gulp.watch('src/pug/**/*.pug', ['pug']).on('change', server.reload);
 });
 
@@ -108,6 +112,7 @@ gulp.task('copy', function () {
     base:'src'
   })
       .pipe(gulp.dest('build'))
+      .pipe(server.stream())
 });
 
 gulp.task('js', function () {
