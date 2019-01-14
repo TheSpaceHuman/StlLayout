@@ -9,18 +9,15 @@ $(document).ready(function() {
   $('.header_bottom_main-menu_item').mouseover(function (event) {
     $('.header_bottom_main-menu_item').removeClass('active');
     $(this).addClass('active')
+
   });
-  $('.header_bottom_main-menu_items.lvl-2').mouseleave(function (event) {
+  $('.header_bottom_main-menu_item').mouseout(function (event) {
      $('.header_bottom_main-menu_item').removeClass('active');
   });
-  // $(".drop")
-  //     .mouseover(function() {
-  //       $(".dropdown").show(300);
-  //     });
-  // $(".drop")
-  //     .mouseleave(function() {
-  //       $(".dropdown").hide(300);
-  //     });
+  $('.btn-reset').click(function () {
+    $('.sidemenu2 ').removeClass('slidein')
+  });
+
   //Slider
   $('.big-slider').slick({
     dots: true,

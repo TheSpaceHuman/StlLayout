@@ -86,7 +86,7 @@ section.footer_bottom
         .row
             .col-12.col-sm-6.p-2
                 .footer_bottom_copyright
-                    p © 2007–2019 Компания «СТЛ» В случае перепечатки материалов активная ссылка на сайт обязательна
+                    p © 2007–2019 Компания «СТЛ» <br>В случае перепечатки материалов активная ссылка на сайт обязательна
             .col-12.col-sm-6.p-2
                 .footer_bottom_social-icons
                     a(href="#").icon-circle.icon-facebook
@@ -94,3 +94,16 @@ section.footer_bottom
                     a(href="#").icon-circle.icon-ok
                     a(href="#").icon-circle.icon-youtube
                     a(href="#").icon-circle.icon-instagram
+
+.modal.fade#searchModal(tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true")
+    .modal-dialog(role="document")
+        .modal-content
+            .modal-header
+                button.close(type="button" aria-label="Close" data-dismiss="modal")
+                    span(aria-hidden="true") &times;
+            .modal-body
+                h2.modal-title.mb-3 Поиск по сайту
+                form#search
+                    input.form-control(type="text" )
+                button(type="button" data-dismiss="modal").btn.btn-dark.m-3 Закрыть
+                button(type="button").btn.btn-blue.m-3 Поиск

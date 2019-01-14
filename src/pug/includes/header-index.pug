@@ -9,7 +9,7 @@ section.header_top
                         a(href="#") Бесплатная доставка
                     li.header_top_link-list_item
                         a(href="#") Неограниченная гарантия
-            .col-12.col-md-6.header_top_wrapper-right
+            .col-12.col-md-4.offset-md-2.header_top_wrapper-right
                 .header_top_lang
                     button.header_top_lang_item.active RU
                     button.header_top_lang_item ENG
@@ -20,10 +20,10 @@ section.header_top
 section.header_middle
     .container
         .row
-            .col-12.col-md-6
+            .col-12.col-sm-6
                 a(href="index.html").header_middle_brand
                     img(src="img/index/top-logo.png" alt="Современные Технологические Линии")
-            .col-12.col-md-6.header_middle_wrapper-right
+            .col-12.col-sm-6.header_middle_wrapper-right
                 .header_middle_delivery
                     .header_middle_delivery_intro Бесплатный звонок по России
                     .header_middle_delivery_phone 8 800 707-78-80
@@ -53,7 +53,7 @@ section.header_bottom
                 li.header_bottom_main-menu_item
                     a(href="#") Вопрос-ответ
                 li.header_bottom_main-menu_item.search
-                    a(href="#") Поиск <i class="fas fa-search pl-2"></i>
+                    button(data-toggle="modal" data-target="#searchModal").btn-search Поиск <i class="fas fa-search pl-2"></i>
         .catalog-menu
             a.sidemenu-btn2(href="#" title="Меню") <i class="fas fa-bars"></i>
         nav.sidemenu2
@@ -63,16 +63,16 @@ section.header_bottom
                     a.nav-link(href="#") Продукция
                     ul.drop-menu.animated.fadeIn
                         li.nav-item.first
-                            a(href="#") Новости
+                            a(href="news.html") Новости
                         li.nav-item
-                            a(href="#") Лучшие сотрудники
+                            a(href="stuff.html") Лучшие сотрудники
                         li.nav-item
-                            a(href="#") Контакты
+                            a(href="contact.html") Контакты
                 li.nav-item
                     a(href="#") Медицина
                 li.nav-item
                     a(href="#") Сотрудничество
                 li.nav-item
                     a(href="#") Вопрос-ответ
-                li.nav-item
-                    a(href="#") Поиск <i class="fas fa-search pl-2"></i>
+                li.nav-item.search
+                    button.btn-reset(data-toggle="modal" data-target="#searchModal") Поиск <i class="fas fa-search pl-2"></i>

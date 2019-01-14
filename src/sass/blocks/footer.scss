@@ -130,3 +130,23 @@
   transform: translate(-50%, -50%);
   font-size: 14px;
 }
+.btn-blue {
+  background-color: #00a3d8;
+  border: 0;
+  border-radius: 0;
+  color: #fff;
+}
+.btn-blue:hover,
+.btn-blue:focus {
+  background-color: #0099cc;
+}
+.btn-dark {
+  background-color: #8b8b8e;
+  border: 0;
+  border-radius: 0;
+  color: #fff;
+}
+.btn-dark:hover,
+.btn-dark:focus {
+  background-color: #656567;
+}

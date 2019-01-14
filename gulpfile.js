@@ -16,10 +16,8 @@ var pug = require('gulp-pug');
 var clean = require('gulp-clean');
 var htmlbeautify = require('gulp-html-beautify');
 var uglify = require('gulp-uglify');
-// var pump = require('pump');
 var plumber = require('gulp-plumber');
-// var jshint = require('gulp-jshint');
-// var concat = require('gulp-concat');
+
 
 
 
@@ -64,6 +62,7 @@ gulp.task('server', function () {
     'src/js/**/*.js',
     '!src/js/script.js'
   ], ['copy']);
+  gulp.watch('src/img/**/*.{png,jpg,svg}', ['imagemin']);
   gulp.watch('src/pug/**/*.pug', ['pug']).on('change', server.reload);
 });
 
