@@ -15,7 +15,6 @@
   align-items: stretch;
 
   .link {
-    margin-bottom: 6px;
     color: #000000;
     font-size: 13px;
     font-weight: 400;
@@ -31,7 +30,7 @@
 
   &_bottom {
     background-color: #edefef;
-    padding: 45px 0;
+    padding: 0 0 30px;
     &_copyright {
       color: #acadb0;
       font-size: 13px;
@@ -40,6 +39,7 @@
     &_social-icons {
       display: flex;
       justify-content: flex-end;
+      padding-right: 45px;
       a:hover, a:focus {
         background-color: $pink;
         color: #fff;
@@ -48,13 +48,13 @@
   }
   &_top {
     background-color: #edefef;
-    padding-top: 70px;
+    padding-top: 55px;
   }
 
 }
 .feetback-info {
   margin-left: auto;
-  min-width: 225px;
+  min-width: 273px;
   font-size: 13px;
   font-weight: 400;
   line-height: 21px;
@@ -78,7 +78,7 @@
   width: 28px;
   height: 28px;
   position: relative;
-  margin: 0 10px;
+  margin: 0 10px 0 14px;
 }
 .icon-facebook::before {
   font-family: "Font Awesome 5 Brands";

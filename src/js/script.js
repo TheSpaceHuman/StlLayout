@@ -9,11 +9,20 @@ $(document).ready(function() {
   $('.header_bottom_main-menu_item').mouseover(function (event) {
     $('.header_bottom_main-menu_item').removeClass('active');
     $(this).addClass('active')
-
   });
   $('.header_bottom_main-menu_item').mouseout(function (event) {
      $('.header_bottom_main-menu_item').removeClass('active');
   });
+
+  $('.header_bottom_main-menu_item.lvl-2').mouseover(function (event) {
+    console.log('item lvl-2')
+    $('.header_bottom_main-menu_item.lvl-2').removeClass('active');
+    $(this).addClass('active')
+  });
+  // $('.header_bottom_main-menu_item.lvl-2').mouseout(function (event) {
+  //   $('.header_bottom_main-menu_item.lvl-2').removeClass('active');
+  // });
+
   $('.btn-reset').click(function () {
     $('.sidemenu2 ').removeClass('slidein')
   });
