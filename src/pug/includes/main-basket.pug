@@ -1,0 +1,83 @@
+.main_basket
+    .container
+        nav(aria-label="breadcrumb")
+            ol.breadcrumb
+                li.breadcrumb-item <a href="index.html">Главная</a>
+                li.breadcrumb-item.active(aria-current="page") Корзина
+        h1.title-1 Корзина
+        .row
+            .main_basket_content.col-12
+                .content_tabs
+                    ul.nav.nav-pills.mb-3#pills-tab(role="tablist")
+                        li.nav-item
+                            a.nav-link#pills-home-tab(data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="false") О пользователе
+                        li.nav-item
+                            a.nav-link#pills-profile-tab(data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false") Мои заказы
+                        li.nav-item
+                            a.nav-link.active#pills-contact-tab(data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="true") Моя корзина
+                .tab-content#pills-tabContent
+                    .tab-pane.fade.show.active#pills-home(role="tabpanel" aria-labelledby="pills-home-tab")
+                        - for (var x = 0; x < 3; x++)
+                            .main_basket_items
+                                .main_basket_item
+                                    .main_basket_item_img
+                                        img(src="img/basket/goods-1.png")
+                                    .main_basket_item_text
+                                        h4.main_basket_item_text_title Меркурий
+                                        p.main_basket_item_text_description Аппарат нервно-мышечной стимуляции
+                                    .main_basket_item_counter
+                                        button(type="button").main_basket_item_counter_minus
+                                        input.main_basket_item_counter_input(type="text" value="1")
+                                        button(type="button").main_basket_item_counter_plus
+                                    .main_basket_item_price
+                                        p.main_basket_item_price_main 12 400 <i class="fas fa-ruble-sign"></i>
+                                        span.main_basket_item_price_old 15 400 <i class="fas fa-ruble-sign"></i>
+                                    .main_basket_item_action <i class="fas fa-times"></i>
+                    .tab-pane.fade#pills-profile(role="tabpanel" aria-labelledby="pills-profile-tab")
+                        - for (var x = 0; x < 3; x++)
+                            .main_basket_items
+                                .main_basket_item
+                                    .main_basket_item_img
+                                        img(src="img/basket/goods-1.png")
+                                    .main_basket_item_text
+                                        h4.main_basket_item_text_title Меркурий
+                                        p.main_basket_item_text_description Аппарат нервно-мышечной стимуляции
+                                    .main_basket_item_counter
+                                        button(type="button").main_basket_item_counter_minus
+                                        input.main_basket_item_counter_input(type="text" value="1")
+                                        button(type="button").main_basket_item_counter_plus
+                                    .main_basket_item_price
+                                        p 12 400 <i class="fas fa-ruble-sign"></i>
+                                    .main_basket_item_action <i class="fas fa-times"></i>
+                    .tab-pane.fade#pills-contact(role="tabpanel" aria-labelledby="pills-contact-tab")
+                        - for (var x = 0; x < 3; x++)
+                            .main_basket_items
+                                .main_basket_item
+                                    .main_basket_item_img
+                                        img(src="img/basket/goods-1.png")
+                                    .main_basket_item_text
+                                        h4.main_basket_item_text_title Меркурий
+                                        p.main_basket_item_text_description Аппарат нервно-мышечной стимуляции
+                                    .main_basket_item_counter
+                                        button(type="button").main_basket_item_counter_minus
+                                        input.main_basket_item_counter_input(type="text" value="1")
+                                        button(type="button").main_basket_item_counter_plus
+                                    .main_basket_item_price
+                                        p 12 400 <i class="fas fa-ruble-sign"></i>
+                                    .main_basket_item_action <i class="fas fa-times"></i>
+
+        section.bootom-actions.col-12.p-0
+            .bootom-actions_subscribers
+                p.text Если у вас есть код купона для получения скидки, введите в данное поле
+                form#form-subscribers
+                    input.form-control.color--pink(type="text" value="SUPERSALE")
+            .bootom-actions_footer-info
+                .bootom-actions_footer-info_bottons
+                    a.btn.btn-a-left(href="#") Назад в продукцию
+                    button.btn.btn-a-close Очистить корзину
+                    a.btn.btn-a-right(href="#") Оформить заказ
+
+                .bootom-actions_footer-info_price
+                    span ИТОГО
+                    .bootom-actions_footer-info_price_main 22 400 <i class="fas fa-ruble-sign"></i>
+                    .bootom-actions_footer-info_price_old  49 900 <i class="fas fa-ruble-sign"></i>

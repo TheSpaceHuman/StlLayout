@@ -141,6 +141,31 @@ $(document).ready(function() {
     return false;
   });
 
+  $(document).ready(function() {
+    $('.main_basket_item_counter_minus').click(function () {
+      var $input = $(this).parent().find('input');
+      var count = parseInt($input.val()) - 1;
+      count = count < 1 ? 1 : count;
+      $input.val(count);
+      $input.change();
+      return false;
+    });
+    $('.main_basket_item_counter_plus').click(function () {
+      var $input = $(this).parent().find('input');
+      $input.val(parseInt($input.val()) + 1);
+      $input.change();
+      return false;
+    });
+  });
+
+/*  $('.main_basket_item_counter > .main_basket_item_counter_minus').click(function () {
+    var curentValue = $('.main_basket_item_counter > .main_basket_item_counter_input').val();
+    $(this).val(--curentValue);
+  });
+  $('.main_basket_item_counter > .main_basket_item_counter_plus').click(function () {
+    var curentValue = $('.main_basket_item_counter > .main_basket_item_counter_input').val();
+    $(this).val(++curentValue);
+  });*/
   // $('[data-fancybox]').fancybox({
   //   youtube : {
   //     controls : 0,

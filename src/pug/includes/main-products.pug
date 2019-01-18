@@ -3,50 +3,26 @@
         nav(aria-label="breadcrumb")
             ol.breadcrumb
                 li.breadcrumb-item <a href="index.html">Главная</a>
-                li.breadcrumb-item <a href="about.html">О Компании</a>
-                li.breadcrumb-item.active(aria-current="page") Лучшие сотрудники
+                li.breadcrumb-item.active(aria-current="page") Продукция
+        h1.title-1 Продукция
         .row
-            .col-12.main_products_page-name
-                h1.title-1 Продукция
-                p.page-name_description Подберите аппарат, исходя из нужных Вам показаний к применению:
-            .col-4.main_products_top-form
-                form#products-select
-                    .form-group
-                        select.form-control.color--pink
-                            option Аднексит
-                            option Аднексит 2
-                            option Аднексит 3
-                p.text или откройте <a href="#">полный список показаний</a>
-    section.main_products_blocks
-        .container
-            .row
-                .col-12.main_products_block
-                    .main_products_block_title Максимальный лечебный эффект
-                    .main_products_block_description Прочитайте подробнее в разделе «Медицина» <a href="#">о воздействии при показании: аденексит</a>
-                    .main_goods_items
-                        - for (var x = 0; x < 3; x++)
-                            .main_goods_item
-                                .main_goods_item_img
-                                    img(data-src="img/index/goods-3.png").lazyload
-                                    .main_goods_item_img-icons
-                                        .main_goods_item_img-icon
-                                            img(data-src="img/index/card_icon-3-ultra.svg" alt="Ультразвуковая терапия").lazyload
-                                            .main_goods_item_img-icon_text Ультразвуковая терапия
-                                        .main_goods_item_img-icon
-                                            img(data-src="img/index/card_icon-4-magnito.svg" alt="Магнитотерапия").lazyload
-                                            .main_goods_item_img-icon_text Магнитотерапия
-                                h3.main_goods_item_title Дельта комби
-                                p.main_goods_item_description Аппарат ультразвуковой терапии
-                                .main_goods_item_price
-                                    span.main_goods_item_price-main 19 200 <i class="fas fa-ruble-sign"></i>
-                                .main_goods_item_buttons
-                                    button.btn.btn-qbuy Купить в 1 клик
-                                    button.btn.btn-buy Купить
-                .col-12.main_products_block
-                    .main_products_block_title Значительный лечебный эффект
-                        .main_products_block_description Прочитайте подробнее в разделе «Медицина» о воздействии при показании: аденексит
+            section.main_products_content.col-12
+                .main_products_page-name
+                    p.page-name_description Подберите аппарат, исходя из нужных Вам показаний к применению:
+                .main_products_top-form
+                    form#products-select
+                        .form-group.col-4.p-0
+                            select.form-control.color--pink
+                                option Аднексит
+                                option Аднексит 2
+                                option Аднексит 3
+                    p.text или откройте <a href="#">полный список показаний</a>
+                .main_products_blocks
+                    .main_products_block
+                        .main_products_block_title Максимальный лечебный эффект
+                        .main_products_block_description Прочитайте подробнее в разделе «Медицина» <a href="#">о воздействии при показании: аденексит</a>
                         .main_goods_items
-                            - for (var y = 0; y < 3; y++)
+                            - for (var x = 0; x < 3; x++)
                                 .main_goods_item
                                     .main_goods_item_img
                                         img(data-src="img/index/goods-3.png").lazyload
@@ -64,33 +40,52 @@
                                     .main_goods_item_buttons
                                         button.btn.btn-qbuy Купить в 1 клик
                                         button.btn.btn-buy Купить
-                .col-12.main_products_block
-                    .main_products_block_title Ощутимый лечебный эффект
-                        .main_products_block_description Прочитайте подробнее в разделе «Медицина» о воздействии при показании: аденексит
-                        .main_goods_items
-                            - for (var z = 0; z < 3; z++)
-                                .main_goods_item
-                                    .main_goods_item_img
-                                        img(data-src="img/index/goods-3.png").lazyload
-                                        .main_goods_item_img-icons
-                                            .main_goods_item_img-icon
-                                                img(data-src="img/index/card_icon-3-ultra.svg" alt="Ультразвуковая терапия").lazyload
-                                                .main_goods_item_img-icon_text Ультразвуковая терапия
-                                            .main_goods_item_img-icon
-                                                img(data-src="img/index/card_icon-4-magnito.svg" alt="Магнитотерапия").lazyload
-                                                .main_goods_item_img-icon_text Магнитотерапия
-                                    h3.main_goods_item_title Дельта комби
-                                    p.main_goods_item_description Аппарат ультразвуковой терапии
-                                    .main_goods_item_price
-                                        span.main_goods_item_price-main 19 200 <i class="fas fa-ruble-sign"></i>
-                                    .main_goods_item_buttons
-                                        button.btn.btn-qbuy Купить в 1 клик
-                                        button.btn.btn-buy Купить
+                    .main_products_block
+                        .main_products_block_title Значительный лечебный эффект
+                            .main_products_block_description Прочитайте подробнее в разделе «Медицина» о воздействии при показании: аденексит
+                            .main_goods_items
+                                - for (var y = 0; y < 3; y++)
+                                    .main_goods_item
+                                        .main_goods_item_img
+                                            img(data-src="img/index/goods-3.png").lazyload
+                                            .main_goods_item_img-icons
+                                                .main_goods_item_img-icon
+                                                    img(data-src="img/index/card_icon-3-ultra.svg" alt="Ультразвуковая терапия").lazyload
+                                                    .main_goods_item_img-icon_text Ультразвуковая терапия
+                                                .main_goods_item_img-icon
+                                                    img(data-src="img/index/card_icon-4-magnito.svg" alt="Магнитотерапия").lazyload
+                                                    .main_goods_item_img-icon_text Магнитотерапия
+                                        h3.main_goods_item_title Дельта комби
+                                        p.main_goods_item_description Аппарат ультразвуковой терапии
+                                        .main_goods_item_price
+                                            span.main_goods_item_price-main 19 200 <i class="fas fa-ruble-sign"></i>
+                                        .main_goods_item_buttons
+                                            button.btn.btn-qbuy Купить в 1 клик
+                                            button.btn.btn-buy Купить
+                    .main_products_block
+                        .main_products_block_title Ощутимый лечебный эффект
+                            .main_products_block_description Прочитайте подробнее в разделе «Медицина» о воздействии при показании: аденексит
+                            .main_goods_items
+                                - for (var z = 0; z < 3; z++)
+                                    .main_goods_item
+                                        .main_goods_item_img
+                                            img(data-src="img/index/goods-3.png").lazyload
+                                            .main_goods_item_img-icons
+                                                .main_goods_item_img-icon
+                                                    img(data-src="img/index/card_icon-3-ultra.svg" alt="Ультразвуковая терапия").lazyload
+                                                    .main_goods_item_img-icon_text Ультразвуковая терапия
+                                                .main_goods_item_img-icon
+                                                    img(data-src="img/index/card_icon-4-magnito.svg" alt="Магнитотерапия").lazyload
+                                                    .main_goods_item_img-icon_text Магнитотерапия
+                                        h3.main_goods_item_title Дельта комби
+                                        p.main_goods_item_description Аппарат ультразвуковой терапии
+                                        .main_goods_item_price
+                                            span.main_goods_item_price-main 19 200 <i class="fas fa-ruble-sign"></i>
+                                        .main_goods_item_buttons
+                                            button.btn.btn-qbuy Купить в 1 клик
+                                            button.btn.btn-buy Купить
 
-    section.doctor-question
-        .container
-            .row
-                .col-6.offset-3
+                .doctor-question.col-6.offset-3
                     .doctor-question_title Задайте свой вопрос нашему профессиональному врачу
                     .doctor-question_img
                         img(src="img/products/doctor-1.png").lazyload
@@ -125,7 +120,7 @@
                 .row
                     .col-12.col-md-6.main_promo-products_present
                         a(href="#")
-                            img(src="img/products/advertising-2.jpg")
+                            img(data-src="img/products/footer-1.jpg").lazyload
                     .col-12.col-md-6.main_promo-products_present
                         a(href="#")
-                            img(src="img/products/advertising-2.jpg")
+                            img(data-src="img/products/footer-2.jpg").lazyload
