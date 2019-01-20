@@ -158,22 +158,14 @@ $(document).ready(function() {
     });
   });
 
-/*  $('.main_basket_item_counter > .main_basket_item_counter_minus').click(function () {
-    var curentValue = $('.main_basket_item_counter > .main_basket_item_counter_input').val();
-    $(this).val(--curentValue);
-  });
-  $('.main_basket_item_counter > .main_basket_item_counter_plus').click(function () {
-    var curentValue = $('.main_basket_item_counter > .main_basket_item_counter_input').val();
-    $(this).val(++curentValue);
-  });*/
-  // $('[data-fancybox]').fancybox({
-  //   youtube : {
-  //     controls : 0,
-  //     showinfo : 0
-  //   },
-  //   vimeo : {
-  //     color : 'f00'
-  //   }
-  // });
+  if ($(document).is('#datepicker-from') || $(document).is('#datepicker-before')) {
+    $('#datepicker-from').datepicker({
+      uiLibrary: 'bootstrap4'
+    });
+    $('#datepicker-before').datepicker({
+      uiLibrary: 'bootstrap4'
+    });
+  }
+
 });
 

@@ -5,79 +5,197 @@
                 li.breadcrumb-item <a href="index.html">Главная</a>
                 li.breadcrumb-item.active(aria-current="page") Корзина
         h1.title-1 Корзина
+        .main_basket_description Товары в заказе
         .row
             .main_basket_content.col-12
-                .content_tabs
-                    ul.nav.nav-pills.mb-3#pills-tab(role="tablist")
-                        li.nav-item
-                            a.nav-link#pills-home-tab(data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="false") О пользователе
-                        li.nav-item
-                            a.nav-link#pills-profile-tab(data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false") Мои заказы
-                        li.nav-item
-                            a.nav-link.active#pills-contact-tab(data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="true") Моя корзина
-                .tab-content#pills-tabContent
-                    .tab-pane.fade.show.active#pills-home(role="tabpanel" aria-labelledby="pills-home-tab")
-                        - for (var x = 0; x < 3; x++)
-                            .main_basket_items
-                                .main_basket_item
-                                    .main_basket_item_img
-                                        img(src="img/basket/goods-1.png")
-                                    .main_basket_item_text
-                                        h4.main_basket_item_text_title Меркурий
-                                        p.main_basket_item_text_description Аппарат нервно-мышечной стимуляции
-                                    .main_basket_item_counter
-                                        button(type="button").main_basket_item_counter_minus
-                                        input.main_basket_item_counter_input(type="text" value="1")
-                                        button(type="button").main_basket_item_counter_plus
-                                    .main_basket_item_price
-                                        p.main_basket_item_price_main 12 400 <i class="fas fa-ruble-sign"></i>
-                                        span.main_basket_item_price_old 15 400 <i class="fas fa-ruble-sign"></i>
-                                    .main_basket_item_action <i class="fas fa-times"></i>
-                    .tab-pane.fade#pills-profile(role="tabpanel" aria-labelledby="pills-profile-tab")
-                        - for (var x = 0; x < 3; x++)
-                            .main_basket_items
-                                .main_basket_item
-                                    .main_basket_item_img
-                                        img(src="img/basket/goods-1.png")
-                                    .main_basket_item_text
-                                        h4.main_basket_item_text_title Меркурий
-                                        p.main_basket_item_text_description Аппарат нервно-мышечной стимуляции
-                                    .main_basket_item_counter
-                                        button(type="button").main_basket_item_counter_minus
-                                        input.main_basket_item_counter_input(type="text" value="1")
-                                        button(type="button").main_basket_item_counter_plus
-                                    .main_basket_item_price
-                                        p 12 400 <i class="fas fa-ruble-sign"></i>
-                                    .main_basket_item_action <i class="fas fa-times"></i>
-                    .tab-pane.fade#pills-contact(role="tabpanel" aria-labelledby="pills-contact-tab")
-                        - for (var x = 0; x < 3; x++)
-                            .main_basket_items
-                                .main_basket_item
-                                    .main_basket_item_img
-                                        img(src="img/basket/goods-1.png")
-                                    .main_basket_item_text
-                                        h4.main_basket_item_text_title Меркурий
-                                        p.main_basket_item_text_description Аппарат нервно-мышечной стимуляции
-                                    .main_basket_item_counter
-                                        button(type="button").main_basket_item_counter_minus
-                                        input.main_basket_item_counter_input(type="text" value="1")
-                                        button(type="button").main_basket_item_counter_plus
-                                    .main_basket_item_price
-                                        p 12 400 <i class="fas fa-ruble-sign"></i>
-                                    .main_basket_item_action <i class="fas fa-times"></i>
+                - for (var x = 0; x < 3; x++)
+                    .main_basket_items
+                        .main_basket_item
+                            .main_basket_item_img
+                                img(src="img/basket/goods-1.png")
+                            .main_basket_item_text
+                                h4.main_basket_item_text_title Меркурий
+                                p.main_basket_item_text_description Аппарат нервно-мышечной стимуляции
+                            .main_basket_item_counter
+                                button(type="button").main_basket_item_counter_minus
+                                input.main_basket_item_counter_input(type="text" value="1")
+                                button(type="button").main_basket_item_counter_plus
+                            .main_basket_item_price
+                                .main_basket_item_price_colum1
+                                    p.main_basket_item_price_main 11 520 <i class="fas fa-ruble-sign"></i>
+                                    span.main_basket_item_price_old 12 960 <i class="fas fa-ruble-sign"></i>
+                                    span.main_basket_item_price_old 14 400 <i class="fas fa-ruble-sign"></i>
+                                    p.main_basket_item_price_sales Ваша скидка: 3 750 <i class="fas fa-ruble-sign"></i>
+                                .main_basket_item_price_cards
+                                    img(src="img/basket/black-card.png")
+                                    img(src="img/basket/blue-card.png")
+                            .main_basket_item_action <i class="fas fa-times"></i>
 
-        section.bootom-actions.col-12.p-0
-            .bootom-actions_subscribers
-                p.text Если у вас есть код купона для получения скидки, введите в данное поле
-                form#form-subscribers
-                    input.form-control.color--pink(type="text" value="SUPERSALE")
-            .bootom-actions_footer-info
-                .bootom-actions_footer-info_bottons
-                    a.btn.btn-a-left(href="#") Назад в продукцию
-                    button.btn.btn-a-close Очистить корзину
-                    a.btn.btn-a-right(href="#") Оформить заказ
+                section.bootom-actions.col-12.p-0
+                    .bootom-actions_subscribers
+                        p.text Если у вас есть код купона для получения скидки, введите в данное поле
+                        form#form-subscribers
+                            input.form-control.color--pink(type="text" value="SUPERSALE")
+                    .bootom-actions_footer-info
+                        .bootom-actions_footer-info_bottons
+                            a.btn.btn-a-left(href="#") <svg id="icon-arrow-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 15" data-lt-installed="true"><switch><g><path d="M7.7 1.5L2 7.4l5.7 6c.3.3.3.9 0 1.3-.3.3-.9.3-1.2 0L.2 8c-.1-.1-.2-.3-.2-.6 0-.2.1-.4.2-.6L6.5.3c.3-.3.9-.3 1.2 0s.3.9 0 1.2z" fill="#fff"/></g></switch></svg> Назад в продукцию
+                            button.btn.btn-a-close Очистить корзину <i class="fas fa-times pl-2"></i>
 
-                .bootom-actions_footer-info_price
-                    span ИТОГО
-                    .bootom-actions_footer-info_price_main 22 400 <i class="fas fa-ruble-sign"></i>
-                    .bootom-actions_footer-info_price_old  49 900 <i class="fas fa-ruble-sign"></i>
+
+                        .bootom-actions_footer-info_price
+                            span ИТОГО
+                            .bootom-actions_footer-info_price_main 22 400 <i class="fas fa-ruble-sign"></i>
+                            .bootom-actions_footer-info_price_old  49 900 <i class="fas fa-ruble-sign"></i>
+
+                section.checkout.col-12.p-0
+                    .checkout_items
+                        .checkout_dashad
+                        .checkout_title Оформление заказа
+                        .checkout_item
+                            label.checkout_item_label Ф.И.О.
+                            input.checkout_item_input
+                        .checkout_item
+                            label.checkout_item_label Телефон
+                            input.checkout_item_input
+                        .checkout_item
+                            label.checkout_item_label Электронная почта
+                            input.checkout_item_input
+                        .checkout_dashad
+                        .checkout_title Укажите информацию о доставке
+                        .checkout_item
+                            label.checkout_item_label Страна
+                            input.checkout_item_input
+                        .checkout_item
+                            label.checkout_item_label Область / край
+                            input.checkout_item_input
+                        .checkout_item
+                            label.checkout_item_label Город
+                            input.checkout_item_input
+                        .checkout_item
+                            label.checkout_item_label Улица, дом
+                            input.checkout_item_input
+                        .checkout_item
+                            label.checkout_item_label Почтовый индекс
+                            input.checkout_item_input
+                        .checkout_item
+                            label.checkout_item_label Комментарий к заказу
+                            textarea(rows="5").checkout_item_input
+                        .checkout_title Выберите способ доставки
+                        .checkout_item
+                            .checkout_item_delivery-list
+                                .checkout_item_delivery-item
+                                    .checkout_item_delivery-item_image
+                                        img(src="img/basket/delivery-1.png")
+                                    .checkout_item_delivery-item_title Самовывоз
+                                    .checkout_item_delivery-item_cost Стоимость: <b>0 руб</b>
+                                    .checkout_item_delivery-item_icon
+                                        img(src="img/basket/icon-question.png")
+                                .checkout_item_delivery-item
+                                    .checkout_item_delivery-item_image
+                                        img(src="img/basket/delivery-2.jpg")
+                                    .checkout_item_delivery-item_title Курьер <span>бесплатно</span>
+                                    .checkout_item_delivery-item_cost Срок доставки от 1 до 2 дней <br>Стоимость: <b>0 руб*</b>
+                                    .checkout_item_delivery-item_icon
+                                        img(src="img/basket/icon-question.png")
+                                .checkout_item_delivery-item
+                                    .checkout_item_delivery-item_image
+                                        img(src="img/basket/delivery-3.png")
+                                    .checkout_item_delivery-item_title Почта России / EMS <span>бесплатно</span>
+                                    .checkout_item_delivery-item_cost Срок доставки от 2 до 12 дней <br>Стоимость: <b>0 руб*</b>
+                                    .checkout_item_delivery-item_icon
+                                        img(src="img/basket/icon-question.png")
+                                .checkout_item_delivery-item
+                                    .checkout_item_delivery-item_image
+                                        img(src="img/basket/delivery-4.png")
+                                    .checkout_item_delivery-item_title Доставка <br>транспортной компанией <span>бесплатно</span>
+                                    .checkout_item_delivery-item_cost Срок доставки от 2 до 5 дней <br>Стоимость: <b>0 руб*</b>
+                                    .checkout_item_delivery-item_icon
+                                        img(src="img/basket/icon-question.png")
+
+                        .checkout_dashad
+                        .checkout_title Выберите способ оплаты
+                        .checkout_item
+                            .checkout_item_payment-list
+                                .checkout_item_payment-item
+                                    .checkout_item_payment-item_img
+                                        img(src="img/basket/payment-1.png")
+                                    .checkout_item_payment-item_description
+                                        | <b>Оплата банковскими картами Visa, MasterCard и электронными деньгами <a href="#">WebMoney</a>, <a href="#">Яндекс.Денги</a> и <a href="#">другие</a></b>
+                                        | Более 40 популярных способов оплаты
+                                .checkout_item_payment-item
+                                    .checkout_item_payment-item_img
+                                        img(src="img/basket/payment-2.png")
+                                    .checkout_item_payment-item_description
+                                        | <b>Наличный расчет</b>
+                                        | Оплата наличными при доставке курьером
+                                        | или при получении на почте
+                                .checkout_item_payment-item
+                                    .checkout_item_payment-item_img
+                                        img(src="img/basket/payment-3.png")
+                                    .checkout_item_payment-item_description
+                                        | <b>Квитанция Сбербанка</b>
+                                        | позволяет распечатать счет или квитанцию
+                                        | для оплаты банковским переводом
+                        .checkout_item
+                            .checkout_item_button
+                                a.btn.btn-a-right(href="#") Оформить заказ
+                                .checkout_item_button_description
+                                    | Отправляя форму, вы соглашаетесь с <a href="#">условиями</a>
+                                    | <br>с обработки и использования персональных данных
+
+                    h2.title-2-center Рекомендуем приобрести вместе с АНМС «Меркурий» аксессуары
+                    .main_goods_items
+                        .main_goods_item
+                            .main_goods_item_img
+                                img(data-src="img/basket/recommend-1.png").lazyload
+                                .main_goods_item_img-icons
+                                    .main_goods_item_img-icon
+                                        img(data-src="img/index/card_icon-1-impulse.svg" alt="Импульсные токи").lazyload
+                                        .main_goods_item_img-icon_text Импульсные токи
+                            h3.main_goods_item_title Перчатки-лектроды
+                            .main_goods_item_price
+                                span.main_goods_item_price-main 12 400 <i class="fas fa-ruble-sign"></i>
+                            .main_goods_item_buttons
+                                button.btn.btn-qbuy Купить в 1 клик
+                                button.btn.btn-buy Купить
+                        .main_goods_item
+                            .main_goods_item_img
+                                img(data-src="img/basket/recommend-2.png").lazyload
+                                .main_goods_item_img-icons
+                                    .main_goods_item_img-icon
+                                        img(data-src="img/index/card_icon-1-impulse.svg" alt="Импульсные токи").lazyload
+                                        .main_goods_item_img-icon_text Импульсные токи
+                            h3.main_goods_item_title Пояс-электрод
+                            .main_goods_item_price
+                                span.main_goods_item_price-main 12 400 <i class="fas fa-ruble-sign"></i>
+                            .main_goods_item_buttons
+                                button.btn.btn-qbuy Купить в 1 клик
+                                button.btn.btn-buy Купить
+                        .main_goods_item
+                            .main_goods_item_img
+                                img(data-src="img/basket/recommend-3.png").lazyload
+                                .main_goods_item_img-icons
+                                    .main_goods_item_img-icon
+                                        img(data-src="img/index/card_icon-1-impulse.svg" alt="Импульсные токи").lazyload
+                                        .main_goods_item_img-icon_text Импульсные токи
+                            h3.main_goods_item_title Носки-электроды
+                            .main_goods_item_price
+                                span.main_goods_item_price-main 12 400 <i class="fas fa-ruble-sign"></i>
+                            .main_goods_item_buttons
+                                button.btn.btn-qbuy Купить в 1 клик
+                                button.btn.btn-buy Купить
+                        .main_goods_item
+                            .main_goods_item_img
+                                img(data-src="img/basket/recommend-4.png").lazyload
+                                .main_goods_item_img-icons
+                                    .main_goods_item_img-icon
+                                        img(data-src="img/index/card_icon-1-impulse.svg" alt="Импульсные токи").lazyload
+                                        .main_goods_item_img-icon_text Импульсные токи
+                            h3.main_goods_item_title Наколенник-электрод
+                            .main_goods_item_price
+                                span.main_goods_item_price-main 12 400 <i class="fas fa-ruble-sign"></i>
+                            .main_goods_item_buttons
+                                button.btn.btn-qbuy Купить в 1 клик
+                                button.btn.btn-buy Купить
+
+

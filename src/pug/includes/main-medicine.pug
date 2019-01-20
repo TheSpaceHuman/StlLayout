@@ -1,0 +1,101 @@
+.container
+    nav(aria-label="breadcrumb")
+        ol.breadcrumb
+            li.breadcrumb-item <a href="index.html">Главная</a>
+            li.breadcrumb-item.active(aria-current="page") Медицина
+    .row
+        .col-12.questions-headlines
+            h1.questions-headlines_title-page Вопрос – ответ
+            p.questions-headlines_description Укажите заболевание, чтобы получить наши рекомендации:
+        .col-12.questions-content
+            .questions-content_items
+                - for (var x = 0; x < 8; x++)
+                .questions-content_item
+                    .questions-content_item_img
+                        img(data-src="img/medicine/img-1.jpg").lazyload
+                    .questions-content_item_title АЛФАВИТ <br>ЗАБОЛЕВАНИЙ
+                    .questions-content_item_button
+                        a(href="#").btn.btn-outline Перейти <i class="icon-arrow-right-blue"></i>
+                .questions-content_item
+                    .questions-content_item_img
+                        img(data-src="img/medicine/img-2.jpg").lazyload
+                    .questions-content_item_title ФИЗИОТЕРАПИЯ
+                    .questions-content_item_button
+                        a(href="#").btn.btn-outline Перейти <i class="icon-arrow-right-blue"></i>
+                .questions-content_item
+                    .questions-content_item_img
+                        img(data-src="img/medicine/img-3.jpg").lazyload
+                    .questions-content_item_title Боль <br>И обезболивание
+                    .questions-content_item_button
+                        a(href="#").btn.btn-outline Перейти <i class="icon-arrow-right-blue"></i>
+                .questions-content_item
+                    .questions-content_item_img
+                        img(data-src="img/medicine/img-4.jpg").lazyload
+                    .questions-content_item_title Болезни <br>суставов
+                    .questions-content_item_button
+                        a(href="#").btn.btn-outline Перейти <i class="icon-arrow-right-blue"></i>
+                .questions-content_item
+                    .questions-content_item_img
+                        img(data-src="img/medicine/img-5.jpg").lazyload
+                    .questions-content_item_title травмы
+                    .questions-content_item_button
+                        a(href="#").btn.btn-outline Перейти <i class="icon-arrow-right-blue"></i>
+                .questions-content_item
+                    .questions-content_item_img
+                        img(data-src="img/medicine/img-6.jpg").lazyload
+                    .questions-content_item_title ОСТЕОХОНДРОЗ
+                    .questions-content_item_button
+                        a(href="#").btn.btn-outline Перейти <i class="icon-arrow-right-blue"></i>
+                .questions-content_item
+                    .questions-content_item_img
+                        img(data-src="img/medicine/img-7.jpg").lazyload
+                    .questions-content_item_title ДРУГИЕ <br>болезни
+                    .questions-content_item_button
+                        a(href="#").btn.btn-outline Перейти <i class="icon-arrow-right-blue"></i>
+                .questions-content_item
+                    .questions-content_item_img
+                        img(data-src="img/medicine/img-8.jpg").lazyload
+                    .questions-content_item_title КРАСОТА <br>И ЗДОРОВЬЕ
+                    .questions-content_item_button
+                        a(href="#").btn.btn-outline Перейти <i class="icon-arrow-right-blue"></i>
+        .doctor-question.col-6.offset-3
+            .doctor-question_title Задайте свой вопрос нашему профессиональному врачу
+            .doctor-question_img
+                img(src="img/products/doctor-1.png").lazyload
+            .doctor-question_name
+                | Ларинский Николай Евгеньевич
+            .doctor-question_awards
+                | главный врач ООО «Санаторий «Солотча», кандидат медицинских наук,
+                | сертифицированный специалист по внутренним болезням,
+                | физиотерапии, рефлексотерапии и восстановительной медицине
+            .doctor-question_button
+                a(href="#").btn.btn-def Задать вопрос
+            .doctor-question_feadback
+                | Мы заботимся о конфиденциальности Ваших вопросов, отвечаем на них
+                | исключительно персонально и не публикуем на нашем сайте никакой информации
+
+section.main_apply
+    .container
+        h2.title-2.text-center Применяются при заболеваниях
+        .slider-apply
+            - for (var x = 0; x < 8; x++)
+                div
+                    .slider-apply_item
+                        p.slider-apply_item_text
+                            | нарушение сна, стресс, болевые синдромы различного происхождения, восстановление после перенесенных операций, заболеваний и травм, целлюлит...
+                        h4.slider-apply_item_title
+                            | Меркурий
+                        a(href="#").slider-apply_item_link
+                            | Подробнее >
+section.main_promo-products
+    .container
+        .main_promo-products_presents
+            .row
+                .col-12.col-md-6.main_promo-products_present
+                    a(href="#")
+                        img(data-src="img/products/footer-1.jpg").lazyload
+                .col-12.col-md-6.main_promo-products_present
+                    a(href="#")
+                        img(data-src="img/products/footer-2.jpg").lazyload
+
+

@@ -8,15 +8,132 @@
         .row
             .main_basket_content.col-12
                 .content_tabs
-                    ul.nav.nav-pills.mb-3#pills-tab(role="tablist")
+                    ul.nav.nav-pills.mb-3.active#pills-tab(role="tablist")
                         li.nav-item
                             a.nav-link#pills-home-tab(data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="false") О пользователе
                         li.nav-item
                             a.nav-link#pills-profile-tab(data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false") Мои заказы
                         li.nav-item
-                            a.nav-link.active#pills-contact-tab(data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="true") Моя корзина
+                            a.nav-link.active.show#pills-contact-tab(data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="true") Моя корзина
                 .tab-content#pills-tabContent
-                    .tab-pane.fade.show.active#pills-home(role="tabpanel" aria-labelledby="pills-home-tab")
+                    .tab-pane.fade#pills-home(role="tabpanel" aria-labelledby="pills-home-tab")
+                        .about-user
+                            .about-user_items
+                                .about-user_item
+                                    label.about-user_item_label ФИО
+                                    input(type="text").about-user_item_input
+                                .about-user_item
+                                    label.about-user_item_label Телефон
+                                    input(type="text").about-user_item_input
+                                .about-user_item
+                                    label.about-user_item_label Электронная почта
+                                    input(type="text").about-user_item_input
+
+                                .about-user_item_dasher
+
+                                .about-user_item
+                                    label.about-user_item_label Логин
+                                    input(type="text").about-user_item_input
+                                .about-user_item
+                                    label.about-user_item_label Новый пароль
+                                    input(type="text").about-user_item_input
+                                .about-user_item
+                                    label.about-user_item_label Подтверждение нового пароля
+                                    input(type="text").about-user_item_input
+
+                                .about-user_item_dasher
+
+                                .about-user_item
+                                    label.about-user_item_label Страна
+                                    input(type="text").about-user_item_input
+                                .about-user_item
+                                    label.about-user_item_label Область / край
+                                    input(type="text").about-user_item_input
+                                .about-user_item
+                                    label.about-user_item_label Город
+                                    input(type="text").about-user_item_input
+                                .about-user_item
+                                    label.about-user_item_label Улица, дом
+                                    input(type="text").about-user_item_input
+                                .about-user_item
+                                    label.about-user_item_label Почтовый индекс
+                                    input(type="text").about-user_item_input
+                                .about-user_item
+                                    label.about-user_item_label Дополнительные заметки
+                                    textarea(rows="5").about-user_item_input
+                                .about-user_item
+                                    .about-user_item_text У Вас есть карта <br>постоянного покупателя
+                                        | <br> <a href="#">Узнать подробнее</a>
+                                    .about-user_item_img
+                                        img(src="../img/profil/babk-card.png")
+                                .about-user_item
+                                    label.about-user_item_label Номер нашей карты
+                                    input(type="text").about-user_item_input
+
+
+
+                            .my-orders_buttons
+                                button.btn.my-orders_buttons-white Сбросить <i class="fas fa-times pl-2"></i>
+                                button.btn.my-orders_buttons-blue Установить
+
+                    .tab-pane.fade#pills-profile(role="tabpanel" aria-labelledby="pills-profile-tab")
+                        .my-orders
+                            .my-orders_items
+                                .my-orders_item
+                                    label(for="code").my-orders_item_label Код заказа
+                                    input(type="text")#code.my-orders_item_input
+                                .my-orders_item
+                                    label(for="datepicker-from").my-orders_item_label Дата заказа
+                                    input(width="276")#datepicker-from.my-orders_item_input
+                                .my-orders_item
+                                    label(for="datepicker-before").my-orders_item_label
+                                    input(width="276")#datepicker-before.my-orders_item_input
+                                .my-orders_item
+                                    label(for="status").my-orders_item_label Статус заказа
+                                    input(type="text")#status.my-orders_item_input
+                                .my-orders_item
+                                    label(for="pay").my-orders_item_label Оплачен
+                                    input(type="text")#pay.my-orders_item_input
+                                .my-orders_item
+                                    label(for="canceled").my-orders_item_label Отменен
+                                    input(type="text")#canceled.my-orders_item_input
+                                .my-orders_item
+                                    label(for="delivered").my-orders_item_label В том числе доставленные
+                                    select.form-control(type="text")#delivered.my-orders_item_input
+                                        option Нет
+                                        option Да
+                            .my-orders_buttons
+                                button.btn.my-orders_buttons-white Снять <i class="fas fa-times pl-2"></i>
+                                button.btn.my-orders_buttons-blue Установить
+                            .my-orders_dasher
+                            .my-orders_input-row
+                                .my-orders_input-row_items
+                                    .my-orders_input-row_item
+                                        lable.my-orders_input-row_item_label Код заказа
+                                        input.my-orders_input-row_item_input
+                                    .my-orders_input-row_item
+                                        lable.my-orders_input-row_item_label Стоимость
+                                        input.my-orders_input-row_item_input
+                                    .my-orders_input-row_item
+                                        lable.my-orders_input-row_item_label Статус
+                                        input.my-orders_input-row_item_input
+                                    .my-orders_input-row_item
+                                        lable.my-orders_input-row_item_label Товары
+                                        input.my-orders_input-row_item_input
+                                    .my-orders_input-row_item
+                                        lable.my-orders_input-row_item_label Оплачен
+                                        input.my-orders_input-row_item_input
+                                    .my-orders_input-row_item
+                                        lable.my-orders_input-row_item_label Отменен
+                                        input.my-orders_input-row_item_input
+                                    .my-orders_input-row_item
+                                        lable.my-orders_input-row_item_label Способ доставки
+                                        input.my-orders_input-row_item_input
+                                    .my-orders_input-row_item
+                                        lable.my-orders_input-row_item_label Действия
+                                        input.my-orders_input-row_item_input
+
+                    .tab-pane.fade.show.active#pills-contact(role="tabpanel" aria-labelledby="pills-contact-tab")
                         - for (var x = 0; x < 3; x++)
                             .main_basket_items
                                 .main_basket_item
@@ -33,51 +150,19 @@
                                         p.main_basket_item_price_main 12 400 <i class="fas fa-ruble-sign"></i>
                                         span.main_basket_item_price_old 15 400 <i class="fas fa-ruble-sign"></i>
                                     .main_basket_item_action <i class="fas fa-times"></i>
-                    .tab-pane.fade#pills-profile(role="tabpanel" aria-labelledby="pills-profile-tab")
-                        - for (var x = 0; x < 3; x++)
-                            .main_basket_items
-                                .main_basket_item
-                                    .main_basket_item_img
-                                        img(src="img/basket/goods-1.png")
-                                    .main_basket_item_text
-                                        h4.main_basket_item_text_title Меркурий
-                                        p.main_basket_item_text_description Аппарат нервно-мышечной стимуляции
-                                    .main_basket_item_counter
-                                        button(type="button").main_basket_item_counter_minus
-                                        input.main_basket_item_counter_input(type="text" value="1")
-                                        button(type="button").main_basket_item_counter_plus
-                                    .main_basket_item_price
-                                        p 12 400 <i class="fas fa-ruble-sign"></i>
-                                    .main_basket_item_action <i class="fas fa-times"></i>
-                    .tab-pane.fade#pills-contact(role="tabpanel" aria-labelledby="pills-contact-tab")
-                        - for (var x = 0; x < 3; x++)
-                            .main_basket_items
-                                .main_basket_item
-                                    .main_basket_item_img
-                                        img(src="img/basket/goods-1.png")
-                                    .main_basket_item_text
-                                        h4.main_basket_item_text_title Меркурий
-                                        p.main_basket_item_text_description Аппарат нервно-мышечной стимуляции
-                                    .main_basket_item_counter
-                                        button(type="button").main_basket_item_counter_minus
-                                        input.main_basket_item_counter_input(type="text" value="1")
-                                        button(type="button").main_basket_item_counter_plus
-                                    .main_basket_item_price
-                                        p 12 400 <i class="fas fa-ruble-sign"></i>
-                                    .main_basket_item_action <i class="fas fa-times"></i>
 
-        section.bootom-actions.col-12.p-0
-            .bootom-actions_subscribers
-                p.text Если у вас есть код купона для получения скидки, введите в данное поле
-                form#form-subscribers
-                    input.form-control.color--pink(type="text" value="SUPERSALE")
-            .bootom-actions_footer-info
-                .bootom-actions_footer-info_bottons
-                    a.btn.btn-a-left(href="#") Назад в продукцию
-                    button.btn.btn-a-close Очистить корзину
-                    a.btn.btn-a-right(href="#") Оформить заказ
+                        section.bootom-actions.col-12.p-0
+                            .bootom-actions_subscribers
+                                p.text Если у вас есть код купона для получения скидки, введите в данное поле
+                                form#form-subscribers
+                                    input.form-control.color--pink(type="text" value="SUPERSALE")
+                            .bootom-actions_footer-info
+                                .bootom-actions_footer-info_bottons
+                                    a.btn.btn-a-left(href="#") Назад в продукцию
+                                    button.btn.btn-a-close Очистить корзину
+                                    a.btn.btn-a-right(href="#") Оформить заказ
 
-                .bootom-actions_footer-info_price
-                    span ИТОГО
-                    .bootom-actions_footer-info_price_main 22 400 <i class="fas fa-ruble-sign"></i>
-                    .bootom-actions_footer-info_price_old  49 900 <i class="fas fa-ruble-sign"></i>
+                                .bootom-actions_footer-info_price
+                                    span ИТОГО
+                                    .bootom-actions_footer-info_price_main 22 400 <i class="fas fa-ruble-sign"></i>
+                                    .bootom-actions_footer-info_price_old  49 900 <i class="fas fa-ruble-sign"></i>

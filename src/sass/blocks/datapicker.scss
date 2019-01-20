@@ -1,0 +1,26 @@
+.gj-datepicker-bootstrap [role=right-icon] button .gj-icon, .gj-datepicker-bootstrap [role=right-icon] button .material-icons {
+  content: url("../img/profil/icon-calendar.png");
+}
+.input-group > .input-group-append > .btn, .input-group > .input-group-append > .input-group-text, .input-group > .input-group-prepend:not(:first-child) > .btn, .input-group > .input-group-prepend:not(:first-child) > .input-group-text, .input-group > .input-group-prepend:first-child > .btn:not(:first-child), .input-group > .input-group-prepend:first-child > .input-group-text:not(:first-child) {
+  border-radius: 0;
+  border: 1px solid #adafb2;
+}
+.gj-datepicker-bootstrap [role=right-icon] button {
+  width: 45px;
+  height: 47px;
+}
+.input-group > .form-control:not(:last-child), .input-group > .custom-select:not(:last-child) {
+  border-radius: 0;
+}
+//.form-control {
+//  height: calc(2.25rem + 11px);
+//}
+#datepicker-from {
+  height: calc(2.25rem + 11px);
+}
+#datepicker-before {
+  height: calc(2.25rem + 11px);
+}
+.gj-datepicker.input-group {
+  margin-right: -4px;
+}
