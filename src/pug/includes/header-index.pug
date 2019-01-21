@@ -13,7 +13,7 @@ section.header_top
                 .header_top_lang
                     button.header_top_lang_item.active RU
                     button.header_top_lang_item ENG
-                a(href='basket.html').header_top_bascket Корзина
+                a(href='basket.html').header_top_bascket Корзина (0)
                 a(href='profil.html').header_top_user-control
                     | Вход / Регистрация
 
@@ -22,14 +22,14 @@ section.header_middle
         .row
             .col-12.col-sm-6.header_middle_brand-wrapper
                 a(href="index.html").header_middle_brand
-                    img(src="img/index/top-logo.png" alt="Современные Технологические Линии")
+                    img(src="img/index/top-logo.svg" alt="Современные Технологические Линии")
             .col-12.col-sm-6.header_middle_wrapper-right
                 .header_middle_delivery
                     .header_middle_delivery_intro Бесплатный звонок по России
                     .header_middle_delivery_phone 8 800 707-78-80
                     .header_middle_delivery_button
                         button.btn.btn-delivery Бесплатная доставка
-                        //<i class="fas fa-truck pl-2"></i>
+
 
 section.header_bottom
     .container
@@ -102,10 +102,32 @@ section.header_bottom
 
                 li.header_bottom_main-menu_item
                     a(href="#") Сотрудничество
-                li.header_bottom_main-menu_item
+                    ul.header_bottom_main-menu_items.lvl-2.animated.slideInLeft
+                        li.header_bottom_main-menu_item.lvl-2
+                            a(href="#") Оптовые закупки
+                        li.header_bottom_main-menu_item.lvl-2
+                            a(href="#") Врачам
+                li.header_bottom_main-menu_item.q
                     a(href="questions.html") Вопрос-ответ
+                    ul.header_bottom_main-menu_items.lvl-2.animated.slideInLeft
+                        li.header_bottom_main-menu_item.lvl-2
+                            a(href="#") Задайте свой вопрос
+                        li.header_bottom_main-menu_item.lvl-2
+                            a(href="#") Где купить?
+                        li.header_bottom_main-menu_item.lvl-2
+                            a(href="#") Как заказать?
+                        li.header_bottom_main-menu_item.lvl-2
+                            a(href="#") Что такое карта постоянного покупателя?
+                        li.header_bottom_main-menu_item.lvl-2
+                            a(href="#") Вопросы по аппаратам
+                        li.header_bottom_main-menu_item.lvl-2
+                            a(href="#") Вопросы по заболеваниям
+                        li.header_bottom_main-menu_item.lvl-2
+                            a(href="#") Вопросы по косметологии
+                        li.header_bottom_main-menu_item.lvl-2
+                            a(href="#") Технические вопросы
                 li.header_bottom_main-menu_item.search
-                    button(data-toggle="modal" data-target="#searchModal").btn-search Поиск
+                    button(data-toggle="modal" data-target="#searchModal").btn-search Поиск <i class="icon-search-white"></i>
         .catalog-menu
             a.sidemenu-btn2(href="#" title="Меню") <i class="fas fa-bars"></i>
         nav.sidemenu2

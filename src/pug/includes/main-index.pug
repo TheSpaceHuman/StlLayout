@@ -1,33 +1,16 @@
 section.main_top-slide
     .container
         .big-slider
-            div
-                .big-slider_item
-                    .big-slider_item_img
-                        img(data-src="img/index/slider-1.jpg").lazyload
-                    .big-slider_item_text
-                        .big-slider_item_text_title Бесплатная Доставка
-                        .big-slider_item_text_description по территории России при онлайн-покупке любого нашего аппарата
-                        .big-slider_item_text_button
-                            button.btn.btn-top-slider Перейти в продукцию
-            div
-                .big-slider_item
-                    .big-slider_item_img
-                        img(data-src="img/index/slider-1.jpg").lazyload
-                    .big-slider_item_text
-                        .big-slider_item_text_title Бесплатная Доставка
-                        .big-slider_item_text_description по территории России при онлайн-покупке любого нашего аппарата
-                        .big-slider_item_text_button
-                            button.btn.btn-top-slider Перейти в продукцию
-            div
-                .big-slider_item
-                    .big-slider_item_img
-                        img(data-src="img/index/slider-1.jpg").lazyload
-                    .big-slider_item_text
-                        .big-slider_item_text_title Бесплатная Доставка
-                        .big-slider_item_text_description по территории России при онлайн-покупке любого нашего аппарата
-                        .big-slider_item_text_button
-                            button.btn.btn-top-slider Перейти в продукцию
+            - for (var x = 0; x < 3; x++)
+                div
+                    .big-slider_item
+                        .big-slider_item_img
+                            img(data-src="img/index/slider-1.jpg" data-srcset="img/index/slider-1x2.jpg 2x").lazyload
+                        .big-slider_item_text
+                            .big-slider_item_text_title Бесплатная <span>Доставка</span>
+                            .big-slider_item_text_description по территории России <br>при онлайн-покупке любого нашего аппарата
+                            .big-slider_item_text_button
+                                button.btn.btn-top-slider Перейти в продукцию
 
 
 section.main_goods
@@ -37,7 +20,7 @@ section.main_goods
                 .main_goods_item_flag-wrapper
                     .main_goods_item_flag-hit Акция
                 .main_goods_item_img
-                    img(data-src="img/index/goods-1.png").lazyload
+                    img(data-src="img/index/goods-1.png" data-srcset="img/index/goods-1x2.png 2x").lazyload
                     .main_goods_item_img-icons
                         .main_goods_item_img-icon
                             img(data-src="img/index/card_icon-1-impulse.svg" alt="Импульсные токи").lazyload
@@ -57,7 +40,7 @@ section.main_goods
                 .main_goods_item_flag-wrapper
                     .main_goods_item_flag-new Новый
                 .main_goods_item_img
-                    img(data-src="img/index/goods-2.png").lazyload
+                    img(data-src="img/index/goods-2.png" data-srcset="img/index/goods-2x2.png 2x").lazyload
                     .main_goods_item_img-icons
                         .main_goods_item_img-icon
                             img(data-src="img/index/card_icon-3-ultra.svg" alt="Ультразвуковая терапия").lazyload
@@ -74,7 +57,7 @@ section.main_goods
                     button.btn.btn-buy Купить
             .main_goods_item
                 .main_goods_item_img
-                    img(data-src="img/index/goods-3.png").lazyload
+                    img(data-src="img/index/goods-3.png" data-srcset="img/index/goods-3x2.png 2x").lazyload
                     .main_goods_item_img-icons
                         .main_goods_item_img-icon
                             img(data-src="img/index/card_icon-3-ultra.svg" alt="Ультразвуковая терапия").lazyload
@@ -92,7 +75,7 @@ section.main_goods
                     button.btn.btn-buy Купить
             .main_goods_item
                 .main_goods_item_img
-                    img(data-src="img/index/goods-4.png").lazyload
+                    img(data-src="img/index/goods-4.png" data-srcset="img/index/goods-4x2.png 2x").lazyload
                     .main_goods_item_img-icons
                         .main_goods_item_img-icon
                             img(data-src="img/index/card_icon-3-ultra.svg" alt="Ультразвуковая терапия").lazyload
@@ -110,7 +93,7 @@ section.main_goods
                     button.btn.btn-buy Купить
             .main_goods_item
                 .main_goods_item_img
-                    img(data-src="img/index/goods-5.png").lazyload
+                    img(data-src="img/index/goods-5.png" data-srcset="img/index/goods-5x2.png 2x").lazyload
                     .main_goods_item_img-icons
                         .main_goods_item_img-icon
                             img(data-src="img/index/card_icon-3-ultra.svg" alt="Ультразвуковая терапия").lazyload
@@ -128,7 +111,7 @@ section.main_goods
                     button.btn.btn-buy Купить
             .main_goods_item
                 .main_goods_item_img
-                    img(data-src="img/index/goods-6.png").lazyload
+                    img(data-src="img/index/goods-6.png" data-srcset="img/index/goods-6x2.png 2x").lazyload
                     .main_goods_item_img-icons
                         .main_goods_item_img-icon
                             img(data-src="img/index/card_icon-3-ultra.svg" alt="Ультразвуковая терапия").lazyload
@@ -146,7 +129,7 @@ section.main_goods
                     button.btn.btn-buy Купить
             .main_goods_item
                 .main_goods_item_img
-                    img(data-src="img/index/goods-7.png").lazyload
+                    img(data-src="img/index/goods-7.png" data-srcset="img/index/goods-7x2.png 2x").lazyload
                     .main_goods_item_img-icons
                         .main_goods_item_img-icon
                             img(data-src="img/index/card_icon-3-ultra.svg" alt="Ультразвуковая терапия").lazyload
@@ -164,7 +147,7 @@ section.main_goods
                     button.btn.btn-buy Купить
             .main_goods_item
                 .main_goods_item_img
-                    img(data-src="img/index/goods-8.png").lazyload
+                    img(data-src="img/index/goods-8.png" data-srcset="img/index/goods-8x2.png 2x").lazyload
                     .main_goods_item_img-icons
                         .main_goods_item_img-icon
                             img(data-src="img/index/card_icon-3-ultra.svg" alt="Ультразвуковая терапия").lazyload
@@ -205,14 +188,14 @@ section.main_video-info
 section.main_promo-products
     .container
         .main_promo-products_button
-            a(href="#").btn.btn-def Перейти в продукцию
+            a(href="#").btn.btn-def Перейти в продукцию <i class="icon-arrow-right-white"></i>
         .main_promo-products_presents
             .row
                 .col-12.col-md-6.main_promo-products_present
                     a(href="#")
-                        img(data-src="img/index/footer-banner-1.jpg").lazyload
+                        img(data-src="img/index/footer-banner-1.jpg" data-srcset="img/index/slider-1x2.jpg 2x").lazyload
                 .col-12.col-md-6.main_promo-products_present
                     a(href="#")
-                        img(data-src="img/index/footer-banner-2.jpg").lazyload
+                        img(data-src="img/index/footer-banner-2.jpg" data-srcset="img/index/slider-1x2.jpg 2x").lazyload
 
 
