@@ -17,139 +17,169 @@
                             a.nav-link.active.show#pills-contact-tab(data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="true") Моя корзина
                 .tab-content#pills-tabContent
                     .tab-pane.fade#pills-home(role="tabpanel" aria-labelledby="pills-home-tab")
-                        .about-user
+                        form(method="post" action="/").about-user
                             .about-user_items
                                 .about-user_item
-                                    label.about-user_item_label ФИО
-                                    input(type="text").about-user_item_input
+                                   .about-user_item_label
+                                        label(for="user-name")  ФИО
+                                   input(type="text" placeholder="Константинопольский Константин Константинович").about-user_item_input#user-name
                                 .about-user_item
-                                    label.about-user_item_label Телефон
-                                    input(type="text").about-user_item_input
+                                    .about-user_item_label
+                                        label(for="user-phone") Телефон
+                                    input(type="tel" placeholder="+7 (999) 999 99 99").about-user_item_input#user-phone
                                 .about-user_item
-                                    label.about-user_item_label Электронная почта
-                                    input(type="text").about-user_item_input
+                                    .about-user_item_label
+                                        label(for="user-email") Электронная почта
+                                    input(type="email" placeholder="KonstantinopolskyKK@yandex.ru").about-user_item_input#user-email
 
                                 .about-user_item_dasher
 
                                 .about-user_item
-                                    label.about-user_item_label Логин
-                                    input(type="text").about-user_item_input
+                                   .about-user_item_label
+                                       label(for="user-login") Логин
+                                   input(type="text").about-user_item_input#user-login
                                 .about-user_item
-                                    label.about-user_item_label Новый пароль
-                                    input(type="text").about-user_item_input
+                                    .about-user_item_label
+                                        label(for="user-password") Новый пароль
+                                    input(type="text").about-user_item_input#user-password
                                 .about-user_item
-                                    label.about-user_item_label Подтверждение нового пароля
-                                    input(type="text").about-user_item_input
+                                    .about-user_item_label
+                                        label(for="user-password-confirm") Подтверждение нового пароля
+                                    input(type="text").about-user_item_input#user-password-confirm
 
                                 .about-user_item_dasher
 
                                 .about-user_item
-                                    label.about-user_item_label Страна
-                                    input(type="text").about-user_item_input
+                                    .about-user_item_label
+                                        label(for="contry") Страна
+                                    input(type="text").about-user_item_input#contry
                                 .about-user_item
-                                    label.about-user_item_label Область / край
-                                    input(type="text").about-user_item_input
+                                    .about-user_item_label
+                                        label(for="region") Область / край
+                                    input(type="text").about-user_item_input#region
                                 .about-user_item
-                                    label.about-user_item_label Город
-                                    input(type="text").about-user_item_input
+                                    .about-user_item_label
+                                        label(for="city") Город
+                                    input(type="text").about-user_item_input#city
                                 .about-user_item
-                                    label.about-user_item_label Улица, дом
-                                    input(type="text").about-user_item_input
+                                    .about-user_item_label
+                                        label(for="house") Улица, дом
+                                    input(type="text").about-user_item_input#house
                                 .about-user_item
-                                    label.about-user_item_label Почтовый индекс
-                                    input(type="text").about-user_item_input
+                                    .about-user_item_label
+                                        label(for="postcode") Почтовый индекс
+                                    input(type="text").about-user_item_input#postcode
                                 .about-user_item
-                                    label.about-user_item_label Дополнительные заметки
-                                    textarea(rows="5").about-user_item_input
+                                    .about-user_item_label
+                                        label(for="notes") Дополнительные заметки
+                                    textarea(rows="5").about-user_item_input#notes
                                 .about-user_item
-                                    .about-user_item_text У Вас есть карта <br>постоянного покупателя
-                                        | <br> <a href="#">Узнать подробнее</a>
+                                    .about-user_item_text
+                                        p У Вас есть карта <br>постоянного покупателя
+                                            | <br> <a href="#">Узнать подробнее</a>
                                     .about-user_item_img
                                         img(src="../img/profil/babk-card.png")
                                 .about-user_item
-                                    label.about-user_item_label Номер нашей карты
-                                    input(type="text").about-user_item_input
+                                    .about-user_item_label
+                                        label(for="number-card") Введите номер вашей карты
+                                    input(type="text").about-user_item_input#number-card
 
 
 
                             .my-orders_buttons
-                                button.btn.my-orders_buttons-white Сбросить <i class="fas fa-times pl-2"></i>
-                                button.btn.my-orders_buttons-blue Установить
+                                button(type="button").my-orders_buttons-white Сбросить <svg xmlns="http://www.w3.org/2000/svg" class="icon-close" viewBox="0 0 12 12"><switch><g><path d="M7 6l4.8-4.8c.3-.3.3-.7 0-1s-.7-.3-1 0L6 5 1.2.3C1 0 .5 0 .3.3s-.3.7 0 .9L5 6 .2 10.8c-.3.3-.3.7 0 1 .3.3.7.3 1 0L6 7l4.8 4.8c.3.3.7.3 1 0 .3-.3.3-.7 0-1L7 6z" fill="#212125"/></g></switch></svg>
+                                button(type="submit").my-orders_buttons-blue Сохранить
 
                     .tab-pane.fade#pills-profile(role="tabpanel" aria-labelledby="pills-profile-tab")
-                        .my-orders
+                        form(method="post" action="/").my-orders
                             .my-orders_items
                                 .my-orders_item
-                                    label(for="code").my-orders_item_label Код заказа
+                                    .my-orders_item_label
+                                        label(for="code") Код заказа
                                     input(type="text")#code.my-orders_item_input
                                 .my-orders_item
-                                    label(for="datepicker-from").my-orders_item_label Дата заказа
+                                    .my-orders_item_label
+                                        label(for="datepicker-from") Дата заказа (от)
                                     input(width="276")#datepicker-from.my-orders_item_input
                                 .my-orders_item
-                                    label(for="datepicker-before").my-orders_item_label
+                                    .my-orders_item_label
+                                        label(for="datepicker-before") Дата заказа (до)
                                     input(width="276")#datepicker-before.my-orders_item_input
                                 .my-orders_item
-                                    label(for="status").my-orders_item_label Статус заказа
+                                    .my-orders_item_label
+                                        label(for="status") Статус заказа
                                     input(type="text")#status.my-orders_item_input
                                 .my-orders_item
-                                    label(for="pay").my-orders_item_label Оплачен
+                                    .my-orders_item_label
+                                        label(for="pay") Оплачен
                                     input(type="text")#pay.my-orders_item_input
                                 .my-orders_item
-                                    label(for="canceled").my-orders_item_label Отменен
+                                    .my-orders_item_label
+                                        label(for="canceled") Отменен
                                     input(type="text")#canceled.my-orders_item_input
                                 .my-orders_item
-                                    label(for="delivered").my-orders_item_label В том числе доставленные
+                                    .my-orders_item_label
+                                        label(for="delivered") В том числе доставленные
                                     select.form-control(type="text")#delivered.my-orders_item_input
                                         option Нет
                                         option Да
                             .my-orders_buttons
-                                button.btn.my-orders_buttons-white Снять <i class="fas fa-times pl-2"></i>
-                                button.btn.my-orders_buttons-blue Установить
+                                button.my-orders_buttons-white Снять<svg xmlns="http://www.w3.org/2000/svg" class="icon-close" viewBox="0 0 12 12"><switch><g><path d="M7 6l4.8-4.8c.3-.3.3-.7 0-1s-.7-.3-1 0L6 5 1.2.3C1 0 .5 0 .3.3s-.3.7 0 .9L5 6 .2 10.8c-.3.3-.3.7 0 1 .3.3.7.3 1 0L6 7l4.8 4.8c.3.3.7.3 1 0 .3-.3.3-.7 0-1L7 6z" fill="#212125"/></g></switch></svg>
+                                button.my-orders_buttons-blue Установить
                             .my-orders_dasher
                             .my-orders_input-row
                                 .my-orders_input-row_items
                                     .my-orders_input-row_item
-                                        lable.my-orders_input-row_item_label Код заказа
+                                        .my-orders_input-row_item_label
+                                            lable(for="order-code") Код заказа
                                         input.my-orders_input-row_item_input
                                     .my-orders_input-row_item
-                                        lable.my-orders_input-row_item_label Стоимость
+                                       .my-orders_input-row_item_label
+                                            lable(for="order-cost") Стоимость
+                                       input.my-orders_input-row_item_input
+                                    .my-orders_input-row_item
+                                        .my-orders_input-row_item_label
+                                            lable(for="order-status") Статус
                                         input.my-orders_input-row_item_input
                                     .my-orders_input-row_item
-                                        lable.my-orders_input-row_item_label Статус
+                                        .my-orders_input-row_item_label
+                                            lable(for="order-product") Товары
                                         input.my-orders_input-row_item_input
                                     .my-orders_input-row_item
-                                        lable.my-orders_input-row_item_label Товары
+                                        .my-orders_input-row_item_label
+                                            lable(for="order-payment") Оплачен
                                         input.my-orders_input-row_item_input
                                     .my-orders_input-row_item
-                                        lable.my-orders_input-row_item_label Оплачен
+                                        .my-orders_input-row_item_label
+                                            lable(for="order-destroy") Отменен
                                         input.my-orders_input-row_item_input
                                     .my-orders_input-row_item
-                                        lable.my-orders_input-row_item_label Отменен
+                                        .my-orders_input-row_item_label
+                                            lable(for="order-delivery") Способ доставки
                                         input.my-orders_input-row_item_input
                                     .my-orders_input-row_item
-                                        lable.my-orders_input-row_item_label Способ доставки
-                                        input.my-orders_input-row_item_input
-                                    .my-orders_input-row_item
-                                        lable.my-orders_input-row_item_label Действия
+                                        .my-orders_input-row_item_label
+                                            lable(for="order-actions") Действия
                                         input.my-orders_input-row_item_input
 
                     .tab-pane.fade.show.active#pills-contact(role="tabpanel" aria-labelledby="pills-contact-tab")
-                        - for (var x = 0; x < 3; x++)
                             .main_basket_items
-                                .main_basket_item
-                                    .main_basket_item_img
-                                        img(src="img/basket/goods-1.png")
-                                    .main_basket_item_text
-                                        h4.main_basket_item_text_title Меркурий
-                                        p.main_basket_item_text_description Аппарат нервно-мышечной стимуляции
-                                    .main_basket_item_counter
-                                        button(type="button").main_basket_item_counter_minus
-                                        input.main_basket_item_counter_input(type="text" value="1")
-                                        button(type="button").main_basket_item_counter_plus
-                                    .main_basket_item_price
-                                        p.main_basket_item_price_main 12 400 <i class="fas fa-ruble-sign"></i>
-                                        span.main_basket_item_price_old 15 400 <i class="fas fa-ruble-sign"></i>
-                                    .main_basket_item_action <i class="fas fa-times"></i>
+                                - for (var x = 0; x < 2; x++)
+                                    .main_basket_item
+                                        .main_basket_item_img
+                                            img(src="img/basket/goods-1.png")
+                                        .main_basket_item_text
+                                            h4.main_basket_item_text_title Меркурий
+                                            p.main_basket_item_text_description Аппарат нервно-мышечной стимуляции
+                                        .main_basket_item_counter
+                                            button(type="button").main_basket_item_counter_minus
+                                            input.main_basket_item_counter_input(type="text" value="1")
+                                            button(type="button").main_basket_item_counter_plus
+                                        .main_basket_item_price
+                                            .main_basket_item_price_wrapper
+                                                p.main_basket_item_price_main 12 400 <i class="fas fa-ruble-sign"></i>
+                                                span.main_basket_item_price_old 15 400 <i class="fas fa-ruble-sign"></i>
+                                        .main_basket_item_action <svg xmlns="http://www.w3.org/2000/svg" class="icon-close" viewBox="0 0 12 12"><switch><g><path d="M7 6l4.8-4.8c.3-.3.3-.7 0-1s-.7-.3-1 0L6 5 1.2.3C1 0 .5 0 .3.3s-.3.7 0 .9L5 6 .2 10.8c-.3.3-.3.7 0 1 .3.3.7.3 1 0L6 7l4.8 4.8c.3.3.7.3 1 0 .3-.3.3-.7 0-1L7 6z" fill="#212125"/></g></switch></svg>
 
                         section.bootom-actions.col-12.p-0
                             .bootom-actions_subscribers
@@ -158,9 +188,9 @@
                                     input.form-control.color--pink(type="text" value="SUPERSALE")
                             .bootom-actions_footer-info
                                 .bootom-actions_footer-info_bottons
-                                    a.btn.btn-a-left(href="#") Назад в продукцию
-                                    button.btn.btn-a-close Очистить корзину
-                                    a.btn.btn-a-right(href="#") Оформить заказ
+                                    a.bootom-actions_footer-info_bottons_left(href="#") <svg xmlns="http://www.w3.org/2000/svg" class="icon-arrow-left" viewBox="0 0 8 15"><switch><g><path d="M7.7 1.5L2 7.4l5.7 6c.3.3.3.9 0 1.3-.3.3-.9.3-1.2 0L.2 8c-.1-.1-.2-.3-.2-.6 0-.2.1-.4.2-.6L6.5.3c.3-.3.9-.3 1.2 0s.3.9 0 1.2z" fill="#fff"/></g></switch></svg> Назад в продукцию
+                                    button.bootom-actions_footer-info_bottons_close Очистить корзину <svg xmlns="http://www.w3.org/2000/svg" class="icon-close" viewBox="0 0 12 12"><switch><g><path d="M7 6l4.8-4.8c.3-.3.3-.7 0-1s-.7-.3-1 0L6 5 1.2.3C1 0 .5 0 .3.3s-.3.7 0 .9L5 6 .2 10.8c-.3.3-.3.7 0 1 .3.3.7.3 1 0L6 7l4.8 4.8c.3.3.7.3 1 0 .3-.3.3-.7 0-1L7 6z" fill="#212125"/></g></switch></svg>
+                                    a.bootom-actions_footer-info_bottons_right(href="#") Оформить заказ <svg xmlns="http://www.w3.org/2000/svg" class="icon-arrow-right" viewBox="0 0 12 21"><switch><g><path d="M.8 2l8.1 8.3-8.1 8.5c-.4.4-.4 1.3 0 1.8.4.4 1.3.4 1.7 0l8.9-9.5c.1-.1.3-.4.3-.8 0-.3 0-.6-.3-.8L2.4.3C2-.1 1.2-.1.8.3S.3 1.6.8 2z" fill="#fff"/></g></switch></svg>
 
                                 .bootom-actions_footer-info_price
                                     span ИТОГО

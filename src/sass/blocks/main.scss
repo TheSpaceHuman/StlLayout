@@ -116,6 +116,7 @@
       text-transform: uppercase;
       color: #000;
       margin-bottom: 4px;
+      letter-spacing: -0.14px;
     }
     &_description {
       color: #000;
@@ -327,7 +328,7 @@
   position: relative;
   .title-2 {
     position: absolute;
-    top: 20px;
+    top: 26px;
     left: 0;
     right: 0;
     color: #fff;
@@ -595,20 +596,12 @@ a.btn:hover {
   border-bottom: 1px solid #ccc;
   padding-bottom: 20px;
   .nav-item {
-    padding: 0 110px;
+    padding-left: 110px;
   }
   .nav-item:first-child {
-    padding: 0;
+    padding-left: 0;
   }
-  .nav-item:last-child {
-    padding: 0;
-  }
-  //.nav-item:first-child {
-  //  padding-left: 0;
-  //}
-  //.nav-item:last-child {
-  //  padding-right: 0;
-  //}
+
 }
 .tab-content_news-list_items {
     display: flex;
@@ -878,7 +871,7 @@ a.btn:hover {
   font-size: 16px;
   font-weight: 400;
   line-height: 14.85px;
-  padding: 50px 100px 30px;
+  padding: 56px 97px 22px;
 }
 .main_goods_item_flag-new {
   position: absolute;
@@ -891,7 +884,7 @@ a.btn:hover {
   font-size: 16px;
   font-weight: 400;
   line-height: 14.85px;
-  padding: 80px 100px 25px;
+  padding: 85px 97px 22px;
 }
 .main_goods_item_flag-wrapper {
   position: absolute;
@@ -1037,18 +1030,19 @@ a.btn:hover {
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  padding-top: 10px;
+  padding-top: 14px;
 }
 .main_basket_item {
   flex: 1 1 auto;
   border: 1px solid #c3c5c8;
   display: flex;
   justify-content: space-around;
-  margin-bottom: 30px;
-  padding: 25px;
+  align-items: center;
+  margin-bottom: 29px;
+  padding: 25px 25px 38px;
 }
 .main_basket_item_img {
-  flex: 1 1 15%;
+  flex: 0 0 14%;
   img {
     width: auto;
     height: auto;
@@ -1057,25 +1051,37 @@ a.btn:hover {
   }
 }
 .main_basket_item_text {
-  flex: 1 1 27%;
-  padding: 20px;
+  flex: 0 0 28%;
+  padding: 30px 0 15px 30px;
 
 }
 .main_basket_item_text_title {
   color: #000000;
   font-size: 18px;
   font-weight: 700;
+  text-transform: uppercase;
   margin: 0;
 }
 .main_basket_item_text_description {
   color: #000000;
   font-size: 17px;
   font-weight: 400;
+  line-height: 18px;
   margin: 0;
 }
+.main_basket_item_text_description-accent {
+  color: $pink;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 1;
+}
+.main_apply > .container {
+  padding: 0;
+}
 .main_basket_item_counter {
-  flex: 1 1 24%;
+  flex: 0 0 26%;
   display: flex;
+  padding-top: 10px;
   justify-content: center;
   align-items: center;
 }
@@ -1127,11 +1133,32 @@ a.btn:hover {
   transform: translate(-50%, -50%);
   z-index: 4;
 }
+.main_basket {
+  .main_basket_item_text {
+    padding: 0 0 0 30px;
+  }
+  .main_basket_item_price {
+    padding: 17px 0 0 28px;
+  }
+  .main_basket_item_counter {
+    flex: 0 0 20%;
+  }
+  .main_basket_item_price {
+    flex: 0 0 28%;
+  }
+  .main_basket_item {
+    padding: 25px 25px 32px;
+  }
+}
+
+
 .main_basket_item_price {
-  flex: 1 1 21%;
+  flex: 0 0 22%;
   display: flex;
-  justify-content: space-around;
+  //flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
+  padding: 27px 10px 0 40px;
   &_main {
     color: #e40071;
     font-size: 28px;
@@ -1147,23 +1174,29 @@ a.btn:hover {
   }
 }
 .main_basket_item_action {
-  flex: 1 1 13%;
+  flex: 0 0 10%;
   font-size: 22px;
   display: flex;
   justify-content: center;
   align-items: center;
   color: rgba(0,0,0, .7);
+  padding-top: 10px;
 }
 .bootom-actions {
-
+  margin-top: 17px;
 }
 .bootom-actions_subscribers {
   display: flex;
   justify-content: center;
   align-items: baseline;
 
+  input {
+    width: 276px;
+    margin-left: 23px;
+  }
+
   .text {
-    padding: 0 15px;
+    padding: 0 0;
     margin: 0;
     color: #000000;
     font-size: 15px;
@@ -1177,15 +1210,19 @@ a.btn:hover {
 .bootom-actions_footer-info {
   display: flex;
   justify-content: space-between;
-  padding: 30px 0;
+  padding: 24px 0 30px;
 }
 .bootom-actions_footer-info_bottons {
   display: flex;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
+  margin-top: 10px;
 }
 .bootom-actions_footer-info_price {
-  width: 190px;
+  //width: 200px;
+  //flex: 1 1 auto;
+  //padding-top: 8px;
+  padding-right: 200px;
   span {
     color: #000000;
     font-size: 15px;
@@ -1216,7 +1253,7 @@ a.btn:hover {
   padding: 9px 45px;
   border: 1px solid #00a5db;
   border-radius: 0;
-  margin: 5px 15px;
+  margin: 5px 15px 5px 0;
   position: relative;
 }
 //.btn-a-left::before {
@@ -1227,7 +1264,7 @@ a.btn:hover {
 //  background-color: red;
 //  fill: black;
 //}
-#icon-arrow-left {
+/*#icon-arrow-left {
   width: 9px;
   height: auto;
   margin-right: 8px;
@@ -1239,7 +1276,91 @@ a.btn:hover {
 
 .btn-a-left:hover #icon-arrow-left path {
   fill: #0076c0;
+}*/
+.bootom-actions_footer-info_bottons_left {
+  color: $blue;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  background-color: #fff;
+  border: 1px solid $blue;
+  border-radius: 0;
+  padding: 7px 22px;
+  margin-right: 30px;
+  cursor: pointer;
 }
+.bootom-actions_footer-info_bottons_left:hover {
+  border: 1px solid $hover;
+  color: $hover;
+  .icon-arrow-left {
+    path {
+      fill: $hover;
+    }
+  }
+}
+.bootom-actions_footer-info_bottons_close {
+  color: $blue;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  background-color: #fff;
+  border: 1px solid $blue;
+  cursor: pointer;
+  border-radius: 0;
+  padding: 7px 22px;
+  margin-right: 30px;
+  .icon-close {
+    margin: 0 5px;
+  }
+}
+.bootom-actions_footer-info_bottons_close:hover {
+  border: 1px solid $hover;
+  color: $hover;
+  .icon-close {
+    path {
+      fill: $hover
+    }
+  }
+}
+.bootom-actions_footer-info_bottons_right {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  background-color: $blue;
+  border-radius: 0;
+  padding: 7px 22px;
+  margin-right: 30px;
+  cursor: pointer;
+  .icon-arrow-right {
+    width: 9px;
+    margin: 0 15px;
+    path {
+      fill: #fff;
+    }
+  }
+}
+.bootom-actions_footer-info_bottons_right:hover {
+  background-color: $hover;
+  color: #fff;
+  .icon-arrow-right {
+    path {
+      fill: #fff;
+    }
+  }
+}
+.icon-arrow-left {
+  width: 9px;
+  path {
+    fill: $blue;
+  }
+}
+.btn-a-left:hover .icon-arrow-left {
+  path {
+    fill: $hover;
+  }
+}
+
 .btn-a-left:hover, .btn-a-left:focus {
   color: #0076c0!important;
   border-color: #0076c0;
@@ -1269,37 +1390,47 @@ a.btn:hover {
 .btn-a-right:hover, .btn-a-right:focus {
   background-color: #0076c0;
 }
+my-orders {
+
+}
+
 .my-orders_items {
   display: flex;
   flex-wrap: wrap;
-
   width: 450px;
+  align-items: flex-start;
 }
 .my-orders_item {
   flex: 1 1 100%;
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 10px;
-  align-items: center;
+  justify-content: flex-start;
+  //margin-bottom: 10px;
+  align-items: flex-start;
+  margin: 15px 0 0;
 }
 .my-orders_item_label {
-  flex: 0 0 50%;
+  flex: 0 0 176px;
   color: #000000;
   font-size: 15px;
   font-weight: 400;
   margin: 0;
   display: block;
-  line-height: 2.5;
+  line-height: 1.2;
+  padding: 10px 0;
+  label {
+    width: 160px;
+  }
 }
 .my-orders_item_input {
-  flex: 0 0 50%;
+  flex: 0 0 100px;
+  max-width: 170px;
   border: 1px solid #adafb2;
-  padding: 8px;
+  padding: 10px;
 }
 .my-orders_buttons {
   display: flex;
   justify-content: flex-end;
-  margin-top: 10px;
+  margin-top: 3px;
   margin-bottom: 35px;
 }
 .my-orders_buttons-white {
@@ -1309,9 +1440,13 @@ a.btn:hover {
   font-weight: 700;
   border-radius: 0;
   color: #00a5db;
+  line-height: 1.5;
   padding: 7px 40px;
-  margin: 0 5px;
+  margin: 0 0 0 30px;
   width: 218px;
+  .icon-close {
+    margin: 0 6px;
+  }
 }
 
 .my-orders_buttons-white:hover {
@@ -1320,16 +1455,18 @@ a.btn:hover {
 }
 .my-orders_buttons-blue {
   color: #ffffff;
+  line-height: 1.5;
   font-size: 16px;
   padding: 4px 40px;
   width: 218px;
   font-weight: 700;
   border-radius: 0;
   background-color: #00a5db;
-  margin: 0 5px;
+  margin: 0 0 0 30px;
+  border: none;
 }
 .my-orders_buttons-blue:hover {
-  background-color: #0076c0;
+  background-color: $hover;
 }
 .my-orders_dasher {
   width: 100%;
@@ -1355,14 +1492,14 @@ a.btn:hover {
   color: #000000;
   font-size: 15px;
   font-weight: 400;
-  padding-bottom: 4px;
+  margin-bottom: 7px;
 }
 .my-orders_input-row_item_input {
   display: block;
   font-size: 15px;
   color: #000000;
   border: 1px solid #adafb2;
-  padding: 8px;
+  padding: 10px;
   width: 100%;
 }
 .about-user {
@@ -1380,34 +1517,47 @@ a.btn:hover {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
-  margin-bottom: 15px;
+  padding: 13px 0 3px;
   position: relative;
 }
 .about-user_item_label {
   flex: 1 1 50%;
   margin: 0;
-  max-width: 25%;
+  max-width: 177px;
+  line-height: 17px;
+  padding: 10px 0;
+  label {
+    width: 150px;
+    margin: 0;
+  }
 }
 .about-user_item_input {
-  flex: 1 1 50%;
-  padding: 8px;
+  flex: 0 1 418px;
+  padding: 10px;
   border: 1px solid #adafb2;
   margin: 0;
-  max-width: 25%;
+  //max-width: 25%;
 }
-
+#user-name {
+  width: 250px;
+}
 .about-user_item_dasher {
   flex: 1 1 100%;
   height: 1px;
   background-color: #b1b4b9;
-  margin: 20px 0 30px;
+  margin: 26px 0 17px;
 }
 .about-user_item_text {
-  padding-right: 50px;
+  //padding-right: 50px;
   color: #000000;
   font-size: 15px;
   font-weight: 400;
   line-height: 17px;
+  p {
+    width: 75%;
+    line-height: 17px;
+    padding: 0 0 10px;
+  }
   a {
     display: block;
     color: #00a5db;
@@ -1416,13 +1566,17 @@ a.btn:hover {
   }
 }
 .about-user_item_img {
-  margin-left: 75px;
+  //margin-left: 75px;
   img{
     width: auto;
   }
 }
+.main_basket_item_price_wrapper {
+  flex-direction: column;
+  flex: 0 0 190px
+}
 .main_basket_item_price_cards {
-
+  flex: 0 0 auto;
   img {
     display: block;
     width: auto;
@@ -1555,6 +1709,7 @@ a.btn:hover {
   font-size: 21px;
   font-weight: 700;
   line-height: 25px;
+  padding:  11px 0;
 }
 dsd{
 
@@ -1581,6 +1736,12 @@ dsd{
   margin: 0;
   margin-bottom: 20px;
 
+}
+.icon-arrow-right {
+  width:  14px;
+  path {
+    fill: $blue;
+  }
 }
 .icon-arrow-right-blue {
   width: 25px;
@@ -1677,5 +1838,34 @@ dsd{
   margin-top: 48px;
 }
 .about-user {
-  
+
+}
+.icon-close {
+  width: 12px;
+  height: auto;
+  path {
+    fill: $blue;
+  }
+}
+.main_basket_items .icon-close {
+  path {
+    fill: #000;
+  }
+}
+.main_basket_item_action:hover .icon-close {
+  path {
+    fill: #000;
+  }
+}
+.my-orders_buttons-white:hover > .icon-close {
+  path {
+    fill: $hover;
+  }
+}
+a.active {
+  color: $blue;
+}
+
+.slick-dotted.slick-slider {
+  margin-bottom: 28px;
 }

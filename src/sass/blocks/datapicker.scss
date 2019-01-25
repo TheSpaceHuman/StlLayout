@@ -3,7 +3,10 @@
 }
 .input-group > .input-group-append > .btn, .input-group > .input-group-append > .input-group-text, .input-group > .input-group-prepend:not(:first-child) > .btn, .input-group > .input-group-prepend:not(:first-child) > .input-group-text, .input-group > .input-group-prepend:first-child > .btn:not(:first-child), .input-group > .input-group-prepend:first-child > .input-group-text:not(:first-child) {
   border-radius: 0;
-  border: 1px solid #adafb2;
+  width: 60px;
+  border: 0;
+  height: 40px;
+  background-color: transparent;
 }
 .gj-datepicker-bootstrap [role=right-icon] button {
   width: 45px;
@@ -12,15 +15,36 @@
 .input-group > .form-control:not(:last-child), .input-group > .custom-select:not(:last-child) {
   border-radius: 0;
 }
+.btn-outline-secondary:not(:disabled):not(.disabled):active, .btn-outline-secondary:not(:disabled):not(.disabled).active, .show > .btn-outline-secondary.dropdown-toggle {
+  color: #fff;
+  //background-color: #6c757d;
+  //border-color: #6c757d;
+  background-color: #fff;
+  border-color: #fff;
+}
+.btn-outline-secondary:not(:disabled):not(.disabled):active:focus, .btn-outline-secondary:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-secondary.dropdown-toggle:focus {
+  //box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(0, 118, 192, .5);
+}
 //.form-control {
 //  height: calc(2.25rem + 11px);
 //}
 #datepicker-from {
-  height: calc(2.25rem + 11px);
+  //height: calc(2.25rem + 11px);
+  height: 40px;
+  border: 1px solid #adafb2;
 }
 #datepicker-before {
-  height: calc(2.25rem + 11px);
+  //height: calc(2.25rem + 11px);
+  height: 40px;
+  border: 1px solid #adafb2;
 }
 .gj-datepicker.input-group {
   margin-right: -4px;
+}
+.gj-datepicker-bootstrap [role=right-icon] button .gj-icon, .gj-datepicker-bootstrap [role=right-icon] button .material-icons {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  //width: 35px;
 }

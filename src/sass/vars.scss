@@ -14,6 +14,10 @@ html {
   margin: 0;
   padding: 0;
 }
+.ee {
+  display: flow;
+  float: left;
+}
 body {
   margin: 0;
   padding: 0;
@@ -21,6 +25,9 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
+}
+label {
+  margin: 0;
 }
 figure {
   margin: 0;
@@ -53,7 +60,10 @@ a:hover, a:focus {
 //@import "fontsMix";
 //@include font-face(Ubuntu, fonts/Ubuntu-Bold, 700, normal, woff2 woff);
 
-
+input:focus, select:hover, textarea:focus {
+  //border: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
 * {
   transition: all .3s;
 }

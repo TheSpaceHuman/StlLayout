@@ -165,13 +165,15 @@ $(document).ready(function() {
   });
 
   if ($(document).is('#datepicker-from') || $(document).is('#datepicker-before')) {
-    $('#datepicker-from').datepicker({
-      uiLibrary: 'bootstrap4'
-    });
-    $('#datepicker-before').datepicker({
-      uiLibrary: 'bootstrap4'
-    });
+
   }
+
+  $('#datepicker-from').datepicker({
+    uiLibrary: 'bootstrap4'
+  });
+  $('#datepicker-before').datepicker({
+    uiLibrary: 'bootstrap4'
+  });
 
 });
 
