@@ -244,7 +244,7 @@
 }
 
 .header_bottom_main-menu_item.search {
-  background-color: #00a5db;
+  background-color: $blue;
 }
 .header {
   background-image: url("../img/index/header-fon.svg");
@@ -309,7 +309,8 @@
   }
   .modal-title {
     text-align: center;
-    font-size: 28px;
+    font-size: 27px;
+    font-weight: 700;
   }
 }
 .btn-reset {
@@ -324,5 +325,10 @@
 }
 .btn-search:hover,
 .btn-search:focus {
-  background-color: #0076c0!important;
+  background-color: $hover;
+}
+form.search {
+  width: 80%;
+  display: block;
+  margin: 20px auto;
 }

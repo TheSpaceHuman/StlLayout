@@ -382,6 +382,13 @@
   font-size: 19px;
   font-weight: 700;
   position: relative;
+  .icon-arrow-right {
+    margin-left: 5px;
+    width: 12px;
+    path {
+      fill: #fff;
+    }
+  }
 }
 /*.main_promo-products_button {
   position: relative;
@@ -421,6 +428,7 @@
   background-color: #fff;
   white-space: nowrap;
   z-index: 10;
+  line-height: 1.5;
 }
 .main_goods_item_img-icon.active > .main_goods_item_img-icon_text {
   display: flex;
@@ -986,7 +994,7 @@ a.btn:hover {
   text-decoration: underline;
 }
 .main_products_block {
-  margin-top: 10px;
+  margin-top: 6px;
 }
 .main_products_block_title {
   color: #000000;
@@ -1008,7 +1016,7 @@ a.btn:hover {
 }
 
 .doctor-question {
-  margin-top: 6px;
+  margin-top: 16px;
   margin-bottom: 42px;
 }
 .doctor-question_title {
@@ -1050,11 +1058,12 @@ a.btn:hover {
   justify-content: center;
   a {
    display: block;
-   padding: 18px 85px 18px 55px;
+   padding: 18px 60px;
  }
 }
 .btn-def {
   position: relative;
+
 }
 /*.btn-def::before {
   content: url(../img/index/arrow-big-right.svg);
@@ -1993,9 +2002,45 @@ a.active {
   }
 }
 
-.main-contact {
+.custom-select {
+  border-radius: 0;
+  //padding: 20px;
+ }
+//Select2 custom css
+.select2-container .select2-selection--single {
+  height: unset;
+  padding: 5px;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+  height: 40px;
+  width: 30px;
+}
+.select2-container .select2-selection--single .select2-selection__rendered {
+  padding-right: 35px;
+}
+.select2-container--default .select2-selection--single {
+  border-radius: 0;
+}
 
-  .title-3 {
-
-  }
+.select2-container--default .select2-selection--single .select2-selection__placeholder {
+  color: $pink;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 21px;
+}
+.select2-search--dropdown .select2-search__field {
+  width: calc(100% - 20px);
+  margin: 10px auto;
+  padding: 8px;
+  display: block;
+}
+.select2-results__option {
+  padding: 6px 16px;
+}
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+  background-color: rgba(0, 165, 219, 0.8);
+}
+#products-select {
+  width: 400px;
+  max-width: 400px;
 }

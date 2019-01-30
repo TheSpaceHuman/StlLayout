@@ -164,15 +164,22 @@ $(document).ready(function() {
     });
   });
 
+  //Datepicker
   if ($('#datepicker-from').is() || $('#datepicker-before').is()) {
 
+    $('#datepicker-from').datepicker({
+      uiLibrary: 'bootstrap4'
+    });
+    $('#datepicker-before').datepicker({
+      uiLibrary: 'bootstrap4'
+    });
   }
 
-  $('#datepicker-from').datepicker({
-    uiLibrary: 'bootstrap4'
-  });
-  $('#datepicker-before').datepicker({
-    uiLibrary: 'bootstrap4'
+  // Select2
+  $('.custom-select').select2({
+    placeholder: "Введите название заболевания",
+    allowClear : true,
+    dropdownParent: $('#products-select')
   });
 
 });
