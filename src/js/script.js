@@ -164,7 +164,7 @@ $(document).ready(function() {
     });
   });
 
-  if ($(document).is('#datepicker-from') || $(document).is('#datepicker-before')) {
+  if ($('#datepicker-from').is() || $('#datepicker-before').is()) {
 
   }
 

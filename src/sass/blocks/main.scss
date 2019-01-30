@@ -476,12 +476,22 @@
     line-height: 35px;
     text-align: center;
     margin: 0;
-    padding: 15px;
+    padding: 0;
   }
   &_img {
     width: auto;
     display: block;
-    margin: 15px auto;
+    margin: 0 auto;
+    &_avatar {
+      width: auto;
+      display: block;
+      margin: 15px auto 0;
+    }
+    &_counter {
+      width: auto;
+      display: block;
+      margin: 60px auto 15px;
+    }
     &_signature {
       color: #000000;
       font-size: 17px;
@@ -489,7 +499,7 @@
       line-height: 25px;
       display: block;
       text-align: center;
-      margin-bottom: 25px;
+      margin-bottom: 33px;
     }
   }
   &_wrapper {
@@ -497,10 +507,16 @@
     justify-content: space-around;
   }
 }
-.photo-slider {
 
+/*.slick-slide:nth-child(2n - 1) .photo-slider_img {
+  padding-right: 20px;
+}*/
+
+.photo-slider {
+  padding: 0 15px;
+  margin-bottom: 36px;
   &_img {
-    padding: 12px;
+    padding: 0 13px;
   }
 }
 .video-fancy {
@@ -512,11 +528,44 @@
 }
 .dedicated {
   background-color: #edeeee;
-  padding: 30px 0;
-  margin: 30px 0;
+  padding: 40px 0 44px;
+  margin: 39px 0 53px;
+  color: #000000;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 25px;
 }
 p.text {
   margin-bottom: 15px;
+   a {
+     color: #00a3d8;
+     text-decoration: underline;
+   }
+}
+.promo-message {
+  .btn-def {
+    margin: 27px 0 60px;
+    padding-left: 25px;
+    padding-right: 20px;
+    .icon-arrow-right {
+      margin-left: 2px;
+      path {
+        fill: #fff;
+      }
+    }
+  }
+  .btn-def:hover {
+    background-color: $hover;
+  }
+}
+.main-about {
+  .text {
+    margin-bottom: 20px;
+  }
+  .title-2 {
+    margin: 0;
+    padding: 25px 0 15px;
+  }
 }
 a.btn {
   display: inline-block;
@@ -532,13 +581,15 @@ a.btn:hover {
   width: 100%;
   height: 420px;
   transition: none;
-  margin-bottom: 15px;
+  margin-bottom: 19px;
 }
 .title-3 {
   color: #000000;
   font-size: 21px;
   font-weight: 700;
-  line-height: 48px;
+  line-height: 24px;
+  margin-bottom: 10px;
+
 }
 .content {
   color: #000000;
@@ -555,7 +606,7 @@ a.btn:hover {
   &_email {
     display: block;
     text-decoration: underline;
-    margin-bottom: 40px;
+    margin-bottom: 48px;
     line-height: 1.5;
   }
 }
@@ -612,11 +663,12 @@ a.btn:hover {
 .tab-content_news-list_item {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: stretch;
+  padding: 45px 0 45px;
   border-bottom: 1px solid #ccc;
   &_img-wrapper {
-    flex: 1 1 40%;
-    padding: 15px;
+    flex: 0 0 311px;
+    //padding: 15px;
   }
   &_img-wrapper img {
     width: auto;
@@ -625,8 +677,9 @@ a.btn:hover {
     margin: 0 auto;
   }
   &_text {
-    flex: 1 1 60%;
-    padding: 15px;
+    flex: 1 1 auto;
+    padding-left: 43px;
+    //padding: 15px;
     &_title {
       color: #000000;
       font-size: 21px;
@@ -647,6 +700,19 @@ a.btn:hover {
       margin-bottom: 10px;
     }
   }
+}
+
+.btn-still {
+  display: block;
+  border-radius: 0;
+  padding: 8px 40px;
+  border: 1px solid $blue;
+  color: $blue;
+  margin: 0 auto;
+}
+.btn-still:hover {
+  border: 1px solid $hover;
+  color: $hover;
 }
 
 .tab-content_progress_items {
@@ -773,7 +839,7 @@ a.btn:hover {
     &_img img {
       width: auto;
       height: auto;
-      margin-bottom: 20px;
+      margin-bottom: 14px;
     }
     &_img span {
       color: #acadb0;
@@ -808,7 +874,7 @@ a.btn:hover {
   align-items: stretch;
 }
 .stuff-item {
-  flex: 0 0 300px;
+  flex: 0 0 322px;
   display: flex;
   align-items: center;
   margin: 0 11px 10px 0;
@@ -1183,7 +1249,7 @@ a.btn:hover {
   padding-top: 10px;
 }
 .bootom-actions {
-  margin-top: 17px;
+  margin-top: 0;
 }
 .bootom-actions_subscribers {
   display: flex;
@@ -1221,13 +1287,30 @@ a.btn:hover {
 .bootom-actions_footer-info_price {
   //width: 200px;
   //flex: 1 1 auto;
-  //padding-top: 8px;
-  padding-right: 200px;
+  padding-top: 3px;
+  padding-right: 240px;
+
   span {
     color: #000000;
     font-size: 15px;
     font-weight: 700;
     line-height: 17px;
+  }
+}
+.bootom-actions_footer-info_bottons_to-order {
+  display: block;
+  background-color: $blue;
+  color: #fff;
+  border: 0;
+  border-radius: 0;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  padding: 7px 22px;
+  margin-right: 30px;
+  cursor: pointer;
+  &:hover {
+    background-color: $hover;
   }
 }
 .bootom-actions_footer-info_price_main {
@@ -1256,27 +1339,18 @@ a.btn:hover {
   margin: 5px 15px 5px 0;
   position: relative;
 }
-//.btn-a-left::before {
-//  content: url("../img/basket/arrow-left.svg");
-//  width: 13px;
-//  color: red;
-//  display: block;
-//  background-color: red;
-//  fill: black;
-//}
-/*#icon-arrow-left {
-  width: 9px;
-  height: auto;
-  margin-right: 8px;
-  path {
-    fill: #00a5db;
+.main-profil .main_basket_item {
+  padding: 25px 25px 42px;
+  &_price {
+    padding: 33px 0 0 110px;
+  }
+  &_counter {
+    padding:14px 0 0 65px;
+  }
+  &_text {
+    padding: 15px 0 0 30px;
   }
 }
-
-
-.btn-a-left:hover #icon-arrow-left path {
-  fill: #0076c0;
-}*/
 .bootom-actions_footer-info_bottons_left {
   color: $blue;
   font-size: 16px;
@@ -1285,9 +1359,12 @@ a.btn:hover {
   background-color: #fff;
   border: 1px solid $blue;
   border-radius: 0;
-  padding: 7px 22px;
+  padding: 7px 22px 7px 16px;
   margin-right: 30px;
   cursor: pointer;
+  .icon-arrow-left {
+    margin-right: 6px;
+  }
 }
 .bootom-actions_footer-info_bottons_left:hover {
   border: 1px solid $hover;
@@ -1868,4 +1945,57 @@ a.active {
 
 .slick-dotted.slick-slider {
   margin-bottom: 28px;
+}
+.custom-col-1 {
+  flex: 0 0 19.5%;
+  max-width: 19.5%;
+  padding: 0 15px;
+}
+.custom-col-2 {
+  flex: 0 0 80.5%;
+  max-width: 80.5%;
+  padding: 0 15px;
+}
+.custom-offset-1 {
+  margin-left: 19.5%;
+}
+.photo-slider {
+
+  .slick-prev {
+    left: 0;
+   }
+  .slick-next {
+    right: 0;
+  }
+  .slick-prev::before {
+    content: '\f104';
+
+    font-size: 24px;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: rgba(0,0,0, .6);
+    background-color: transparent;
+    &:hover {
+      color: rgba(0,0,0, .9);
+    }
+  }
+  .slick-next::before {
+    content: '\f105';
+
+    font-size: 24px;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: rgba(0,0,0, .6);
+    background-color: transparent;
+    &:hover {
+      color: rgba(0,0,0, .9);
+    }
+  }
+}
+
+.main-contact {
+
+  .title-3 {
+
+  }
 }
