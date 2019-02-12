@@ -41,6 +41,8 @@ $(document).ready(function() {
     autoplaySpeed: 4000,
     slidesToShow: 1,
     slidesToScroll: 1,
+    prevArrow: false,
+    nextArrow: false
     // centerMode: true,
     // variableWidth: true
   });
@@ -92,8 +94,18 @@ $(document).ready(function() {
     $('.main_goods_item_img-icon').removeClass('active');
   });
 
-
-
+  /*================== SideBar =====================*/
+  $(".left-saidbar_list_item").on("click", function() {
+/*    if ($('.left-saidbar_list_item').has('click')) {
+      $('.left-saidbar_list_item').removeClass('click');
+    }*/
+    $(this).toggleClass('click');
+    /*if ($(this).hasClass('click')){
+      $(this).removeClass('click');
+    }*/
+    /*$(this).addClass('click');*/
+    return false;
+  });
   /*================== Menu open =====================*/
   $(".sidemenu-btn").on("click", function() {
     $(".wrapper").toggleClass("stop");
@@ -165,7 +177,7 @@ $(document).ready(function() {
   });
 
   //Datepicker
-  if ($('#datepicker-from').is() || $('#datepicker-before').is()) {
+  if ($('input').is('#datepicker-from') || $('input').is('#datepicker-before')) {
 
     $('#datepicker-from').datepicker({
       uiLibrary: 'bootstrap4'
@@ -176,11 +188,46 @@ $(document).ready(function() {
   }
 
   // Select2
-  $('.custom-select').select2({
-    placeholder: "Введите название заболевания",
-    allowClear : true,
-    dropdownParent: $('#products-select')
+  if ($('select').is('.custom-select')) {
+    $('.custom-select').select2({
+      placeholder: "Введите название заболевания",
+      allowClear : true,
+      dropdownParent: $('#products-select')
+    });
+  }
+
+/*  $(window).scroll(function() {
+    // console.log($(this).scrollTop());
+    if ($(this).scrollTop() > 200){
+      $('.mini-header').addClass("fixed-top");
+      $('.mini-header').addClass("d-flex");
+    }
+    if ($(this).scrollTop() < 200) {
+      $('.mini-header').removeClass("fixed-top");
+      $('.mini-header').removeClass("d-flex");
+    }
+  });*/
+
+  $('.slider-for').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: '.slider-nav'
   });
+  $('.slider-nav').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    asNavFor: '.slider-for',
+    dots: false,
+    centerMode: false,
+    focusOnSelect: true
+  });
+  $('.card-base-slider').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1
+  });
+
 
 });
 

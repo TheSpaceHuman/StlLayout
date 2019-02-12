@@ -1,0 +1,163 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/STL/icomoon.eot?hxnxyb');
+  src:  url('../fonts/STL/icomoon.eot?hxnxyb#iefix') format('embedded-opentype'),
+  url('../fonts/STL/icomoon.ttf?hxnxyb') format('truetype'),
+  url('../fonts/STL/icomoon.woff?hxnxyb') format('woff'),
+  url('../fonts/STL/icomoon.svg?hxnxyb#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="stl-icon-"], [class*=" stl-icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.stl-icon-click-hover-active:before {
+  content: "\e900";
+  color: #0076c0;
+}
+.stl-icon-arrow-left:before {
+  content: "\e901";
+  color: #fff;
+}
+.stl-icon-arrow-right:before {
+  content: "\e902";
+  color: #fff;
+}
+.stl-icon-card_icon-1-impulse .path1:before {
+  content: "\e903";
+  color: rgb(0, 165, 219);
+}
+.stl-icon-card_icon-1-impulse .path2:before {
+  content: "\e904";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.stl-icon-card_icon-2-plus .path1:before {
+  content: "\e905";
+  color: rgb(0, 165, 219);
+}
+.stl-icon-card_icon-2-plus .path2:before {
+  content: "\e906";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.stl-icon-card_icon-3-ultra .path1:before {
+  content: "\e907";
+  color: rgb(0, 165, 219);
+}
+.stl-icon-card_icon-3-ultra .path2:before {
+  content: "\e908";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.stl-icon-card_icon-3-ultra .path3:before {
+  content: "\e909";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.stl-icon-card_icon-3-ultra .path4:before {
+  content: "\e90a";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.stl-icon-card_icon-3-ultra .path5:before {
+  content: "\e90b";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.stl-icon-card_icon-3-ultra .path6:before {
+  content: "\e90c";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.stl-icon-card_icon-4-magnito .path1:before {
+  content: "\e90d";
+  color: rgb(0, 165, 219);
+}
+.stl-icon-card_icon-4-magnito .path2:before {
+  content: "\e90e";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.stl-icon-card_icon-4-magnito .path3:before {
+  content: "\e90f";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.stl-icon-card_icon-4-magnito .path4:before {
+  content: "\e910";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.stl-icon-card_icon-4-magnito .path5:before {
+  content: "\e911";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.stl-icon-card_icon-4-magnito .path6:before {
+  content: "\e912";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.stl-icon-cart:before {
+  content: "\e913";
+  color: #fff;
+}
+.stl-icon-close:before {
+  content: "\e914";
+}
+.stl-icon-delivery-hover-active:before {
+  content: "\e915";
+  color: #0076c0;
+}
+//to slider
+//.slick-prev:before, .slick-next:before
+.slick-prev:before {
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  content: "\e901";
+  color: #adafb2;
+}
+.slick-next:before {
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  content: "\e902";
+  color: #adafb2;
+}
+.left-saidbar {
+
+  .stl-icon-arrow-right:before {
+    color: #000;
+    font-size: 11px;
+  }
+}
+
+.left-saidbar_list_item:hover {
+  color: #00a5db;
+  .stl-icon-arrow-right:before {
+    color: #00a5db;
+  }
+}
+

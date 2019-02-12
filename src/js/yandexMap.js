@@ -14,10 +14,10 @@ function init(){
     // Своё изображение иконки метки.
     iconImageHref: 'img/about/mapPlacemark.png',
     // Размеры метки.
-    iconImageSize: [86, 122],
+    iconImageSize: [130, 123],
     // Смещение левого верхнего угла иконки относительно
     // её "ножки" (точки привязки).
-    iconImageOffset: [-43, -122]
+    iconImageOffset: [-130, -123]
     // preset: 'islands#redDotIcon'
   });
 
@@ -35,8 +35,8 @@ function init(){
 }, {
     iconLayout: 'default#image',
     iconImageHref: 'img/about/mapPlacemark.png',
-    iconImageSize: [86, 122],
-    iconImageOffset: [-43, -122]
+    iconImageSize: [130, 123],
+    iconImageOffset: [-130, -123]
   });
 
   Map2.geoObjects.add(Placemark2);
@@ -53,8 +53,8 @@ function init(){
   }, {
     iconLayout: 'default#image',
     iconImageHref: 'img/about/mapPlacemark.png',
-    iconImageSize: [86, 122],
-    iconImageOffset: [-43, -122]
+    iconImageSize: [130, 123],
+    iconImageOffset: [-130, -123]
   });
 
   Map3.geoObjects.add(Placemark3);
@@ -71,8 +71,8 @@ function init(){
   }, {
     iconLayout: 'default#image',
     iconImageHref: 'img/about/mapPlacemark.png',
-    iconImageSize: [86, 122],
-    iconImageOffset: [-43, -122]
+    iconImageSize: [130, 123],
+    iconImageOffset: [-130, -123]
   });
 
   Map4.geoObjects.add(Placemark4);
@@ -89,8 +89,8 @@ function init(){
   }, {
     iconLayout: 'default#image',
     iconImageHref: 'img/about/mapPlacemark.png',
-    iconImageSize: [86, 122],
-    iconImageOffset: [-43, -122]
+    iconImageSize: [130, 123],
+    iconImageOffset: [-130, -123]
   });
 
   Map5.geoObjects.add(Placemark5);

@@ -1,0 +1,114 @@
+.main_products
+    .container
+        nav(aria-label="breadcrumb")
+            ol.breadcrumb
+                li.breadcrumb-item <a href="index.html">Главная</a>
+                li.breadcrumb-item  <a href="questions.html">Вопрос – ответ</a>
+                li.breadcrumb-item.active(aria-current="page") Что такое карта постоянного покупателя?
+        h1.title-1 Что такое карта постоянного покупателя?
+        .row
+            .custom-col-1.mt-1
+                aside.left-saidbar
+                    .left-saidbar_title Вопрос – ответ
+                    ul.left-saidbar_list
+                        li.left-saidbar_list_item Задайте свой вопрос
+                        li.left-saidbar_list_item Где купить?
+                        li.left-saidbar_list_item Как заказать?
+                        li.left-saidbar_list_item.active Что такое карта
+                            | <br>постоянного
+                            | <br>покупателя?
+                        li.left-saidbar_list_item Вопросы
+                            | <br>по аппаратам
+                        li.left-saidbar_list_item Вопросы
+                            | <br>по заболеваниям
+                        li.left-saidbar_list_item Вопросы
+                            | <br>по косметологии
+                        li.left-saidbar_list_item Технические вопросы
+
+
+            .custom-col-2
+                section.customer-card_content
+                    .customer-card_content_items
+                        .customer-card_content_item
+                            img(data-src="img/customer-card/big-card.png").lazyload
+                        .customer-card_content_item
+                            .customer-card_content_item_question-title
+                                | Вопрос:
+                            .customer-card_content_item_question-text
+                                | Что это за карта?
+                            .customer-card_content_item_answer-title
+                                | Ответ:
+                            .customer-card_content_item_answer-text
+                                | Карта постоянного покупателя является эксклюзивным предложением Компании «СТЛ»
+                                | и предоставляет ее держателю ряд существенных привилегий и льгот при пользовании услугами
+                                | или продукцией Компании.
+                        .customer-card_content_item
+                            .customer-card_content_item_question-title
+                                | Вопрос:
+                            .customer-card_content_item_question-text
+                                | Какие привилегии и льготы дает карта?
+                            .customer-card_content_item_answer-title
+                                | Ответ:
+                            .customer-card_content_item_answer-text
+                                ol
+                                    li Бесплатная горячая линия поддержки клиентов 8 800 707-78-80.
+                                    li Персональная скидка 10% на любую продукцию Компании «СТЛ».
+                                    li Бессрочная гарантия на все наши аппараты.
+                        .customer-card_content_item
+                            .customer-card_content_item_question-title
+                                | Вопрос:
+                            .customer-card_content_item_question-text
+                                | Какие есть условия пользования картой?
+                            .customer-card_content_item_answer-title
+                                | Ответ:
+                            .customer-card_content_item_answer-text
+                                ol
+                                    li Данная карта действительна только на услуги и продукцию Компании «СТЛ».
+                                    li Льготы по данной карте не могут быть использованы совместно с другими рекламными
+                                        | предложениями Компании «СТЛ»
+                                    li Привилегии и льготы по данной карте действительны только для держателя карты.
+                                    li Карта постоянного покупателя не может быть продана, передана либо подарена другим лицам.
+                                    li Владелец карты дает разрешение на использование и хранение своих персональных данных,
+                                        | в соответствии требованиями законодательства РФ.
+
+                        .customer-card_content_item
+                            .customer-card_content_item_question-title
+                                | Вопрос:
+                            .customer-card_content_item_question-text
+                                | Как получить карту постоянного покупателя?
+                            .customer-card_content_item_answer-title
+                                | Ответ:
+                            .customer-card_content_item_answer-text
+                                | Карта выдается при покупке любого нашего физиотерапевтического аппарата:
+                                | <br> АНМС «Меркурий», ЭНМС «Феникс», АУЗТ «Дельта Комби», АМТ «Вега Плюс», АУЗТ «Дельта».
+                        .customer-card_content_item
+                            .customer-card_content_item_base
+                                | Более подробную информацию о правилах пользования картой постоянного покупателя, Вы можете получить
+                                | <br>по телефону 8 800 707-78-80.
+
+
+
+
+    section.main_apply
+        .container
+            h2.title-2.text-center Применяются при заболеваниях
+            .slider-apply
+                - for (var x = 0; x < 8; x++)
+                    div
+                        .slider-apply_item
+                            p.slider-apply_item_text
+                                | нарушение сна, стресс, болевые синдромы различного происхождения, восстановление после перенесенных операций, заболеваний и травм, целлюлит...
+                            h4.slider-apply_item_title
+                                | Меркурий
+                            a(href="#").slider-apply_item_link
+                                | Подробнее >
+    section.main_promo-products
+        .container
+            .main_promo-products_presents
+                .row
+                    .col-12.col-md-6.main_promo-products_present
+                        a(href="#")
+                            img(data-src="img/products/footer-1.jpg").lazyload
+                    .col-12.col-md-6.main_promo-products_present
+                        a(href="#")
+                            img(data-src="img/products/footer-2.jpg").lazyload

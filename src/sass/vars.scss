@@ -68,4 +68,13 @@ input:focus, select:hover, textarea:focus {
   max-width: 1230px!important;
 }
 
-
+.modal-open {
+  overflow-y: auto!important;
+  padding: 0!important;
+}
+.compensate-for-scrollbar {
+  margin: 0!important;
+}
+body.compensate-for-scrollbar {
+  overflow-y: auto!important;
+}
