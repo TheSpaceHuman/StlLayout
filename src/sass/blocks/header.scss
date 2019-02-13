@@ -298,20 +298,54 @@
   right: 22px;
 }*/
 
-#searchModal {
+//#searchModal {
 
-  .btn-blue {
-    float: right;
+  .btn-modal {
+    display: block;
+    background-color: #00a5db;
+    border: 0;
+    border-radius: 0;
+    color: #fff;
+    font-weight: 700;
   }
+.btn-modal:hover {
+  background-color: $hover;
+}
   .modal-content {
     border-radius: 0;
   }
   .modal-title {
     text-align: center;
-    font-size: 27px;
+    font-size: 19px;
     font-weight: 700;
+    color: $blue;
+  }
+  .modal-header {
+    margin: 0;
+    padding: 8px 21px;
+    span {
+      display: inline-block;
+    }
+    .stl-icon-close::before {
+      font-size: 10px;
+      color: #000;
+    }
+
+  }
+.modal-body {
+  padding: 0 20px 15px;
+}
+.modal-body_description {
+  color: rgba(0,0,0, .3);
+  font-size: 11px;
+  text-align: center;
+  margin-top: 15px;
+  a {
+    color: inherit;
+    text-decoration: underline;
   }
 }
+//}
 .btn-reset {
   border: none;
   border-radius: 0;

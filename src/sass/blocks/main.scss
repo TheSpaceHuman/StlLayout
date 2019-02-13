@@ -395,6 +395,11 @@
     display: block;
   }
 }
+.doctor-question {
+  .btn-def {
+    padding: 20px 45px;
+  }
+}
 .btn-def {
   display: block;
   background-color: #00a5db;
@@ -406,7 +411,7 @@
   position: relative;
   .icon-arrow-right {
     margin-left: 5px;
-    width: 12px;
+    width: 10px;
     path {
       fill: #fff;
     }
@@ -987,7 +992,7 @@ a.btn:hover {
   left: -112px;
   -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
-  background-color: #8d0080;
+  background-color: $new;
   color: #fff;
   font-size: 16px;
   font-weight: 400;
@@ -2129,7 +2134,15 @@ a.active {
   letter-spacing: -0.15px;
 }
 .slider-nav {
-  padding: 0 35px;
+  padding: 0 10px;
+  .slick-prev {
+    left: -4px;
+    z-index: 100;
+  }
+  .slick-next {
+    right: -4px;
+    z-index: 100;
+  }
 }
 .slider-nav_item {
   padding: 10px;
@@ -2155,6 +2168,7 @@ a.active {
 }
 .goods-card_content_right-info-product_price {
   display: flex;
+  align-items: baseline;
 }
 .goods-card_content_right-info-product_price_main {
   color: $pink;
@@ -2166,14 +2180,14 @@ a.active {
   }
 }
 .goods-card_content_right-info-product_price_old {
-  color: #aeafb2;
-  font-size: 28px;
+  color: $old-price;
+  font-size: 21px;
   font-weight: 400;
-  line-height: 42px;
+  line-height: 22px;
   padding-left: 46px;
   text-decoration: line-through;
   .fa-ruble-sign:before {
-    font-size: 28px;
+    font-size: 19px;
   }
 }
 .goods-card_content_right-info-product_buttons {
@@ -2289,6 +2303,7 @@ a.active {
   background-color: #e8f5f8;
 }
 .video-block_img {
+  position: relative;
   margin: 45px 0;
   display: flex;
   justify-content: center;
@@ -2297,6 +2312,18 @@ a.active {
     width: 500px;
     display: block;
   }
+  .video-block_img_youtube {
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    opacity: 0.8;
+  }
+  .video-block_img_youtube:hover {
+    width: 75px;
+  }
+
 }
 .marker-list {
   width: 710px;
@@ -2309,6 +2336,14 @@ a.active {
   img {
     display: block;
     padding: 7px;
+  }
+  .slick-prev {
+    left: -13px;
+    z-index: 100;
+  }
+  .slick-next {
+    right: -13px;
+    z-index: 100;
   }
 }
 .w-542 {
@@ -2364,20 +2399,25 @@ a.active {
   font-size: 33px;
   font-weight: 700;
   line-height: 1.8;
+  .fa-ruble-sign::before {
+    font-size: 30px;
+  }
 }
 .goods-card_specifications_price_old {
   font-size: 21px;
   font-weight: 400;
   line-height: 1.8;
   text-decoration: line-through;
-  color: #aeafb2;
-
+  color: $old-price;
+  .fa-ruble-sign::before {
+    font-size: 19px;
+  }
 }
 .goods-card_specifications_col-2_table {
   color: #000000;
   font-size: 17px;
   font-weight: 400;
-  line-height: 1.4;
+  line-height: 21px;
   padding-left: 40px;
   padding-bottom: 53px;
   td {
@@ -2504,4 +2544,67 @@ a.active {
   font-size: 17px;
   font-weight: 400;
   line-height: 21px;
+}
+.dedicated  {
+  .goods-card_description {
+    font-size: 17px;
+  }
+  a {
+    letter-spacing: -0.17px;
+    color: #00a5db;
+    text-decoration: underline;
+  }
+}
+.btn-still {
+  span {
+    display: inline-block;
+    transform: rotate(90deg);
+    padding-left: 5px;
+    margin-left: 8px;
+  }
+  .stl-icon-arrow-right:before {
+    color: $blue;
+    font-size: 12px;
+    //padding-bottom: 10px;
+  }
+}
+.btn-still:hover {
+  .stl-icon-arrow-right:before {
+    color: $hover;
+  }
+}
+.custom-pagination {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;
+  .page-link {
+    border-radius: 100%!important;
+    border: 1px solid rgba(0,0,0, .3)!important;
+    outline: none;
+    display: block;
+    width: 39px;
+    height: 39px;
+    text-align: center;
+    color: #000;
+    font-weight: 700;
+  }
+  .page-link:hover {
+    border-color: $blue!important;
+    background-color: #fff;
+  }
+  .page-item {
+    padding: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .page-item.active {
+    .page-link {
+      border-color: transparent!important;
+      background-color: $blue;
+      color: #fff;
+    }
+  }
 }

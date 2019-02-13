@@ -97,3 +97,16 @@
     display: none;
   }
 }
+
+.modal-dialog {
+  max-width: 350px;
+}
+@media (max-width: 1100px) {
+  .custom-col-1 {
+    display: none;
+  }
+  .custom-col-2 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}

@@ -196,7 +196,7 @@ $(document).ready(function() {
     });
   }
 
-/*  $(window).scroll(function() {
+  $(window).scroll(function() {
     // console.log($(this).scrollTop());
     if ($(this).scrollTop() > 200){
       $('.mini-header').addClass("fixed-top");
@@ -206,7 +206,7 @@ $(document).ready(function() {
       $('.mini-header').removeClass("fixed-top");
       $('.mini-header').removeClass("d-flex");
     }
-  });*/
+  });
 
   $('.slider-for').slick({
     slidesToShow: 1,
