@@ -495,7 +495,8 @@
       color: #000000;
       font-size: 15px;
       font-weight: 400;
-      line-height: 30px;
+      margin-bottom: 14px;
+      line-height: 1.2;
       a {
         display: block;
       }
@@ -617,6 +618,10 @@ a.btn:hover {
 .left-saidbar_list_item.active,
 .left-saidbar_list_item.active a {
   color: #00a5db;
+}
+.left-saidbar_list_item.current-active,
+.left-saidbar_list_item.current-active a {
+  color: $pink;
 }
 #map-1, #map-2, #map-3, #map-4, #map-5 {
   width: 100%;
@@ -1426,11 +1431,22 @@ a.btn:hover {
   margin-right: 30px;
   .icon-close {
     margin: 0 5px;
+    path {
+      fill: $blue;
+    }
+  }
+  .stl-icon-close {
+    color: $blue;
+    font-size: 13px;
+    margin-left: 8px;
   }
 }
 .bootom-actions_footer-info_bottons_close:hover {
   border: 1px solid $hover;
   color: $hover;
+  .stl-icon-close {
+    color: $hover;
+  }
   .icon-close {
     path {
       fill: $hover
@@ -1873,8 +1889,16 @@ dsd{
   margin: 0 10px;
   height: auto;
 }
-.btn-outline:hover > .icon-arrow-right-blue::before {
-  content: url(../img/questions/arrow-blue-right-hover-active.svg);
+.btn-outline .stl-icon-arrow-right {
+  margin-left: 8px;
+}
+.btn-outline .stl-icon-arrow-right::before {
+  color: $blue;
+  font-size: 13px;
+}
+.btn-outline:hover > .stl-icon-arrow-right::before {
+  color: $hover;
+  font-size: 13px;
 }
 .questions-content_items {
   display: flex;
@@ -2136,16 +2160,21 @@ a.active {
 .slider-nav {
   padding: 0 10px;
   .slick-prev {
-    left: -4px;
+    left: -14px;
     z-index: 100;
   }
   .slick-next {
-    right: -4px;
+    right: -14px;
     z-index: 100;
+  }
+  img {
+    width: 107px;
+    display: block;
+    margin: 0 auto;
   }
 }
 .slider-nav_item {
-  padding: 10px;
+  padding: 10px 0;
 }
 .slider-for {
   margin: 0 0 6px;
@@ -2335,14 +2364,15 @@ a.active {
   margin: 36px -7px 56px;
   img {
     display: block;
-    padding: 7px;
+    width: 218px;
+    margin: 0 auto;
   }
   .slick-prev {
-    left: -13px;
+    left: -17px;
     z-index: 100;
   }
   .slick-next {
-    right: -13px;
+    right: -17px;
     z-index: 100;
   }
 }
@@ -2607,4 +2637,26 @@ a.active {
       color: #fff;
     }
   }
+}
+.main-customer-card  {
+  .left-saidbar {
+    padding-top: 34px;
+    padding-bottom: 32px;
+  }
+  .left-saidbar_title {
+    margin-bottom: 10px;
+  }
+}
+.main-goods-card {
+  .btn-qbuy {
+    font-size: 21px;
+    padding: 0 10px;
+  }
+  .btn-buy {
+    font-size: 21px;
+    padding: 0 10px;
+  }
+}
+.new-font {
+  font-family: 'PFDinDisplayPro';
 }

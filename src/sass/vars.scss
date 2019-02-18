@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'PFDinDisplayPro';
+  src: url('../fonts/PF Din Display Pro/PFDinDisplayPro-Regular.eot'), /* IE9 Compat Modes */
+  url('../fonts/PF Din Display Pro/PFDinDisplayPro-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+  url('../fonts/PF Din Display Pro/PFDinDisplayPro-Regular.ttf')  format('truetype') /* Safari, Android, iOS */
+}
 /* Variables */
 $blue: #00a5db;
 $dark-blue: #0076c0;

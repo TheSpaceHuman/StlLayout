@@ -170,6 +170,18 @@
         color: #fff;
       }
     }
+    &_item:nth-child(2) {
+      flex-grow: 1.4;
+    }
+    &_item:nth-child(3) {
+      flex-grow: 1.7;
+    }
+    &_item:nth-child(5) {
+      flex-grow: 1.5;
+    }
+    &_item:nth-child(4) {
+      flex-grow: 0;
+    }
     &_item:hover, &_item:focus {
       background-color: #464548;
     }
@@ -207,6 +219,7 @@
 .header_bottom_main-menu_item.lvl-2 a:hover,
 .header_bottom_main-menu_item.lvl-2 a:focus {
   color: $blue;
+  //text-decoration: underline;
 }
 .header_bottom_main-menu_item.active > .header_bottom_main-menu_items.lvl-2 {
   display: flex;
@@ -219,7 +232,7 @@
   color: #000000;
   background-color: #fff;
   font-weight: 400;
-  line-height: 30px;
+  //line-height: 30px;
   font-size: 15px;
   white-space: nowrap;
 
@@ -307,18 +320,23 @@
     border-radius: 0;
     color: #fff;
     font-weight: 700;
+    font-size: 17px;
+    //line-height: 60px;
+    padding: 11px 50px 14px;
   }
 .btn-modal:hover {
   background-color: $hover;
 }
   .modal-content {
     border-radius: 0;
+    width: 500px;
   }
   .modal-title {
     text-align: center;
-    font-size: 19px;
     font-weight: 700;
     color: $blue;
+    font-size: 17px;
+    text-transform: uppercase;
   }
   .modal-header {
     margin: 0;
@@ -333,7 +351,7 @@
 
   }
 .modal-body {
-  padding: 0 20px 15px;
+  padding: 0 30px 40px;
 }
 .modal-body_description {
   color: rgba(0,0,0, .3);
@@ -433,4 +451,16 @@ form.search {
     width: 100%;
     height: auto;
   }
+}
+.header_bottom_main-menu_item {
+  .stl-icon-arrow-right {
+    margin-bottom: -3px;
+  }
+  .stl-icon-arrow-right::before {
+    color: #000;
+    font-size: 11px;
+  }
+}
+.header_bottom_main-menu_item a:hover > .stl-icon-arrow-right::before {
+  color: $hover;
 }

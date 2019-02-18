@@ -198,14 +198,14 @@ $(document).ready(function() {
 
   $(window).scroll(function() {
     // console.log($(this).scrollTop());
-    if ($(this).scrollTop() > 200){
+    /*if ($(this).scrollTop() > 200){
       $('.mini-header').addClass("fixed-top");
       $('.mini-header').addClass("d-flex");
     }
     if ($(this).scrollTop() < 200) {
       $('.mini-header').removeClass("fixed-top");
       $('.mini-header').removeClass("d-flex");
-    }
+    }*/
   });
 
   $('.slider-for').slick({
@@ -216,12 +216,14 @@ $(document).ready(function() {
     asNavFor: '.slider-nav'
   });
   $('.slider-nav').slick({
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
     asNavFor: '.slider-for',
     dots: false,
     centerMode: false,
-    focusOnSelect: true
+    focusOnSelect: true,
+    // prevArrow: true,
+    // nextArrow: true
   });
   $('.card-base-slider').slick({
     slidesToShow: 4,
