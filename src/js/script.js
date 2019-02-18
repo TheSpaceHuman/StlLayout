@@ -197,15 +197,14 @@ $(document).ready(function() {
   }
 
   $(window).scroll(function() {
-    // console.log($(this).scrollTop());
-    /*if ($(this).scrollTop() > 200){
+    if ($(this).scrollTop() > 200){
       $('.mini-header').addClass("fixed-top");
       $('.mini-header').addClass("d-flex");
     }
     if ($(this).scrollTop() < 200) {
       $('.mini-header').removeClass("fixed-top");
       $('.mini-header').removeClass("d-flex");
-    }*/
+    }
   });
 
   $('.slider-for').slick({

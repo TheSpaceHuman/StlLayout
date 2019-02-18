@@ -619,9 +619,9 @@ a.btn:hover {
 .left-saidbar_list_item.active a {
   color: #00a5db;
 }
-.left-saidbar_list_item.current-active,
-.left-saidbar_list_item.current-active a {
-  color: $pink;
+.current-active,
+.current-active a {
+  color: $pink!important;
 }
 #map-1, #map-2, #map-3, #map-4, #map-5 {
   width: 100%;
@@ -2649,13 +2649,16 @@ a.active {
 }
 .main-goods-card {
   .btn-qbuy {
-    font-size: 21px;
+    //font-size: 21px;
     padding: 0 10px;
   }
   .btn-buy {
-    font-size: 21px;
+    //font-size: 21px;
     padding: 0 10px;
   }
+}
+.fz-21{
+  font-size: 21px;
 }
 .new-font {
   font-family: 'PFDinDisplayPro';

@@ -86,3 +86,7 @@ input:focus, select:hover, textarea:focus {
 body.compensate-for-scrollbar {
   overflow-y: auto!important;
 }
+.modal.fade.show {
+  padding-right: 0!important;
+  overflow-y: auto!important;
+}
