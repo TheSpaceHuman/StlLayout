@@ -488,6 +488,7 @@
     font-size: 15px;
     line-height: 45px;
     text-transform: uppercase;
+    margin-bottom: 11px;
   }
   &_list{
 
@@ -2421,14 +2422,14 @@ a.active {
     flex: 1 1 auto;
     font-size: 21px;
     font-weight: 700;
-    line-height: 58.93px;
+    line-height: 75px;
   }
 }
 .goods-card_specifications_price_main {
   color: $pink;
-  font-size: 33px;
+  font-size: 45px;
   font-weight: 700;
-  line-height: 1.8;
+  line-height: 1.4;
   .fa-ruble-sign::before {
     font-size: 30px;
   }
@@ -2648,11 +2649,11 @@ a.active {
   }
 }
 .main-goods-card {
-  .btn-qbuy {
+  .btn-qbuy.new-font {
     //font-size: 21px;
     padding: 0 10px;
   }
-  .btn-buy {
+  .btn-buy.new-font {
     //font-size: 21px;
     padding: 0 10px;
   }
@@ -2662,4 +2663,8 @@ a.active {
 }
 .new-font {
   font-family: 'PFDinDisplayPro';
+}
+.fix-size-btn-buy {
+  width: 207px;
+  height: 75px;
 }
