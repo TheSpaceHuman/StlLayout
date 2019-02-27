@@ -1,0 +1,83 @@
+.main_products
+    .container
+        nav(aria-label="breadcrumb")
+            ol.breadcrumb
+                li.breadcrumb-item <a href="index.html">Главная</a>
+                li.breadcrumb-item  <a href="questions.html">Вопрос – ответ</a>
+                li.breadcrumb-item.active(aria-current="page") Задайте свой вопрос
+        h1.title-1 Задайте свой вопрос
+        .row
+            .custom-col-1.mt-1
+                aside.left-saidbar
+                    .left-saidbar_title Вопрос – ответ
+                    ul.left-saidbar_list
+                        li.left-saidbar_list_item.active Задайте свой вопрос
+                        li.left-saidbar_list_item Где купить?
+                        li.left-saidbar_list_item Как заказать?
+                        li.left-saidbar_list_item Что такое карта
+                            | <br>постоянного
+                            | <br>покупателя?
+                        li.left-saidbar_list_item Вопросы
+                            | <br>по аппаратам
+                        li.left-saidbar_list_item Вопросы
+                            | <br>по заболеваниям
+                        li.left-saidbar_list_item Вопросы
+                            | <br>по косметологии
+                        li.left-saidbar_list_item Технические вопросы
+
+
+            .custom-col-2
+                section.ask-questions
+                    .ask-questions_title
+                        | На вопрос ответят наш профессиональный врач, консультант
+                        | <br>или технический специалист
+                    .ask-questions_description
+                        | Для того чтобы отправить вопрос, необходимо указать хотя бы одно поле
+                        | <br>с Вашими контактами (телефон или электронную почту)
+                    form.ask-questions_form
+                        .form-group
+                            label(for="name") Ваше имя
+                            input.form-control(type="text" name="name")#name
+                        .form-group
+                            label(for="phone") Телефон
+                            input.form-control(type="text" name="phone")#phone
+                        .form-group
+                            label(for="email") Электронная почта
+                            input.form-control(type="email" name="email")#email
+                        .form-group
+                            label(for="message") Ваш вопрос
+                            textarea.form-control(rows="8")#message
+                        .ask-questions_form_submit
+                            button(type="submit").btn.btn-buy Отправить
+                            .ask-questions_form_submit_description
+                                | Отправляя форму, вы соглашаетесь с <a href="#">условиями</a>
+                                | <br>с обработки и использования персональных данных
+
+
+
+
+
+
+    section.main_apply
+        .container
+            h2.title-2.text-center Применяются при заболеваниях
+            .slider-apply
+                - for (var x = 0; x < 8; x++)
+                    div
+                        .slider-apply_item
+                            p.slider-apply_item_text
+                                | нарушение сна, стресс, болевые синдромы различного происхождения, восстановление после перенесенных операций, заболеваний и травм, целлюлит...
+                            h4.slider-apply_item_title
+                                | Меркурий
+                            a(href="#").slider-apply_item_link
+                                | Подробнее >
+    section.main_promo-products
+        .container
+            .main_promo-products_presents
+                .row
+                    .col-12.col-md-6.main_promo-products_present
+                        a(href="#")
+                            img(data-src="img/products/footer-1.jpg").lazyload
+                    .col-12.col-md-6.main_promo-products_present
+                        a(href="#")
+                            img(data-src="img/products/footer-2.jpg").lazyload

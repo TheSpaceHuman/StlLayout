@@ -248,7 +248,7 @@
 .header_bottom_main-menu_item.lvl-2.active > .header_bottom_main-menu_items.lvl-3 {
   display: block;
   position: absolute;
-  top: 0;
+  top: -20px;
   //right: 0;
   left: 100%;
   box-shadow: 3px 0 10px rgba(0, 0, 0, 0.3);
@@ -347,7 +347,7 @@
       display: inline-block;
     }
     .stl-icon-close::before {
-      font-size: 10px;
+      font-size: 12px;
       color: #000;
     }
 

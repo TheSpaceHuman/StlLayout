@@ -17,6 +17,7 @@ $brow: #cb5000;
 $old-price: rgba(174, 175, 178, .8);
 
 
+
 /* Remove def style */
 html {
   margin: 0;
@@ -90,3 +91,16 @@ body.compensate-for-scrollbar {
   padding-right: 0!important;
   overflow-y: auto!important;
 }
+
+.w-418 {
+  width: 418px;
+}
+.w-169 {
+  width: 169px;
+}
+.w-307 {
+  width: 307px;
+}
+//select option[value="none"] {
+//  color: red;
+//}

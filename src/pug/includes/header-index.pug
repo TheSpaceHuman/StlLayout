@@ -3,7 +3,8 @@ section.header_top
     nav.mini-header
         .container
             .min-header_logo
-                img(src="img/index/mini-logo.svg" alt="logo")
+                a(href="index.html")
+                    img(src="img/index/mini-logo.svg" alt="logo")
             ul.mini-header_menu-items
                 li.mini-header_menu-item
                     a.mini-header_menu-item_link(href="about.html") О компании
@@ -21,7 +22,7 @@ section.header_top
             .mini-header_lang-basket
                 .header_top_lang
                     button.header_top_lang_item.active RU
-                    button.header_top_lang_item ENG
+                    button.header_top_lang_item(data-toggle="modal" data-target="#loginModal") ENG
                 .mini-header_lang-basket_basket
                     | Корзина (0)
             .mini-header_phone
@@ -33,15 +34,17 @@ section.header_top
             nav.col-12.col-md-6
                 ul.header_top_link-list
                     li.header_top_link-list_item
-                        a(href="#") Сертификаты
+                        //a(href="img/index/ser-1.jpg" data-fancybox="gallery" data-caption="Регистрационное удотоверение на АУЗТ «Дельта» и «Дельта Комби» #1")
+                        a(href="img/index/ser-2.jpg" data-fancybox="gallery" data-caption="Регистрационное удотоверение на АУЗТ «Дельта» и «Дельта Комби» #1") Сертификаты
+                        a(href="img/index/ser-3.jpg" data-fancybox="gallery" data-caption="Регистрационное удотоверение на АУЗТ «Дельта» и «Дельта Комби» #2")
                     li.header_top_link-list_item
-                        a(href="#") Бесплатная доставка
+                        a(href="#" data-toggle="modal" data-target="#deliveryModal") Бесплатная доставка
                     li.header_top_link-list_item
-                        a(href="#") Неограниченная гарантия
+                        a(href="#" data-toggle="modal" data-target="#warrantyModal") Неограниченная гарантия
             .col-12.col-md-6.header_top_wrapper-right
                 .header_top_lang
                     button.header_top_lang_item.active RU
-                    button.header_top_lang_item ENG
+                    button.header_top_lang_item(data-toggle="modal" data-target="#loginModal") ENG
                 a(href='basket.html').header_top_bascket Корзина (0)
                 a(href='profil.html').header_top_user-control
                     | Вход / Регистрация
@@ -93,13 +96,13 @@ section.header_bottom
                             a(href="#") Аксессуары <i class="stl-icon-arrow-right"></i>
                             ul.header_bottom_main-menu_items.lvl-3.animated.slideInRight
                                 li.header_bottom_main-menu_item.lvl-3
-                                    a(href="#") Перчатки-электроды
+                                    a(href="#") Перчатки - электроды
                                 li.header_bottom_main-menu_item.lvl-3
-                                    a(href="#") Пояс-электрод
+                                    a(href="#") Пояс - электрод
                                 li.header_bottom_main-menu_item.lvl-3
                                     a(href="#") Носки-электроды
                                 li.header_bottom_main-menu_item.lvl-3
-                                    a(href="#") Наколенники-электроды
+                                    a(href="#") Наколенник - электрод
                                 li.header_bottom_main-menu_item.lvl-3
                                     a(href="#") Электроды 5х10 см
                                 li.header_bottom_main-menu_item.lvl-3
@@ -141,10 +144,10 @@ section.header_bottom
                         li.header_bottom_main-menu_item.lvl-2
                             a(href="#") Врачам
                 li.header_bottom_main-menu_item.q
-                    a(href="questions.html") Вопрос - ответ
+                    a(href="questions.html") Вопрос &#x2013; ответ
                     ul.header_bottom_main-menu_items.lvl-2.animated.slideInLeft
                         li.header_bottom_main-menu_item.lvl-2
-                            a(href="#").current-active Задайте свой вопрос
+                            a(href="ask-questions.html").current-active Задайте свой вопрос
                         li.header_bottom_main-menu_item.lvl-2
                             a(href="#") Где купить?
                         li.header_bottom_main-menu_item.lvl-2
@@ -180,6 +183,6 @@ section.header_bottom
                 li.nav-item
                     a(href="#") Сотрудничество
                 li.nav-item
-                    a(href="#") Вопрос - ответ
+                    a(href="#") Вопрос &#x2013; ответ
                 li.nav-item.search
                     button.btn-reset(data-toggle="modal" data-target="#searchModal") Поиск <i class="fas fa-search pl-2"></i>
