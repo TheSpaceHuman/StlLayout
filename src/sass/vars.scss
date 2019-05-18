@@ -15,8 +15,26 @@ $green: #209740;
 $emerald: #009e9c;
 $brow: #cb5000;
 $old-price: rgba(174, 175, 178, .8);
+$gray: #adafb2;
 
-
+.color--blue {
+  color: $blue;
+}
+.color--dark-blue {
+  color: $dark-blue;
+}
+.color-hover {
+  color: $hover;
+}
+.color--dark-pink {
+  color: $dark-pink;
+}
+.color--new {
+  color: $new;
+}
+.color--gray {
+  color: $gray;
+}
 
 /* Remove def style */
 html {
@@ -101,6 +119,6 @@ body.compensate-for-scrollbar {
 .w-307 {
   width: 307px;
 }
-//select option[value="none"] {
-//  color: red;
-//}
+.text {
+  margin-bottom: 20px;
+}

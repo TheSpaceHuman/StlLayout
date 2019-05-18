@@ -2780,3 +2780,28 @@ a.active {
   border: 1px solid #00a5db;
   outline: 1px solid #00a5db;
 }
+.recovery-form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+
+  &_item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 560px;
+    margin-bottom: 20px;
+  }
+  &_label {
+    flex: 0 0 130px;
+  }
+  &_input {
+    flex: 0 0 400px;
+  }
+  &_submit {
+    flex: 0 0 auto;
+    max-width: 260px;
+    margin-bottom: 20px;
+  }
+
+}
