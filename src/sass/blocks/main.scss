@@ -2787,13 +2787,15 @@ a.active {
 
   &_item {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
-    width: 560px;
+    width: 100%;
     margin-bottom: 20px;
   }
   &_label {
-    flex: 0 0 130px;
+    flex: 0 0 auto;
+    display: inline-block;
+    margin-right: 30px;
   }
   &_input {
     flex: 0 0 400px;
@@ -2803,5 +2805,47 @@ a.active {
     max-width: 260px;
     margin-bottom: 20px;
   }
-
+}
+.search-form {
+  display: flex;
+  margin-bottom: 23px;
+  input {
+    flex: 0 0 400px;
+    color: $pink;
+  }
+  .btn {
+    margin-left: 20px;
+    margin-right: 5px;
+    min-width: 150px;
+    font-weight: 700;
+  }
+}
+.search-result {
+  &_items {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 45px;
+  }
+  &_item {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #d6d7d8;
+    span {
+      color: $pink;
+    }
+  }
+  &_item_title {
+    font-weight: 700;
+    font-size: 21px;
+  }
+  &_item_description {
+    font-weight: 400;
+    font-size: 17px;
+    margin-bottom: 26px;
+  }
+  &_item_signature {
+    font-size: 13px;
+    font-weight: 400;
+    color: $gray;
+  }
 }
