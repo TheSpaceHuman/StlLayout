@@ -1,0 +1,150 @@
+extends layout/main
+block title
+    title STL | Продукты
+block content
+    main.main
+        .main_products
+            .container
+                nav(aria-label="breadcrumb")
+                    ol.breadcrumb
+                        li.breadcrumb-item <a href="index.html">Главная</a>
+                        li.breadcrumb-item.active(aria-current="page") Продукция
+                h1.title-1 Продукция
+                .row
+                    section.main_products_content.col-12
+                        .main_products_page-name
+                            p.page-name_description Подберите аппарат, исходя из нужных Вам показаний к применению:
+                        .main_products_top-form
+                            form#products-select
+                                .form-group.col-12.p-0
+                                    select.custom-select(name="select")
+                                        option
+                                        option(value="A1") Аднексит
+                                        option(value="A2") Аднексит 2
+                                        option(value="A3") Аднексит 3
+                                        option(value="A4") Аднексит 4
+                                        option(value="A5") Аднексит 5
+                                        option(value="A6") Аднексит 6
+                                        option(value="A7") Аднексит 7
+                                        option(value="A8") Аднексит 8
+                                        option(value="A9") Аднексит 9
+                                        option(value="A10") Аднексит 10
+                                        option(value="A11") Аднексит 11
+                                        option(value="A12") Аднексит 12
+                                        option(value="A13") Аднексит 13
+                                        option(value="A14") Аднексит 14
+                                        option(value="A15") Аднексит 15
+                                    //select.form-control.color--pink
+                                        option Аднексит
+                                        option Аднексит 2
+                                        option Аднексит 3
+                            p.text или откройте <a href="#">полный список показаний</a>
+                        .main_products_blocks
+                            .main_products_block
+                                //.main_products_block_title Максимальный лечебный эффект
+                                //.main_products_block_description Прочитайте подробнее в разделе «Медицина» <a href="#">о воздействии при показании: аденексит</a>
+                                .main_goods_items
+                                    - for (var x = 0; x < 8; x++)
+                                        .main_goods_item
+                                            .main_goods_item_img
+                                                img(data-src="img/index/goods-3.png").lazyload
+                                                .main_goods_item_img-icons
+                                                    .main_goods_item_img-icon
+                                                        img(data-src="img/index/card_icon-3-ultra.svg" alt="Ультразвуковая терапия").lazyload
+                                                        .main_goods_item_img-icon_text Ультразвуковая терапия
+                                                    .main_goods_item_img-icon
+                                                        img(data-src="img/index/card_icon-4-magnito.svg" alt="Магнитотерапия").lazyload
+                                                        .main_goods_item_img-icon_text Магнитотерапия
+                                            h3.main_goods_item_title Дельта комби
+                                            p.main_goods_item_description Аппарат ультразвуковой терапии
+                                            .main_goods_item_price
+                                                span.main_goods_item_price-main 19 200 <i class="fas fa-ruble-sign"></i>
+                                            .main_goods_item_buttons
+                                                button.btn.btn-qbuy Купить в 1 клик <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 18"><switch><g><path class="icon-qbuy" d="M8.3 12.6c-.1.1-2.1 1.9-2.9 2.7-.1.1-.3.2-.4.3-.1.1-.3.1-.4 0-.1-.1-.2-.2-.2-.4v-.5c0-.3.5-5.1.5-5.1S.9 7.5.4 7.2C.1 7 0 6.8 0 6.5c0-.4.2-.6.5-.7.5-.2 1-.3 1.6-.5C3.1 5 18.5.5 19.4.2c.2-.1.4-.1.6-.2.3-.1.6 0 .8.2.2.2.2.5.1.8-.6 1.3-6.9 14.7-7.6 16-.1.2-.2.5-.3.7-.3.5-1 .4-1.3 0-1.2-1.8-2.2-3.4-3.4-5.1zM18.7 1.8C13.4 3.4 8 5.1 2.7 6.7c1 .6 2.1 1.1 3.1 1.7h.1c1-.4 2-.9 2.9-1.3 2.5-1.1 7.8-3.4 7.8-3.4s-5.2 4.8-7.8 7.1c1.1 1.7 2.2 3.3 3.3 4.9 2.3-4.6 4.4-9.3 6.6-13.9z" fill="#00a5db"/></g></switch></svg>
+                                                button.btn.btn-buy Купить <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 19"><style></style><switch><g><path class="icon-buy" d="M6.7 11.5c.1.3.1.7.2 1.1l.1.1H17.4c.4 0 .8.1 1 .4.4.6 0 1.5-.7 1.6H6.2c-.4 0-.8-.1-1-.5-.1-.2-.2-.4-.2-.6-.3-1.8-1.8-10.8-1.9-11.3 0-.1-.1-.2-.2-.2H1.5C.8 2.1.4 1.6.4 1c0-.5.4-.9.9-1h2.5c.6 0 1 .3 1.1.9.1.3.1.6.2.9 0 .3 0 .3.3.3H19.6c.7 0 1 .5 1 1.2-.1.5-.9 6.3-1 7.2-.1.6-.5 1-1.2 1H6.7zm7.7-5.2h3.7l.3-2.1h-4v2.1zm-5.3 0V4.4c0-.2-.1-.2-.2-.2H5.5v.1c.1.6.2 1.3.3 1.9 0 0 .1.1.2.1h3.1zm8.6 3.1l.3-2.1h-3.4c-.1 0-.2.1-.2.2V9.4h3.3zm-4.4-3.1v-2c0-.1-.1-.1-.2-.1h-2.8c-.2 0-.2.1-.2.2V6.3h3.2zm-3.1 3.1h3.2v-2l-.1-.1h-2.9c-.1 0-.1 0-.1.1-.1.7-.1 1.4-.1 2zM6 7.4v.1l.3 1.8c0 .1.1.2.2.2h2.6V7.6c0-.2-.1-.2-.2-.2H6.2c0-.1-.1-.1-.2 0zM7.6 15.6c.9 0 1.7.7 1.7 1.7 0 .9-.8 1.7-1.7 1.7-.9 0-1.7-.8-1.7-1.7 0-.9.7-1.7 1.7-1.7zM18.1 17.3c0 .9-.7 1.7-1.7 1.7-.9 0-1.7-.8-1.7-1.7 0-.9.7-1.7 1.7-1.7s1.7.8 1.7 1.7z"/></g></switch></svg>
+
+                            //.main_products_block
+                                .main_products_block_title Значительный лечебный эффект
+                                    .main_products_block_description Прочитайте подробнее в разделе «Медицина» о воздействии при показании: аденексит
+                                    .main_goods_items
+                                        - for (var y = 0; y < 3; y++)
+                                            .main_goods_item
+                                                .main_goods_item_img
+                                                    img(data-src="img/index/goods-3.png").lazyload
+                                                    .main_goods_item_img-icons
+                                                        .main_goods_item_img-icon
+                                                            img(data-src="img/index/card_icon-3-ultra.svg" alt="Ультразвуковая терапия").lazyload
+                                                            .main_goods_item_img-icon_text Ультразвуковая терапия
+                                                        .main_goods_item_img-icon
+                                                            img(data-src="img/index/card_icon-4-magnito.svg" alt="Магнитотерапия").lazyload
+                                                            .main_goods_item_img-icon_text Магнитотерапия
+                                                h3.main_goods_item_title Дельта комби
+                                                p.main_goods_item_description Аппарат ультразвуковой терапии
+                                                .main_goods_item_price
+                                                    span.main_goods_item_price-main 19 200 <i class="fas fa-ruble-sign"></i>
+                                                .main_goods_item_buttons
+                                                    button.btn.btn-qbuy Купить в 1 клик
+                                                    button.btn.btn-buy Купить
+                            //.main_products_block
+                                .main_products_block_title Ощутимый лечебный эффект
+                                    .main_products_block_description Прочитайте подробнее в разделе «Медицина» о воздействии при показании: аденексит
+                                    .main_goods_items
+                                        - for (var z = 0; z < 3; z++)
+                                            .main_goods_item
+                                                .main_goods_item_img
+                                                    img(data-src="img/index/goods-3.png").lazyload
+                                                    .main_goods_item_img-icons
+                                                        .main_goods_item_img-icon
+                                                            img(data-src="img/index/card_icon-3-ultra.svg" alt="Ультразвуковая терапия").lazyload
+                                                            .main_goods_item_img-icon_text Ультразвуковая терапия
+                                                        .main_goods_item_img-icon
+                                                            img(data-src="img/index/card_icon-4-magnito.svg" alt="Магнитотерапия").lazyload
+                                                            .main_goods_item_img-icon_text Магнитотерапия
+                                                h3.main_goods_item_title Дельта комби
+                                                p.main_goods_item_description Аппарат ультразвуковой терапии
+                                                .main_goods_item_price
+                                                    span.main_goods_item_price-main 19 200 <i class="fas fa-ruble-sign"></i>
+                                                .main_goods_item_buttons
+                                                    button.btn.btn-qbuy Купить в 1 клик
+                                                    button.btn.btn-buy Купить
+
+                        .doctor-question.col-6.offset-3
+                            .doctor-question_title Задайте свой вопрос нашему профессиональному врачу
+                            .doctor-question_img
+                                img(src="img/products/doctor-1.png").lazyload
+                            .doctor-question_name
+                                | Ларинский Николай Евгеньевич
+                            .doctor-question_awards
+                                | главный врач ООО «Санаторий «Солотча», кандидат медицинских наук,
+                                | сертифицированный специалист по внутренним болезням,
+                                | физиотерапии, рефлексотерапии и восстановительной медицине
+                            .doctor-question_button
+                                button(data-toggle="modal" data-target="#questionModal" ).btn.btn-def Задать вопрос <svg xmlns="http://www.w3.org/2000/svg" class="icon-arrow-right" viewBox="0 0 12 21"><switch><g><path d="M.8 2l8.1 8.3-8.1 8.5c-.4.4-.4 1.3 0 1.8.4.4 1.3.4 1.7 0l8.9-9.5c.1-.1.3-.4.3-.8 0-.3 0-.6-.3-.8L2.4.3C2-.1 1.2-.1.8.3S.3 1.6.8 2z" fill="#fff"/></g></switch></svg>
+                            .doctor-question_feadback
+                                | Мы заботимся о конфиденциальности Ваших вопросов, отвечаем на них
+                                | исключительно персонально и не публикуем на нашем сайте никакой информации
+
+            section.main_apply
+                .container
+                    h2.title-2.text-center Применяются при заболеваниях
+                    .slider-apply
+                        - for (var x = 0; x < 8; x++)
+                            div
+                                .slider-apply_item
+                                    p.slider-apply_item_text
+                                        | нарушение сна, стресс, болевые синдромы различного происхождения, восстановление после перенесенных операций, заболеваний и травм, целлюлит...
+                                    h4.slider-apply_item_title
+                                        | Меркурий
+                                    a(href="#").slider-apply_item_link
+                                        | Подробнее >
+            section.main_promo-products
+                .container
+                    .main_promo-products_presents
+                        .row
+                            .col-12.col-md-6.main_promo-products_present
+                                a(href="#")
+                                    img(data-src="img/products/footer-1.jpg").lazyload
+                            .col-12.col-md-6.main_promo-products_present
+                                a(href="#")
+                                    img(data-src="img/products/footer-2.jpg").lazyload
+

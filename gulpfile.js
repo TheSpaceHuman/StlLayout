@@ -38,7 +38,7 @@ gulp.task('style', function() {
 });
 
 gulp.task('pug', function() {
-  return gulp.src('src/pug/*.pug')
+  return gulp.src('src/template/*.pug')
 
       .pipe(plumber())
       .pipe(pug())
@@ -63,7 +63,7 @@ gulp.task('server', function () {
     '!src/js/script.js'
   ], ['copy']);
   gulp.watch('src/img/**/*.{png,jpg,svg}', ['imagemin']);
-  gulp.watch('src/pug/**/*.pug', ['pug']).on('change', server.reload);
+  gulp.watch('src/template/**/*.pug', ['pug']).on('change', server.reload);
 });
 
 gulp.task('imagemin', function () {

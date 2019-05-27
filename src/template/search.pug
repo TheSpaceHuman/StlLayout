@@ -1,0 +1,49 @@
+extends layout/main
+block title
+    title STL | Поиск
+block content
+    main.main
+        .container
+            nav(aria-label="breadcrumb")
+                ol.breadcrumb
+                    li.breadcrumb-item <a href="index.html">Главная</a>
+                    li.breadcrumb-item.active(aria-current="page") Поиск
+            h1.title-1 Поиск
+            .row
+                .col-12
+                    form.search-form
+                        input#searh.form-control(value='болит нога' placeholder='Что будем искать?' name='search' width='400')
+                        button.btn.btn-blue(type='submit') Найти
+                .col-12
+                    .text.color--gray
+                        p По запросу «болит нога» найдено 15 совпадений
+                .col-12.search-result
+                    .search-result_items
+                        .search-result_item
+                            .search-result_item_title Аппарат нервно-мышечной стимуляции «Меркурий». Показания к применению... <span>боль</span> в <span>ногах</span>
+                            .search-result_item_description Болевые синдромы различного происхождения: головная <span>боль</span>, <span>боль</span> в шее, <span>боль</span> в спине, <span>боль</span> в пояснице, <span>боль</span> в <span>ногах</span>, нервно-мышечная боль, миофасциальные синдромы, мигрень ...
+                            .search-result_item_signature Раздел: Продукция
+                        .search-result_item
+                            .search-result_item_title Аппарат нервно-мышечной стимуляции «Меркурий». Показания к применению... <span>боль</span> в <span>ногах</span>
+                            .search-result_item_description Болевые синдромы различного происхождения: головная <span>боль</span>, <span>боль</span> в шее, <span>боль</span> в спине, <span>боль</span> в пояснице, <span>боль</span> в <span>ногах</span>, нервно-мышечная боль, миофасциальные синдромы, мигрень ...
+                            .search-result_item_signature Раздел: Продукция
+                        .search-result_item
+                            .search-result_item_title Аппарат нервно-мышечной стимуляции «Меркурий». Показания к применению... <span>боль</span> в <span>ногах</span>
+                            .search-result_item_description Болевые синдромы различного происхождения: головная <span>боль</span>, <span>боль</span> в шее, <span>боль</span> в спине, <span>боль</span> в пояснице, <span>боль</span> в <span>ногах</span>, нервно-мышечная боль, миофасциальные синдромы, мигрень ...
+                            .search-result_item_signature Раздел: Продукция
+                    .still
+                        button.btn.btn-still Показать еще
+                            span.stl-icon-arrow-right
+                    nav(aria-label="Page navigation example")
+                        ul.pagination.custom-pagination
+                            li.page-item.active
+                                a(href="#").page-link 1
+                            li.page-item
+                                a(href="#").page-link 2
+                            li.page-item
+                                a(href="#").page-link 3
+                            li.page-item
+                                a(href="#").page-link 4
+                            li.page-item
+                                a(href="#").page-link 5
+

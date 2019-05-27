@@ -1,0 +1,185 @@
+extends layout/main
+block title
+    title STL | Медицина
+block content
+    main.main
+        .container
+            nav(aria-label="breadcrumb")
+                ol.breadcrumb
+                    li.breadcrumb-item <a href="index.html">Главная</a>
+                    li.breadcrumb-item.active(aria-current="page") Медицина
+            .row
+                .col-12.questions-headlines
+                    h1.questions-headlines_title-page Вопрос – ответ
+                    p.questions-headlines_description Укажите заболевание, чтобы получить наши рекомендации:
+                .col-12.questions-content
+                    .questions-content_items
+                        // - for (var x = 0; x < 8; x++)
+                        .questions-content_item
+                            .questions-content_item_img
+                                img(data-src="img/medicine/img-1.jpg").lazyload
+                            .questions-content_item_title АЛФАВИТ <br>ЗАБОЛЕВАНИЙ
+                            .questions-content_item_button
+                                a(href="#").btn.btn-outline Перейти <i class="stl-icon-arrow-right"></i>
+                        .questions-content_item
+                            .questions-content_item_img
+                                img(data-src="img/medicine/img-2.jpg").lazyload
+                            .questions-content_item_title ФИЗИОТЕРАПИЯ
+                            .questions-content_item_button
+                                a(href="#").btn.btn-outline Перейти <i class="stl-icon-arrow-right"></i>
+                        .questions-content_item
+                            .questions-content_item_img
+                                img(data-src="img/medicine/img-3.jpg").lazyload
+                            .questions-content_item_title Боль <br>И обезболивание
+                            .questions-content_item_button
+                                a(href="#").btn.btn-outline Перейти <i class="stl-icon-arrow-right"></i>
+                        .questions-content_item
+                            .questions-content_item_img
+                                img(data-src="img/medicine/img-4.jpg").lazyload
+                            .questions-content_item_title Болезни <br>суставов
+                            .questions-content_item_button
+                                a(href="#").btn.btn-outline Перейти <i class="stl-icon-arrow-right"></i>
+                        .questions-content_item
+                            .questions-content_item_img
+                                img(data-src="img/medicine/img-5.jpg").lazyload
+                            .questions-content_item_title травмы
+                            .questions-content_item_button
+                                a(href="#").btn.btn-outline Перейти <i class="stl-icon-arrow-right"></i>
+                        .questions-content_item
+                            .questions-content_item_img
+                                img(data-src="img/medicine/img-6.jpg").lazyload
+                            .questions-content_item_title ОСТЕОХОНДРОЗ
+                            .questions-content_item_button
+                                a(href="#").btn.btn-outline Перейти <i class="stl-icon-arrow-right"></i>
+                        .questions-content_item
+                            .questions-content_item_img
+                                img(data-src="img/medicine/img-7.jpg").lazyload
+                            .questions-content_item_title ДРУГИЕ <br>болезни
+                            .questions-content_item_button
+                                a(href="#").btn.btn-outline Перейти <i class="stl-icon-arrow-right"></i>
+                        .questions-content_item
+                            .questions-content_item_img
+                                img(data-src="img/medicine/img-8.jpg").lazyload
+                            .questions-content_item_title КРАСОТА <br>И ЗДОРОВЬЕ
+                            .questions-content_item_button
+                                a(href="#").btn.btn-outline Перейти <i class="stl-icon-arrow-right"></i>
+                .col-12.impact-type
+                    h3.impact-type_title Тип воздействия
+                    .impact-type_header-list
+                        .impact-type_header-item <img src="img/index/card_icon-3-ultra.svg"> ультразвук
+                        .impact-type_header-item <img src="img/index/card_icon-1-impulse.svg"> импульсный ток
+                        .impact-type_header-item <img src="img/index/card_icon-4-magnito.svg"> магнитное поле
+                    .impact-type_card-list
+                        .impact-type_card-item
+                            .impact-type_card-item_img
+                                img(data-src="img/index/goods-4.png" data-srcset="img/index/goods-4x2.png 2x").lazyload
+                            .impact-type_card-item_title
+                                | дельта
+                            .impact-type_card-item_listing
+                                p - ультразвук (механические колебания)
+                        .impact-type_card-item
+                            .impact-type_card-item_img
+                                img(data-src="img/index/goods-3.png" data-srcset="img/index/goods-3x2.png 2x").lazyload
+                            .impact-type_card-item_title
+                                | дельта комби
+                            .impact-type_card-item_listing
+                                p - ультразвук
+                                p - импульсный ток
+                                p - ультразвук + импульсный ток (в сочетании)
+
+
+                        .impact-type_card-item
+                            .impact-type_card-item_img
+                                img(data-src="img/index/goods-1.png" data-srcset="img/index/goods-1x2.png 2x").lazyload
+                            .impact-type_card-item_title
+                                | меркурий
+                            .impact-type_card-item_listing
+                                p - импульсный ток
+                                p - электростимуляция
+                                p - массаж
+                        .impact-type_card-item
+                            .impact-type_card-item_img
+                                img(data-src="img/index/goods-2.png" data-srcset="img/index/goods-2x2.png 2x").lazyload
+                            .impact-type_card-item_title
+                                | феникс
+                            .impact-type_card-item_listing
+                                p - импульсный ток
+                        .impact-type_card-item
+                            .impact-type_card-item_img
+                                img(data-src="img/index/goods-4.png" data-srcset="img/index/goods-4x2.png 2x").lazyload
+                            .impact-type_card-item_title
+                                | вега плюс
+                            .impact-type_card-item_listing
+                                p - переменное низкочастотное магнитное поле
+
+
+                    .impact-type_buttons
+                        a.btn.btn-outline(href="#") Показания <i class="stl-icon-arrow-right"></i></a>
+                        a.btn.btn-outline.btn--pink(href="#") Противопоказания <i class="stl-icon-arrow-right"></i></a>
+                .col-6.column-listing
+                    h4.column-listing_title Заболевания
+                    .column-listing_content
+                        p Боли в шее <a href='#'>Подробнее...</a>
+                        p Боли в шее <a href='#'>Подробнее...</a>
+                        p Боли в шее <a href='#'>Подробнее...</a>
+                        p Боли в шее <a href='#'>Подробнее...</a>
+                        p Боли в шее <a href='#'>Подробнее...</a>
+                        p Боли в шее <a href='#'>Подробнее...</a>
+                        p <a href='#'>Смотреть полный список заболеваний...</a>
+                .col-6.column-listing
+                    h4.column-listing_title Аппараты
+                    .column-listing_content
+                        p Меркурий
+                        p Вега Плюс
+                        p Вега, Меркурий
+                        p Дельта Комби
+                        p Вега Плюс
+                        p Меркурий, Вега Плюс, Дельта Комби
+
+                .col-12.def-content
+                    p Физиотерапия — это лечение с помощью физических факторов. Несомненное ее преимущество перед другими методами лечения — высокая эффективность вкупе с безопасностью. Она не только не требует применения лекарственных препаратов, но и благодаря своему активному воздействию на организм позволяет сократить прием лекарств в разы за счет повышения чувствительности организма к лечебным свойствам медикаментов. Физиотерапевтические аппараты позволяют свести к минимуму возможные побочные явления и неприятные последствия как самой болезни, так и ее лечения, подчас отрицательно сказывающегося на защитных силах организма. Физиотерапия будит внутренние резервы организма, укрепляет иммунитет и тем самым сокращает сроки лечения, ускоряет заживление ран и воспалений, активизирует важнейшие биохимические процессы в организме, настраивая естественные силы организма на выздоровление. Физиотерапия успешно применяется для лечения самых разных заболеваний органов и систем человеческого организма. В качестве самостоятельного способа лечения физиотерапия эффективна на всех стадиях развития заболевания.
+                    p Физиотерапия — это прекрасное средство профилактики многих болезней.
+                    p Линейка нашей продукции АНМС «Меркурий», АУЗТ «Дельта», АУЗТ «Дельта Комби», АМТ «Вега плюс» и новинка ЭНМС «Феникс» является физиотерапевтическим оборудованием и поможет Вам справиться с различными заболеваниями и в самые короткие сроки восстановить здоровье.
+
+                .doctor-question.col-6.offset-3
+                    .doctor-question_title Задайте свой вопрос нашему профессиональному врачу
+                    .doctor-question_img
+                        img(src="img/products/doctor-1.png").lazyload
+                    .doctor-question_name
+                        | Ларинский Николай Евгеньевич
+                    .doctor-question_awards
+                        | главный врач ООО «Санаторий «Солотча», кандидат медицинских наук,
+                        | сертифицированный специалист по внутренним болезням,
+                        | физиотерапии, рефлексотерапии и восстановительной медицине
+                    .doctor-question_button
+                        button(data-toggle="modal" data-target="#questionModal" ).btn.btn-def Задать вопрос <svg xmlns="http://www.w3.org/2000/svg" class="icon-arrow-right" viewBox="0 0 12 21"><switch><g><path d="M.8 2l8.1 8.3-8.1 8.5c-.4.4-.4 1.3 0 1.8.4.4 1.3.4 1.7 0l8.9-9.5c.1-.1.3-.4.3-.8 0-.3 0-.6-.3-.8L2.4.3C2-.1 1.2-.1.8.3S.3 1.6.8 2z" fill="#fff"/></g></switch></svg>
+                    .doctor-question_feadback
+                        | Мы заботимся о конфиденциальности Ваших вопросов, отвечаем на них
+                        | исключительно персонально и не публикуем на нашем сайте никакой информации
+
+        section.main_apply
+            .container
+                h2.title-2.text-center Применяются при заболеваниях
+                .slider-apply
+                    - for (var x = 0; x < 8; x++)
+                        div
+                            .slider-apply_item
+                                p.slider-apply_item_text
+                                    | нарушение сна, стресс, болевые синдромы различного происхождения, восстановление после перенесенных операций, заболеваний и травм, целлюлит...
+                                h4.slider-apply_item_title
+                                    | Меркурий
+                                a(href="#").slider-apply_item_link
+                                    | Подробнее >
+        section.main_promo-products
+            .container
+                .main_promo-products_presents
+                    .row
+                        .col-12.col-md-6.main_promo-products_present
+                            a(href="#")
+                                img(data-src="img/products/footer-1.jpg").lazyload
+                        .col-12.col-md-6.main_promo-products_present
+                            a(href="#")
+                                img(data-src="img/products/footer-2.jpg").lazyload
+
+
+
