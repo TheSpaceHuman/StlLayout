@@ -41,7 +41,7 @@
     "run-sequence": "2.2.1"
   },
   "scripts": {
-    "start": "gulp build"
+    "build": "gulp build"
   },
   "repository": {
     "type": "git",
