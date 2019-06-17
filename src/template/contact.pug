@@ -1,6 +1,7 @@
 extends layout/main
 block title
     title STL | Контакты
+
 block content
     main.main-contact
         .container
@@ -63,3 +64,16 @@ block content
                             | Измайловский пр., д. 9/2 А, офис 7
                         a(href="tel:+7 (812) 418-24-10").content_phone +7 (812) 418-24-10
                         a(href="mailto:spb@stl-comp.ru").content_email spb@stl-comp.ru
+
+block script
+    script(src="libs/jquery/dist/jquery.min.js")
+    script(src="libs/jquery/dist/jquery.slim.min.js")
+    script(src="libs/bootstrap/dist/js/bootstrap.min.js" async)
+    script(src="libs/slick/slick.min.js" async)
+    script(src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js" async)
+    script(src="libs/lazysizes/lazysizes.min.js" async)
+    script(src="https://unpkg.com/gijgo@1.9.11/js/gijgo.min.js")
+    script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU")
+    script(src="js/yandexMap.js" async)
+    script(src="js/script.min.js" async)
+

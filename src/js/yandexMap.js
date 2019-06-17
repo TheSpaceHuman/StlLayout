@@ -12,12 +12,12 @@ function init(){
     // Необходимо указать данный тип макета.
     iconLayout: 'default#image',
     // Своё изображение иконки метки.
-    iconImageHref: 'img/about/mapPlacemark.png',
+    iconImageHref: 'img/about/mapPlacemark2.png',
     // Размеры метки.
-    iconImageSize: [130, 123],
+    iconImageSize: [87, 123],
     // Смещение левого верхнего угла иконки относительно
     // её "ножки" (точки привязки).
-    iconImageOffset: [-130, -123]
+    iconImageOffset: [-44, -123]
     // preset: 'islands#redDotIcon'
   });
 
@@ -34,9 +34,9 @@ function init(){
     balloonContent: 'Офис продаж в Москве у станции метро ВДНХ 129164, ул. Ярославская, д. 8, к. 6, офис 325'
 }, {
     iconLayout: 'default#image',
-    iconImageHref: 'img/about/mapPlacemark.png',
-    iconImageSize: [130, 123],
-    iconImageOffset: [-130, -123]
+    iconImageHref: 'img/about/mapPlacemark2.png',
+    iconImageSize: [87, 123],
+    iconImageOffset: [-44, -123]
   });
 
   Map2.geoObjects.add(Placemark2);
@@ -52,9 +52,9 @@ function init(){
     balloonContent: 'Офис продаж в Люберцах 140000, ул. Красная, д. 1, офис 505'
   }, {
     iconLayout: 'default#image',
-    iconImageHref: 'img/about/mapPlacemark.png',
-    iconImageSize: [130, 123],
-    iconImageOffset: [-130, -123]
+    iconImageHref: 'img/about/mapPlacemark2.png',
+    iconImageSize: [87, 123],
+    iconImageOffset: [-44, -123]
   });
 
   Map3.geoObjects.add(Placemark3);
@@ -70,9 +70,9 @@ function init(){
     balloonContent: 'Офис продаж в Сергиевом Посаде 141313, ул. Институтская, д. 10 А '
   }, {
     iconLayout: 'default#image',
-    iconImageHref: 'img/about/mapPlacemark.png',
-    iconImageSize: [130, 123],
-    iconImageOffset: [-130, -123]
+    iconImageHref: 'img/about/mapPlacemark2.png',
+    iconImageSize: [87, 123],
+    iconImageOffset: [-44, -123]
   });
 
   Map4.geoObjects.add(Placemark4);
@@ -88,9 +88,9 @@ function init(){
     balloonContent: 'Офис продаж в Санкт-Петербурге 190005, Измайловский пр., д. 9/2 А, офис 7'
   }, {
     iconLayout: 'default#image',
-    iconImageHref: 'img/about/mapPlacemark.png',
-    iconImageSize: [130, 123],
-    iconImageOffset: [-130, -123]
+    iconImageHref: 'img/about/mapPlacemark2.png',
+    iconImageSize: [87, 123],
+    iconImageOffset: [-44, -123]
   });
 
   Map5.geoObjects.add(Placemark5);

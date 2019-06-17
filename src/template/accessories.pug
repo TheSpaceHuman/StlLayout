@@ -1,0 +1,120 @@
+extends layout/main
+block title
+    title STL | Аксессуары
+block content
+    main.main_accessories
+        .container
+            nav(aria-label="breadcrumb")
+                ol.breadcrumb
+                    li.breadcrumb-item <a href="index.html">Главная</a>
+                    li.breadcrumb-item  <a href="products.html">Продукция</a>
+                    li.breadcrumb-item.active(aria-current="page") Аксессуары
+            h1.title-1 Подобрать аппарат
+            .row
+                .custom-col-1.mt-1
+                    aside.left-saidbar
+                        .left-saidbar_title Продукция
+                        ul.left-saidbar_list
+                            li.left-saidbar_list_item.current-active(aria-current="page") Подобрать аппарат
+                            li.left-saidbar_list_item <a href="#">АНМС «Меркурий»</a>
+                            li.left-saidbar_list_item <a href="#">ЭНМС «Феникс»</a>
+                            li.left-saidbar_list_item <a href="#">АУЗТ «Дельта Комби»</a>
+                            li.left-saidbar_list_item <a href="#">АМТ «Вега Плюс»</a>
+                            li.left-saidbar_list_item <a href="#">АУЗТ «Дельта»</a>
+                            li.left-saidbar_list_item <a href="#">Аксессуары <i class="stl-icon-arrow-right"></i></a>
+                                ul.left-saidbar_list_items.lvl-2.animated.fadeIn
+                                    li.left-saidbar_list_item Перчатки-электроды
+                                    li.left-saidbar_list_item Пояс-электрод
+                                    li.left-saidbar_list_item Носки-электроды
+                                    li.left-saidbar_list_item Налокотник-электрод
+                                    li.left-saidbar_list_item Наколенник-электрод
+                                    li.left-saidbar_list_item Электроды 5х10 см
+                                    li.left-saidbar_list_item Электроды 5х5 см
+                                    li.left-saidbar_list_item Электроды 4х4 см
+                                    li.left-saidbar_list_item Электроды D 3,2 см
+                                    li.left-saidbar_list_item Гель специальный
+
+                .custom-col-2
+                    section.main_products_content
+                        .main_products_blocks
+                            .main_products_block
+                                .main_goods_items
+                                    - for (var x = 0; x < 9; x++)
+                                        .main_goods_item
+                                            .main_goods_item_img
+                                                img(data-src="img/index/goods-3.png").lazyload
+                                                .main_goods_item_img-icons
+                                                    .main_goods_item_img-icon
+                                                        img(data-src="img/index/card_icon-3-ultra.svg" alt="Ультразвуковая терапия").lazyload
+                                                        .main_goods_item_img-icon_text Ультразвуковая терапия
+                                                    .main_goods_item_img-icon
+                                                        img(data-src="img/index/card_icon-4-magnito.svg" alt="Магнитотерапия").lazyload
+                                                        .main_goods_item_img-icon_text Магнитотерапия
+                                            h3.main_goods_item_title Дельта комби
+                                            p.main_goods_item_description Аппарат ультразвуковой терапии
+                                            .main_goods_item_price
+                                                span.main_goods_item_price-main 19 200 <i class="fas fa-ruble-sign"></i>
+                                            .main_goods_item_buttons
+                                                button.btn.btn-qbuy Купить в 1 клик <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 18"><switch><g><path class="icon-qbuy" d="M8.3 12.6c-.1.1-2.1 1.9-2.9 2.7-.1.1-.3.2-.4.3-.1.1-.3.1-.4 0-.1-.1-.2-.2-.2-.4v-.5c0-.3.5-5.1.5-5.1S.9 7.5.4 7.2C.1 7 0 6.8 0 6.5c0-.4.2-.6.5-.7.5-.2 1-.3 1.6-.5C3.1 5 18.5.5 19.4.2c.2-.1.4-.1.6-.2.3-.1.6 0 .8.2.2.2.2.5.1.8-.6 1.3-6.9 14.7-7.6 16-.1.2-.2.5-.3.7-.3.5-1 .4-1.3 0-1.2-1.8-2.2-3.4-3.4-5.1zM18.7 1.8C13.4 3.4 8 5.1 2.7 6.7c1 .6 2.1 1.1 3.1 1.7h.1c1-.4 2-.9 2.9-1.3 2.5-1.1 7.8-3.4 7.8-3.4s-5.2 4.8-7.8 7.1c1.1 1.7 2.2 3.3 3.3 4.9 2.3-4.6 4.4-9.3 6.6-13.9z" fill="#00a5db"/></g></switch></svg>
+                                                button.btn.btn-buy Купить <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 19"><style></style><switch><g><path class="icon-buy" d="M6.7 11.5c.1.3.1.7.2 1.1l.1.1H17.4c.4 0 .8.1 1 .4.4.6 0 1.5-.7 1.6H6.2c-.4 0-.8-.1-1-.5-.1-.2-.2-.4-.2-.6-.3-1.8-1.8-10.8-1.9-11.3 0-.1-.1-.2-.2-.2H1.5C.8 2.1.4 1.6.4 1c0-.5.4-.9.9-1h2.5c.6 0 1 .3 1.1.9.1.3.1.6.2.9 0 .3 0 .3.3.3H19.6c.7 0 1 .5 1 1.2-.1.5-.9 6.3-1 7.2-.1.6-.5 1-1.2 1H6.7zm7.7-5.2h3.7l.3-2.1h-4v2.1zm-5.3 0V4.4c0-.2-.1-.2-.2-.2H5.5v.1c.1.6.2 1.3.3 1.9 0 0 .1.1.2.1h3.1zm8.6 3.1l.3-2.1h-3.4c-.1 0-.2.1-.2.2V9.4h3.3zm-4.4-3.1v-2c0-.1-.1-.1-.2-.1h-2.8c-.2 0-.2.1-.2.2V6.3h3.2zm-3.1 3.1h3.2v-2l-.1-.1h-2.9c-.1 0-.1 0-.1.1-.1.7-.1 1.4-.1 2zM6 7.4v.1l.3 1.8c0 .1.1.2.2.2h2.6V7.6c0-.2-.1-.2-.2-.2H6.2c0-.1-.1-.1-.2 0zM7.6 15.6c.9 0 1.7.7 1.7 1.7 0 .9-.8 1.7-1.7 1.7-.9 0-1.7-.8-1.7-1.7 0-.9.7-1.7 1.7-1.7zM18.1 17.3c0 .9-.7 1.7-1.7 1.7-.9 0-1.7-.8-1.7-1.7 0-.9.7-1.7 1.7-1.7s1.7.8 1.7 1.7z"/></g></switch></svg>
+
+                        p.text
+                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad at consequatur consequuntur corporis cumque dolorem eligendi exercitationem in ipsum iste iure odit quisquam, reprehenderit repudiandae saepe similique, sit vitae. Ad adipisci aliquid commodi, culpa cumque distinctio doloremque earum facere fugit ipsa iure, laboriosam maxime molestiae mollitia natus necessitatibus neque odit omnis perferendis porro quam totam ullam veritatis. Consequuntur cumque debitis dolore dolorem dolorum ea enim, facere fuga illum, molestiae, nulla odio porro quaerat quis quo suscipit ullam ut veniam. Aut autem cupiditate inventore itaque odit optio quae tenetur ullam vel veniam! A aliquid enim eveniet exercitationem hic illum labore laborum, nihil quam quidem sed tempora tenetur voluptate. Commodi consequatur, voluptates! Animi architecto aut ea, enim eos fuga harum, in ipsum molestiae mollitia quam, quas repellat saepe tempora tempore temporibus veniam. Accusamus alias aliquam aliquid consequatur dolore dolorem ea est et excepturi exercitationem id illum iste itaque laudantium minus molestiae mollitia nihil nisi obcaecati odit pariatur placeat porro, qui quibusdam quod rem sunt unde! Aspernatur et libero natus quibusdam vitae. Ad deleniti deserunt dignissimos eius enim et eveniet expedita fugiat ipsam modi molestias numquam possimus quis, similique voluptate. Alias aliquid architecto deleniti, et ex necessitatibus nisi officiis, pariatur qui quo reiciendis.
+                        p.text
+                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit necessitatibus quidem ratione vero? Animi, beatae dignissimos dolore dolorem dolorum eligendi eveniet ex facilis fuga fugiat ipsa itaque laborum magnam maiores nisi nobis, non porro quaerat quidem rem repudiandae saepe vero voluptate! Accusamus aliquam amet assumenda autem beatae corporis cumque dolore dolorem dolores doloribus ducimus enim eos error esse eveniet ex expedita facere harum, ipsam iure iusto libero maiores natus nisi obcaecati, quas qui quibusdam quis quo quos ratione rem sit tempora tempore tenetur vero voluptates? Cumque dolorum earum eum harum impedit nobis non quis totam ut voluptatibus! Ab consectetur consequuntur dolores doloribus eius error est ex facilis hic illo incidunt, iure laborum molestias mollitia odit possimus quia quod quos reiciendis temporibus ullam veniam voluptate voluptatem. Aliquid aperiam consequatur distinctio dolor doloremque ducimus eum illo ipsum laboriosam magnam nam, nulla numquam obcaecati ullam voluptates. Consectetur doloremque eveniet inventore mollitia necessitatibus neque quis. Aliquam cupiditate illo vel. Aliquid dolorum, ea eveniet exercitationem fuga ipsa libero nemo nesciunt nihil quibusdam? Aut delectus dicta dignissimos dolorum eos excepturi incidunt labore magnam, maxime molestiae nostrum odio quod repellat reprehenderit rerum sed similique unde. Amet aperiam excepturi fuga iusto maxime mollitia, nisi numquam quo soluta tenetur.
+
+
+        section.video-block
+            .container
+                .d-flex.justify-content-center.alight-items-center
+                    | <iframe width="560" height="315" src="https://www.youtube.com/embed/MotohvkO-Kk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        .container
+            .row
+                .custom-col-1
+                .custom-col-2
+                    .text.py-5
+                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, repellendus!
+                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis consequatur cupiditate dolorem harum neque pariatur provident rerum sed sit? Consequuntur, culpa deleniti dolore, ducimus eligendi error et eum illo incidunt iusto laboriosam maiores, maxime modi odio perferendis sed sit ullam.
+                        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt fugit in, incidunt minus nemo recusandae sed. Adipisci aperiam culpa delectus dolore ducimus earum, eligendi enim exercitationem hic laudantium obcaecati optio, placeat praesentium qui quia soluta, tenetur unde voluptatum? Ex exercitationem facilis illum temporibus ut voluptatem?
+                    .doctor-question.col-6.offset-3
+                        .doctor-question_title Задайте свой вопрос нашему профессиональному врачу
+                        .doctor-question_img
+                            img(src="img/products/doctor-1.png").lazyload
+                        .doctor-question_name
+                            | Ларинский Николай Евгеньевич
+                        .doctor-question_awards
+                            | главный врач ООО «Санаторий «Солотча», кандидат медицинских наук,
+                            | сертифицированный специалист по внутренним болезням,
+                            | физиотерапии, рефлексотерапии и восстановительной медицине
+                        .doctor-question_button
+                            button(data-toggle="modal" data-target="#questionModal" ).btn.btn-def Задать вопрос <svg xmlns="http://www.w3.org/2000/svg" class="icon-arrow-right" viewBox="0 0 12 21"><switch><g><path d="M.8 2l8.1 8.3-8.1 8.5c-.4.4-.4 1.3 0 1.8.4.4 1.3.4 1.7 0l8.9-9.5c.1-.1.3-.4.3-.8 0-.3 0-.6-.3-.8L2.4.3C2-.1 1.2-.1.8.3S.3 1.6.8 2z" fill="#fff"/></g></switch></svg>
+
+                        .doctor-question_feadback
+                            | Мы заботимся о конфиденциальности Ваших вопросов, отвечаем на них
+                            | исключительно персонально и не публикуем на нашем сайте никакой информации
+
+        section.main_apply
+            .container
+                h2.title-2.text-center Применяются при заболеваниях
+                .slider-apply
+                    - for (var x = 0; x < 8; x++)
+                        div
+                            .slider-apply_item
+                                p.slider-apply_item_text
+                                    | нарушение сна, стресс, болевые синдромы различного происхождения, восстановление после перенесенных операций, заболеваний и травм, целлюлит...
+                                h4.slider-apply_item_title
+                                    | Меркурий
+                                a(href="#").slider-apply_item_link
+                                    | Подробнее >
+        section.main_promo-products
+            .container
+                .main_promo-products_presents
+                    .row
+                        .col-12.col-md-6.main_promo-products_present
+                            a(href="#")
+                                img(data-src="img/products/footer-1.jpg").lazyload
+                        .col-12.col-md-6.main_promo-products_present
+                            a(href="#")
+                                img(data-src="img/products/footer-2.jpg").lazyload
+
+
